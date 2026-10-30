@@ -55,6 +55,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-profunda-badalona.html" />
   </url>
   <url>
+    <loc>https://www.limpiezasfernet.com/aviso-legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/aviso-legal.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/avis-legal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/aviso-legal.html" />
+  </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/politica-privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/politica-privacidad.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/politica-privacitat.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/politica-privacidad.html" />
+  </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/politica-cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/politica-cookies.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/politica-cookies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/politica-cookies.html" />
+  </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/ca/avis-legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/aviso-legal.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/avis-legal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/aviso-legal.html" />
+  </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/ca/politica-privacitat.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/politica-privacidad.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/politica-privacitat.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/politica-privacidad.html" />
+  </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/ca/politica-cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/politica-cookies.html" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/politica-cookies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/politica-cookies.html" />
+  </url>
+  <url>
     <loc>https://www.limpiezasfernet.com/como-llegar.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/como-llegar.html" />
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/com-arribar.html" />
