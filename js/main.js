@@ -157,7 +157,7 @@ class FooterComponent extends HTMLElement {
         const i18n = {
             es: {
                 companyName: 'Fernet Limpiezas',
-                companyDescription: 'Empresa de limpieza en Badalona. Servicios para comunidades, negocios y viviendas.',
+                companyDescription: 'Empresa de limpieza profesional en Badalona. Soluciones a medida para comunidades, empresas y particulares con total transparencia.',
                 contactTitle: 'Contacto',
                 address: 'Avenida Alfonso XIII nº 107-109, Badalona, Barcelona',
                 linksTitle: 'Enlaces de interes',
@@ -169,7 +169,7 @@ class FooterComponent extends HTMLElement {
                 employment: 'Empleo',
                 servicesTitle: 'Servicios en Badalona',
                 copyright: `&copy; ${new Date().getFullYear()} Fernet Limpiezas. Todos los derechos reservados. | Servicios de Limpieza Profesional en Badalona`,
-                copyrightDescription: 'Empresa de limpieza especializada en comunidades, oficinas, comercios, escuelas, fábricas y centros clínicos',
+                copyrightDescription: 'Empresa de limpieza especialista en comunidades, oficinas, comercios, escuelas, fábricas y centros clínicos en Badalona',
                 services: {
                     comunidades: 'Comunidades de Vecinos',
                     oficinas: 'Oficinas',
@@ -187,7 +187,7 @@ class FooterComponent extends HTMLElement {
             },
             ca: {
                 companyName: 'Fernet Neteges',
-                companyDescription: 'Empresa de neteja a Badalona. Serveis per a comunitats, negocis i habitatges.',
+                companyDescription: 'Empresa de neteja professional a Badalona. Solucions a mida per a comunitats, empreses i particulars amb total transparència.',
                 contactTitle: 'Contacte',
                 address: 'Avinguda Alfons XIII núm. 107-109, Badalona, Barcelona',
                 linksTitle: "Enllaços d'interès",
@@ -199,7 +199,7 @@ class FooterComponent extends HTMLElement {
                 employment: 'Feina',
                 servicesTitle: 'Serveis a Badalona',
                 copyright: `&copy; ${new Date().getFullYear()} Fernet Neteges. Tots els drets reservats. | Serveis de Neteja Professional a Badalona`,
-                copyrightDescription: 'Empresa de neteja especialitzada en comunitats, oficines, comerços, escoles, fàbriques i centres clínics',
+                copyrightDescription: 'Empresa de neteja especialitzada en comunitats, oficines, comerços, escoles, fàbriques i centres clínics a Badalona',
                 services: {
                     comunidades: 'Comunitats de Veïns',
                     oficinas: 'Oficines',
