@@ -66,7 +66,9 @@ class HeaderComponent extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="${basePath}/styles.css">
             <header>
-                <img src="${basePath}/img/logo.jpg" alt="${t.logoAlt}" class="logo">
+                <a href="${links.home}" class="logo-link" aria-label="${t.home}">
+                    <img src="${basePath}/img/logo.jpg" alt="${t.logoAlt}" class="logo">
+                </a>
                 <input type="checkbox" id="menu-checkbox" aria-hidden="true">
                 <label for="menu-checkbox" class="menu-toggle" aria-label="${t.openMenu}">
                     <span class="hamburger-line"></span>
