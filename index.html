@@ -199,17 +199,29 @@
         current-page="index.html">
     </header-component>
     <main id="main-content">
-        <section id="inicio" class="hero">
-            <h1>Empresa de limpieza en Badalona para comunidades y empresas</h1>
-            <p class="hero-subtitle">Limpieza de comunidades, oficinas, comercios y viviendas. Cuéntanos qué espacio necesitas y solicita una propuesta a medida.</p>
-            <div class="cta-container">
-                <a href="tel:+34931050338" class="cta-phone">📞 Llama al 931 050 338</a>
-                <a href="contacto.html" class="cta-secondary">Solicitar presupuesto</a>
-            </div>
-            <div class="hero-benefits">
-                <div class="benefit-item">✅ Servicios para comunidades, negocios y viviendas</div>
-                <div class="benefit-item">✅ Presupuesto sin compromiso</div>
-                <div class="benefit-item">✅ Atención en Badalona</div>
+        <section id="inicio" class="hero home-hero-section">
+            <div class="home-hero container">
+                <div class="home-hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Limpieza de proximidad · Badalona</p>
+                    <h1>Empresa de limpieza en Badalona</h1>
+                    <p class="hero-subtitle">Limpieza profesional de comunidades, empresas y viviendas en Badalona. Cuéntanos qué espacio necesitas y pide una propuesta a medida.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.55 3.6.55a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.45.55 3.58a1 1 0 0 1-.25 1.02z"/></svg>
+                            Llama al 931 050 338
+                        </a>
+                        <a href="contacto.html" class="cta-secondary">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <ul class="hero-benefits">
+                        <li>Comunidades, negocios y viviendas</li>
+                        <li>Presupuesto sin compromiso</li>
+                        <li>Atención en Badalona</li>
+                    </ul>
+                </div>
+                <figure class="home-hero-image">
+                    <img src="img/portada.png" alt="Equipo de Fernet Limpiezas delante de su oficina en Badalona" fetchpriority="high">
+                    <figcaption><span class="hero-image-dot" aria-hidden="true"></span><span>Un equipo local<br><strong>cerca de ti</strong></span></figcaption>
+                </figure>
             </div>
         </section>
         <section id="servicios" class="servicios">
@@ -217,57 +229,69 @@
             <p class="section-intro">Elige el servicio que necesitas y consulta las tareas que podemos realizar en tu espacio.</p>
             <div class="servicios-grid">
                 <article class="servicio-card">
-                <a href="servicios/limpieza-comunidades-badalona.html">
+                <a href="servicios/limpieza-comunidades-badalona.html" aria-label="Ver servicio de limpieza de comunidades en Badalona">
                     <img src="img/limpieza-comunidad-vecinos.png" class="img-servicio" alt="Limpieza de comunidades en Badalona">
+                    <span class="servicio-card-category">Zonas comunes</span>
                     <h3>Comunidades de vecinos</h3>
                     <p>Limpieza integral de escaleras, portales, garajes y zonas comunes. Mantenimiento regular adaptado a las necesidades de cada comunidad en Badalona.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                 </a>
                 </article>
                 <article class="servicio-card">
-                    <a href="servicios/limpieza-oficinas-badalona.html">
+                    <a href="servicios/limpieza-oficinas-badalona.html" aria-label="Ver servicio de limpieza de oficinas en Badalona">
                     <img src="img/limpieza-oficinas.jpeg" class="img-servicio" alt="limpieza de oficinas">
+                    <span class="servicio-card-category">Espacios de trabajo</span>
                     <h3>Oficinas y empresas</h3>
                     <p>Limpieza de despachos, zonas comunes y espacios de trabajo, con tareas adaptadas al uso de cada oficina.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                 </a>
                 </article>
                 <article class="servicio-card">
-                    <a href="servicios/limpieza-comercios-badalona.html">
+                    <a href="servicios/limpieza-comercios-badalona.html" aria-label="Ver servicio de limpieza de comercios en Badalona">
                     <img src="img/limpieza-tiendas.png" class="img-servicio" alt="Limpieza de tiendas y comercios">
+                    <span class="servicio-card-category">Atención al público</span>
                     <h3>Comercios y tiendas</h3>
                     <p>Limpieza especializada para comercios, tiendas y locales comerciales. Mantenemos tu negocio impecable para ofrecer la mejor imagen a tus clientes.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                 </a>
                 </article>
                 <article class="servicio-card">
-                    <a href="servicios/limpieza-centros-docentes-badalona.html">
+                    <a href="servicios/limpieza-centros-docentes-badalona.html" aria-label="Ver servicio de limpieza de escuelas y academias en Badalona">
                     <img src="img/limpieza-academias.png" class="img-servicio" alt="Limpieza de academias y escuelas">
+                    <span class="servicio-card-category">Centros educativos</span>
                     <h3>Escuelas y academias</h3>
                     <p>Limpieza de aulas, zonas comunes y superficies de uso frecuente en escuelas y academias.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                 </a>
                 </article>
                 <article class="servicio-card">
-                    <a href="servicios/limpieza-industrial-badalona.html">
+                    <a href="servicios/limpieza-industrial-badalona.html" aria-label="Ver servicio de limpieza industrial en Badalona">
                     <img src="img/limpieza-fabricas.png" class="img-servicio" alt="Limpieza de fábricas e industrias">
+                    <span class="servicio-card-category">Espacios productivos</span>
                     <h3>Fábricas e industrias</h3>
                     <p>Limpieza de naves, almacenes y espacios de producción, según las características de cada instalación.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                 </a>
                 </article>
                 <article class="servicio-card">
-                    <a href="servicios/limpieza-clinicas-badalona.html">
+                    <a href="servicios/limpieza-clinicas-badalona.html" aria-label="Ver servicio de limpieza de centros clínicos en Badalona">
                     <img src="img/limpieza-clinicas.jpeg" class="img-servicio" alt="Limpieza de clinicas y centros de salud">
+                    <span class="servicio-card-category">Atención sanitaria</span>
                     <h3>Centros clínicos</h3>
                     <p>Limpieza de clínicas, consultas de podología y ópticas. Cuéntanos qué espacios y horarios necesitas cubrir.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver servicio <span>↗</span></span>
                     </a>
                 </article>
             </div>
             <div class="otros-servicios-section">
                 <h3 class="otros-servicios-title">Otros servicios que ofrecemos en Badalona:</h3>
                 <ul class="otros-servicios-grid">
-                    <li><a href="servicios/limpieza-particulares-badalona.html">🏠 <strong>Limpieza de hogar</strong> - Servicio doméstico</a></li>
-                    <li><a href="servicios/limpieza-fondo-badalona.html">🧽 <strong>Limpieza profunda</strong> - Limpieza intensiva</a></li>
-                    <li><a href="servicios/limpieza-cristales-badalona.html">🔝 <strong>Limpieza de cristales</strong> - Ventanas y escaparates en altura</a></li>
-                    <li><a href="servicios/limpieza-finales-obra-badalona.html">🧹 <strong>Limpieza post-obra</strong> - Después de reformas</a></li>
-                    <li><a href="servicios/limpieza-parkings-badalona.html">🏢 <strong>Limpieza de garajes</strong> - Parkings y sótanos</a></li>
-                    <li><a href="servicios/abrillantado-suelos-badalona.html">🌿 <strong>Abrillantado suelos</strong> - Abrillantado y pulido</a></li>
+                    <li><a href="servicios/limpieza-particulares-badalona.html"><strong>Limpieza del hogar</strong><span>Servicio doméstico</span></a></li>
+                    <li><a href="servicios/limpieza-fondo-badalona.html"><strong>Limpieza a fondo</strong><span>Limpieza intensiva</span></a></li>
+                    <li><a href="servicios/limpieza-cristales-badalona.html"><strong>Limpieza de cristales</strong><span>Ventanas y escaparates</span></a></li>
+                    <li><a href="servicios/limpieza-finales-obra-badalona.html"><strong>Limpieza de fin de obra</strong><span>Después de reformas</span></a></li>
+                    <li><a href="servicios/limpieza-parkings-badalona.html"><strong>Limpieza de garajes</strong><span>Parkings y sótanos</span></a></li>
+                    <li><a href="servicios/abrillantado-suelos-badalona.html"><strong>Abrillantado de suelos</strong><span>Abrillantado y pulido</span></a></li>
                 </ul>
             </div>
         </section>
@@ -284,22 +308,18 @@
                     </div>
                     <div class="sobre-valores">
                         <div class="valor">
-                            <div class="valor-icon">⭐</div>
                             <h4>Servicio adaptado</h4>
                             <p>Tareas pensadas para el espacio y su uso</p>
                         </div>
                         <div class="valor">
-                            <div class="valor-icon">🤝</div>
                             <h4>Atención directa</h4>
                             <p>Cuéntanos qué zonas y tareas necesitas</p>
                         </div>
                         <div class="valor">
-                            <div class="valor-icon">✨</div>
                             <h4>Alcance claro</h4>
                             <p>Consulta qué incluye cada servicio</p>
                         </div>
                         <div class="valor">
-                            <div class="valor-icon">📍</div>
                             <h4>Local</h4>
                             <p>Empresa de Badalona para Badalona</p>
                         </div>
@@ -308,17 +328,28 @@
             </div>
         </section>
         <section class="zona-cobertura">
-            <h2>¿Dónde ofrecemos nuestros servicios de limpieza?</h2>
-            <div class="zona-content">
-                <h3>Zona de cobertura en el área metropolitana:</h3>
-                <p class="zonas-lista">
-                    <strong>Badalona</strong> • Santa Coloma de Gramenet • Sant Adrià de Besòs • 
-                    Montgat • Tiana • Alella • Barcelona Norte • 
-                    <em>y municipios cercanos</em>
-                </p>
-                <p class="zona-consulta">
-                    ¿Tu zona no aparece? ¡Consúltanos! Estudiamos cada caso
-                </p>
+            <div class="container zona-layout">
+                <div class="zona-intro">
+                    <p class="zona-kicker">Atención local</p>
+                    <h2>Badalona y municipios cercanos</h2>
+                    <p>Un equipo de aquí, para cuidar espacios de la ciudad y su entorno.</p>
+                </div>
+                <div class="zona-content">
+                    <h3>Áreas de cobertura</h3>
+                    <ul class="zonas-lista">
+                        <li><strong>Badalona</strong></li>
+                        <li>Santa Coloma de Gramenet</li>
+                        <li>Sant Adrià de Besòs</li>
+                        <li>Montgat</li>
+                        <li>Tiana</li>
+                        <li>Alella</li>
+                        <li>Barcelona Norte</li>
+                        <li>Municipios cercanos</li>
+                    </ul>
+                    <p class="zona-consulta">
+                        ¿Tu zona no aparece? <a href="tel:+34931050338">Consúltanos</a>. Estudiamos cada caso.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="agencia-badalona">

@@ -40,6 +40,8 @@ class HeaderComponent extends HTMLElement {
                 rates: 'Tarifas',
                 contact: 'Contacto',
                 openMenu: 'Abrir menú de navegación',
+                closeMenu: 'Cerrar menú de navegación',
+                navLabel: 'Navegación principal',
                 logoAlt: 'Fernet Limpiezas - Servicios de Limpieza Profesional en Badalona'
             },
             ca: {
@@ -50,6 +52,8 @@ class HeaderComponent extends HTMLElement {
                 rates: 'Tarifes',
                 contact: 'Contacte',
                 openMenu: 'Obrir menú de navegació',
+                closeMenu: 'Tancar menú de navegació',
+                navLabel: 'Navegació principal',
                 logoAlt: 'Fernet Neteges - Serveis de Neteja Professional a Badalona'
             }
         };
@@ -73,13 +77,12 @@ class HeaderComponent extends HTMLElement {
                 <a href="${links.home}" class="logo-link" aria-label="${t.home}">
                     <img src="${basePath}/img/logo.jpg" alt="${t.logoAlt}" class="logo">
                 </a>
-                <input type="checkbox" id="menu-checkbox" aria-hidden="true">
-                <label for="menu-checkbox" class="menu-toggle" aria-label="${t.openMenu}">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="${t.openMenu}">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
-                </label>
-                <nav role="navigation" aria-label="Navegación principal">
+                </button>
+                <nav id="main-nav" aria-label="${t.navLabel}">
                     <ul>
                         <li><a href="${links.home}" ${isHome ? 'aria-current="page"' : ''}>${t.home}</a></li>
                         <li><a href="${links.services}">${t.services}</a></li>
@@ -96,6 +99,32 @@ class HeaderComponent extends HTMLElement {
                 </nav>
             </header>
         `;
+
+        const menuToggle = this.shadowRoot.querySelector('.menu-toggle');
+        const navigation = this.shadowRoot.querySelector('#main-nav');
+        const closeMenu = () => {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', t.openMenu);
+            navigation.classList.remove('is-open');
+        };
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+            menuToggle.setAttribute('aria-label', isExpanded ? t.openMenu : t.closeMenu);
+            navigation.classList.toggle('is-open', !isExpanded);
+        });
+        navigation.addEventListener('click', (event) => {
+            if (event.target instanceof HTMLAnchorElement) {
+                closeMenu();
+            }
+        });
+        this.shadowRoot.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                closeMenu();
+                menuToggle.focus();
+            }
+        });
     }
 }
 
@@ -231,9 +260,9 @@ class FooterComponent extends HTMLElement {
                         <br>
                         <br>
                         <h4>${t.contactTitle}</h4>
-                        <p>📍 ${t.address}</p>
-                        <p>📞 <a href="tel:+34931050338">931 050 338</a></p>
-                        <p>📧 <a href="mailto:info@limpiezasfernet.com">info@limpiezasfernet.com</a></p>
+                        <p>${t.address}</p>
+                        <p><a href="tel:+34931050338">931 050 338</a></p>
+                        <p><a href="mailto:info@limpiezasfernet.com">info@limpiezasfernet.com</a></p>
                     </div>
                     <div class="footer-about">
                         <div class="footer-links-secondary">

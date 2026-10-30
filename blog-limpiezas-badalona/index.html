@@ -65,6 +65,7 @@
     }
     </script>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
             <script src="../js/main.js" defer></script>
 <link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/blog-limpiezas-badalona/">
 </head>
@@ -75,13 +76,22 @@
         ca-link="https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/"
         current-page="index.html">
     </header-component>
-    <main id="main-content">
-        <section class="hero">
-            <h1>Blog de Limpieza Profesional en Badalona</h1>
-            <p class="hero-subtitle">Guías prácticas para organizar la limpieza de hogares, comunidades y negocios.</p>
-            <div class="cta-container">
-                <a href="tel:+34931050338" class="cta-phone">📞 Consulta Profesional: 931 050 338</a>
-                <a href="../contacto.html" class="cta-secondary">Solicita Presupuesto</a>
+    <main id="main-content" class="blog-index">
+        <section class="hero blog-index-hero">
+            <div class="container blog-index-layout">
+                <div class="blog-index-copy">
+                    <p class="blog-kicker">Ideas locales para espacios cuidados</p>
+                    <h1>Blog de Limpieza Profesional en Badalona</h1>
+                    <p class="hero-subtitle">Guías prácticas para organizar la limpieza de hogares, comunidades y negocios.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">Llama al 931 050 338</a>
+                        <a href="../contacto.html" class="cta-secondary">Solicita presupuesto</a>
+                    </div>
+                </div>
+                <figure class="blog-index-image">
+                    <img src="../img/portada.png" alt="Equipo de Fernet Limpiezas delante de su oficina en Badalona" width="1280" height="960">
+                    <figcaption>Consejos prácticos <strong>desde Badalona</strong></figcaption>
+                </figure>
             </div>
         </section>
         <section class="blog-intro">
@@ -94,7 +104,7 @@
             <div class="container">
                 <h2 class="section-title">Artículos Destacados</h2>
                 <div class="blog-grid">
-                    <article class="blog-card">
+                    <article class="blog-card blog-card-featured">
                         <div class="blog-image">
                             <img loading="lazy" src="../img/abrillantado-suelos-profesional-badalona.jpg" alt="Limpieza de pisos nuevos en el barrio del Gorg, Badalona">
                         </div>
@@ -200,7 +210,7 @@
                 <h2>¿Necesitas Servicios de Limpieza Profesional en Badalona?</h2>
                 <p>¿Necesitas un servicio de limpieza en Badalona? Revisa nuestros servicios y solicita una propuesta sin compromiso.</p>
                 <div class="cta-container">
-                    <a href="tel:+34931050338" class="cta-phone">📞 Llama Ahora: 931 050 338</a>
+                    <a href="tel:+34931050338" class="cta-phone"> Llama Ahora: 931 050 338</a>
                     <a href="../contacto.html" class="cta-secondary">Solicitar Presupuesto</a>
                 </div>
             </div>
@@ -309,21 +319,6 @@
         }
         .blog-read-more:hover {
             color: var(--verde-principal);
-        }
-        .blog-cta {
-            padding: 4rem 0;
-            background: var(--gris-claro);
-            text-align: center;
-        }
-        .blog-cta h2 {
-            color: var(--azul-principal);
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-        .blog-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: var(--gris-texto);
         }
         @media (max-width: 768px) {
             .blog-grid {

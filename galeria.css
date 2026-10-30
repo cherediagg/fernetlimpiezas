@@ -162,3 +162,130 @@
     background-color: #f5f5f5;
     color: var(--azul-principal); /* Evita que cambie el color del texto */
 }
+
+.gallery-page {
+    max-width: 1280px;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.gallery-page > .section-title {
+    margin-bottom: .8rem;
+    text-align: left;
+}
+
+.gallery-page > .section-intro {
+    max-width: 70ch;
+    margin: 0 0 2.2rem;
+    text-align: left;
+}
+
+.gallery-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.thumbnail {
+    min-width: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    background: var(--paper);
+}
+
+.thumbnail img {
+    height: auto;
+    aspect-ratio: 1.25;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 12px 30px rgba(24, 51, 42, .16);
+    transform: translateY(-3px);
+}
+
+.thumbnail:hover img,
+.thumbnail:focus-visible img {
+    transform: scale(1.035);
+}
+
+.thumbnail .caption {
+    transform: none;
+    background: linear-gradient(transparent, rgba(14, 42, 33, .78));
+    padding: 1.8rem 1rem .85rem;
+    font-size: .9rem;
+    font-weight: 650;
+    text-align: left;
+}
+
+.thumbnail:focus-visible .caption {
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+.cta-section {
+    margin: 0;
+    padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 4vw, 3.5rem);
+    border-radius: 0;
+    background: var(--verde-principal);
+    text-align: left;
+}
+
+.cta-section h2 {
+    max-width: 20ch;
+    color: #fffefa;
+}
+
+.cta-section p {
+    max-width: 64ch;
+    color: rgba(255, 254, 250, .84);
+}
+
+.cta-section .cta-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: .8rem 1.2rem;
+    border-radius: 5px;
+    background: #fffefa;
+    color: var(--verde-principal);
+    font-size: .95rem;
+}
+
+.lightbox {
+    padding: 1rem;
+    background: rgba(14, 36, 29, .94);
+}
+
+.lightbox-content img {
+    border-radius: 4px;
+}
+
+.close-lightbox {
+    top: .5rem;
+    right: 1.2rem;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@media (max-width: 800px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbnail img {
+        aspect-ratio: 1.45;
+    }
+}

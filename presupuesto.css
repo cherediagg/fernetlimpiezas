@@ -104,3 +104,88 @@
         max-width: 100%;
     }
 }
+
+.presupuesto-section {
+    min-height: 68vh;
+    padding: clamp(3rem, 7vw, 6rem) 1.25rem;
+    background: var(--paper);
+    text-align: left;
+}
+
+.presupuesto-section .container {
+    max-width: 1280px;
+}
+
+.presupuesto-section h1 {
+    max-width: 18ch;
+    color: var(--ink);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.presupuesto-section > p {
+    max-width: 68ch;
+    color: var(--muted);
+}
+
+.opciones-presupuesto {
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.opcion {
+    width: calc(50% - .5rem);
+    max-width: none;
+    padding: clamp(1.4rem, 3vw, 2.2rem);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--surface);
+    box-shadow: none;
+}
+
+.opcion h2 {
+    border: 0;
+    padding: 0;
+    color: var(--ink);
+    font-size: 1.5rem;
+}
+
+.opcion p {
+    color: var(--muted);
+}
+
+.presupuesto-section .cta-button,
+.presupuesto-section .cta-button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: .75rem 1rem;
+    border: 1px solid var(--verde-principal);
+    border-radius: 5px;
+    background: var(--verde-principal);
+    color: #fffefa;
+    font-weight: 700;
+}
+
+.presupuesto-section .cta-button-secondary {
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: var(--verde-principal);
+}
+
+.presupuesto-section .cta-button:hover,
+.presupuesto-section .cta-button-secondary:hover {
+    background: #104633;
+    color: #fffefa;
+}
+
+@media (max-width: 760px) {
+    .opciones-presupuesto {
+        flex-direction: column;
+    }
+
+    .opcion {
+        width: 100%;
+    }
+}
