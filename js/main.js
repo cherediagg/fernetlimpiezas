@@ -160,13 +160,17 @@ class FooterComponent extends HTMLElement {
                 companyDescription: 'Empresa de limpieza profesional en Badalona. Soluciones a medida para comunidades, empresas y particulares con total transparencia.',
                 contactTitle: 'Contacto',
                 address: 'Avenida Alfonso XIII nº 107-109, Badalona, Barcelona',
-                linksTitle: 'Enlaces de interes',
+                linksTitle: 'Enlaces de interés',
                 rates: 'Tarifas',
                 budget: 'Presupuesto',
                 howToArrive: 'Cómo llegar',
                 contact: 'Contacto',
                 gallery: 'Galería',
                 employment: 'Empleo',
+                legalTitle: 'Legal',
+                notice: 'Aviso Legal',
+                privacy: 'Política de Privacidad',
+                cookies: 'Política de Cookies',
                 servicesTitle: 'Servicios en Badalona',
                 copyright: `&copy; ${new Date().getFullYear()} Fernet Limpiezas. Todos los derechos reservados. | Servicios de Limpieza Profesional en Badalona`,
                 copyrightDescription: 'Empresa de limpieza especialista en comunidades, oficinas, comercios, escuelas, fábricas y centros clínicos en Badalona',
@@ -197,6 +201,10 @@ class FooterComponent extends HTMLElement {
                 contact: 'Contacte',
                 gallery: 'Galeria',
                 employment: 'Feina',
+                legalTitle: 'Legal',
+                notice: 'Avís Legal',
+                privacy: 'Política de Privacitat',
+                cookies: 'Política de Cookies',
                 servicesTitle: 'Serveis a Badalona',
                 copyright: `&copy; ${new Date().getFullYear()} Fernet Neteges. Tots els drets reservats. | Serveis de Neteja Professional a Badalona`,
                 copyrightDescription: 'Empresa de neteja especialitzada en comunitats, oficines, comerços, escoles, fàbriques i centres clínics a Badalona',
@@ -225,6 +233,9 @@ class FooterComponent extends HTMLElement {
             contact: 'contacto.html',
             gallery: 'galeria.html',
             employment: 'empleo.html',
+            notice: 'aviso-legal.html',
+            privacy: 'politica-privacidad.html',
+            cookies: 'politica-cookies.html',
             serviceRoot: 'servicios'
         } : {
             rates: 'ca/tarifes.html',
@@ -233,6 +244,9 @@ class FooterComponent extends HTMLElement {
             contact: 'ca/contacte.html',
             gallery: 'ca/galeria.html',
             employment: 'ca/feina.html',
+            notice: 'ca/avis-legal.html',
+            privacy: 'ca/politica-privacitat.html',
+            cookies: 'ca/politica-cookies.html',
             serviceRoot: 'ca/serveis'
         };
         const servicePages = {
@@ -274,6 +288,12 @@ class FooterComponent extends HTMLElement {
                                 <li><a href="${pagePath(pageLinks.contact)}">${t.contact}</a></li>
                                 <li><a href="${pagePath(pageLinks.gallery)}">${t.gallery}</a></li>
                                 <li><a href="${pagePath(pageLinks.employment)}">${t.employment}</a></li>
+                            </ul>
+                            <h4 style="margin-top: 1.5rem;">${t.legalTitle}</h4>
+                            <ul>
+                                <li><a href="${pagePath(pageLinks.notice)}">${t.notice}</a></li>
+                                <li><a href="${pagePath(pageLinks.privacy)}">${t.privacy}</a></li>
+                                <li><a href="${pagePath(pageLinks.cookies)}">${t.cookies}</a></li>
                             </ul>
                         </div>
                     </div>
