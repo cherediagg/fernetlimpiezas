@@ -1,0 +1,141 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Galeria de Treballs de Neteja a Badalona | Fernet Neteges";
+const description = "Galeria d'imatges dels nostres treballs de neteja a Badalona. Vegi la qualitat dels nostres serveis en comunitats, oficines, comerços i més.";
+const keywords = "";
+const canonical = "https://www.limpiezasfernet.com/ca/galeria.html";
+const esLink = "https://www.limpiezasfernet.com/galeria.html";
+const caLink = "https://www.limpiezasfernet.com/ca/galeria.html";
+const jsonLd = null;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="galeria.html"
+  extraCss={["../galeria.css"]}
+>
+<section class="gallery-page">
+            <h1 class="section-title">Galeria dels Nostres Treballs</h1>
+            <p class="section-intro">Aquí podeu veure una selecció dels nostres treballs de neteja realitzats a Badalona i rodalies. Cada imatge és un testimoni del nostre compromís amb la qualitat i l'atenció al detall.</p>
+
+            <div class="gallery-container">
+                <a href="#img1" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-comunidades-vecinos-badalona.jpg" alt="Neteja professional de comunitats de veïns a Badalona">
+                    <div class="caption">Comunitats de Veïns</div>
+                </a>
+                <a href="#img2" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-oficinas-empresas-badalona.jpg" alt="Servei de neteja per a oficines i empreses a Badalona">
+                    <div class="caption">Oficines i Empreses</div>
+                </a>
+                <a href="#img3" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-comercios-tiendas-badalona.jpg" alt="Neteja de comerços i botigues a Badalona">
+                    <div class="caption">Comerços i Botigues</div>
+                </a>
+                <a href="#img4" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-cristales-escaparates-badalona.jpg" alt="Neteja de vidres i aparadors en alçada a Badalona">
+                    <div class="caption">Neteja de Vidres</div>
+                </a>
+                <a href="#img5" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-final-obra-badalona.jpg" alt="Neteja detallada de final d'obra a Badalona">
+                    <div class="caption">Final d'Obra</div>
+                </a>
+                <a href="#img6" class="thumbnail">
+                    <img loading="lazy" src="../img/abrillantado-suelos-profesional-badalona.jpg" alt="Abrillantat i poliment de terres a Badalona">
+                    <div class="caption">Abrillantat de Terres</div>
+                </a>
+                <a href="#img7" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-industrial-naves-badalona.jpg" alt="Neteja de naus industrials a Badalona">
+                    <div class="caption">Neteja Industrial</div>
+                </a>
+                <a href="#img8" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-barcos-yates-puerto-badalona.jpg" alt="Neteja de vaixells i iots al port de Badalona">
+                    <div class="caption">Neteja de Iots</div>
+                </a>
+                 <a href="#img9" class="thumbnail">
+                    <img loading="lazy" src="../img/limpieza-general-badalona.jpg" alt="Servei de neteja general per a particulars a Badalona">
+                    <div class="caption">Neteja General</div>
+                </a>
+                <a href="#img10" class="thumbnail">
+                    <img loading="lazy" src="../img/servicio-limpieza-badalona.jpg" alt="Equip de neteja professional a Badalona">
+                    <div class="caption">El Nostre Equip</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Vols un Resultat Impecable al Teu Espai?</h2>
+            <p>Descobreix la tranquil·litat d'un servei professional, puntual i garantit. Sol·licita la teva proposta a mida sense compromís en menys de 24 hores.</p>
+            <a href="pressupost.html" class="cta-button">Sol·licitar proposta en 24h</a>
+        </section>
+
+        <!-- Lightbox Modals -->
+        <div id="img1" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-comunidades-vecinos-badalona.jpg" alt="Neteja professional de comunitats de veïns a Badalona">
+            </div>
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-oficinas-empresas-badalona.jpg" alt="Servei de neteja per a oficines i empreses a Badalona">
+            </div>
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-comercios-tiendas-badalona.jpg" alt="Neteja de comerços i botigues a Badalona">
+            </div>
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-cristales-escaparates-badalona.jpg" alt="Neteja de vidres i aparadors en alçada a Badalona">
+            </div>
+        </div>
+        <div id="img5" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-final-obra-badalona.jpg" alt="Neteja detallada de final d'obra a Badalona">
+            </div>
+        </div>
+        <div id="img6" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/abrillantado-suelos-profesional-badalona.jpg" alt="Abrillantat i poliment de terres a Badalona">
+            </div>
+        </div>
+        <div id="img7" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-industrial-naves-badalona.jpg" alt="Neteja de naus industrials a Badalona">
+            </div>
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-barcos-yates-puerto-badalona.jpg" alt="Neteja de vaixells i iots al port de Badalona">
+            </div>
+        </div>
+        <div id="img9" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/limpieza-general-badalona.jpg" alt="Servei de neteja general per a particulars a Badalona">
+            </div>
+        </div>
+        <div id="img10" class="lightbox">
+            <a href="#_" class="close-lightbox">×</a>
+            <div class="lightbox-content">
+                <img loading="lazy" src="../img/servicio-limpieza-badalona.jpg" alt="Equip de neteja professional a Badalona">
+            </div>
+        </div>
+</BaseLayout>

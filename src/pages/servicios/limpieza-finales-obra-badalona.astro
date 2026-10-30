@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza de final de obra en Badalona | Fernet Limpiezas";
+const description = "Retirada de polvo y restos tras una reforma en pisos, casas y locales de Badalona. Cuéntanos qué espacio necesitas preparar.";
+const keywords = "limpieza final obra Badalona, limpieza post-obra Badalona, limpieza obras Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-finals-obra-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpiezas de Final de Obra en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpiezas de Final de Obra en Badalona | Eliminación de Restos de Obra",
+      "description": "Servicio de limpieza de final de obra en Badalona para pisos, casas y locales. Eliminamos polvo, pintura y restos de obra para una entrega impecable. ¡Pide presupuesto!",
+      "serviceType": "Limpiezas de Final de Obra",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-final-obra-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-finales-obra-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza de final de obra en Badalona</h1>
+        <p>Dejamos tu piso o local listo para entrar a vivir o trabajar</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpiezas de final de obra en Badalona</h2>
+        <p class="section-subtitle">Limpiezas de final de obra en Badalona para viviendas, locales y oficinas. Eliminamos polvo, cemento y residuos para dejar el espacio habitable.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🧱 Eliminación de polvo y restos</h3>
+<ul>
+<li>Aspirado profesional y limpieza de juntas</li>
+<li>Eliminación de residuos y embalajes</li>
+<li>Limpieza de cristales y carpintería</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧽 Limpieza detallada</h3>
+<ul>
+<li>Retirada de manchas de pintura y adhesivos</li>
+<li>Pulido y tratamiento de suelos</li>
+<li>Limpieza de instalaciones eléctricas y sanitarias</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🚚 Gestión de residuos</h3>
+<ul>
+<li>Retirada y gestión de escombros y materiales</li>
+<li>Coordinación con gestores autorizados</li>
+<li>Servicio puntual o por fases según necesidad</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro proceso de trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

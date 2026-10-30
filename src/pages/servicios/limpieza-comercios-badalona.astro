@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza de comercios en Badalona | Fernet Limpiezas";
+const description = "Limpieza de escaparates, suelos y áreas de atención en tiendas y locales de Badalona. Solicita una propuesta para tu negocio.";
+const keywords = "limpieza comercios Badalona, limpieza tiendas Badalona, limpieza escaparates Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-comercos-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza de Comercios en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza de Comercios en Badalona | Tiendas y Locales Comerciales",
+      "description": "Servicio de limpieza de comercios en Badalona. Dejamos tu tienda o local impecable: escaparates, suelos y áreas de atención al cliente. ¡Pide presupuesto!",
+      "serviceType": "Limpieza de Comercios",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-comercios-tiendas-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-comercios-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza de comercios en Badalona</h1>
+        <p>Dejamos tu local impecable para recibir a tus clientes</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza de comercios en Badalona</h2>
+        <p class="section-subtitle">Servicios de limpieza para comercios en Badalona: escaparates, suelos, probadores y áreas de atención al cliente. Horarios fuera de apertura.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏪 Limpieza de escaparates</h3>
+<ul>
+<li>Limpieza sin marcas para mayor visibilidad</li>
+<li>Mantenimiento regular para escaparates comerciales</li>
+<li>Tratamientos antiestáticos y antihuellas</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧾 Áreas de atención al cliente</h3>
+<ul>
+<li>Desinfección de mostradores y TPV</li>
+<li>Control de polvo y mantenimiento de estanterías</li>
+<li>Aperturas y cierres con servicio programado</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧼 Suelos y probadores</h3>
+<ul>
+<li>Fregado profundo y eliminación de manchas</li>
+<li>Tratamientos de abrillantado según el material</li>
+<li>Mantenimiento nocturno para no interferir en la actividad</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro Proceso de Trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y Evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y Presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

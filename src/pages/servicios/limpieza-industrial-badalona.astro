@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza industrial en Badalona | Fernet Limpiezas";
+const description = "Limpieza de naves, fábricas y almacenes en Badalona, adaptada a las características de cada instalación.";
+const keywords = "limpieza industrial Badalona, limpieza naves Badalona, limpieza fábricas Badalona, limpieza almacenes Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-industrial-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza Industrial en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza Industrial en Badalona | Naves, Fábricas y Almacenes",
+      "description": "Servicio de limpieza industrial en Badalona para naves, fábricas y almacenes. Cumplimos con normativas de seguridad e higiene. ¡Pide presupuesto!",
+      "serviceType": "Limpieza Industrial",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-industrial-naves-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-industrial-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza industrial en Badalona</h1>
+        <p>Protocolos y maquinaria para limpieza industrial especializada</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza industrial en Badalona</h2>
+        <p class="section-subtitle">Limpieza industrial en Badalona para naves, fábricas y almacenes. Servicios con cumplimiento de normativas de seguridad e higiene.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏭 Limpieza de naves</h3>
+<ul>
+<li>Limpieza a gran escala con equipos de presión</li>
+<li>Eliminación de residuos y aceites industriales</li>
+<li>Planificación fuera de horas productivas</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>⚙️ Limpieza de maquinaria</h3>
+<ul>
+<li>Limpieza y desengrase de equipos y cadenas de producción</li>
+<li>Protocolos específicos por sector (alimentario, químico, metalúrgico)</li>
+<li>Mantenimiento preventivo y documentado</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>📦 Almacenes y logística</h3>
+<ul>
+<li>Orden y limpieza de zonas de almacenaje</li>
+<li>Tratamiento de suelos y pasillos de carga</li>
+<li>Gestión de residuos y coordinación logística</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro proceso de trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

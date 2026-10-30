@@ -1,0 +1,283 @@
+
+.section-subtitle{max-width:800px;margin:0 auto 3rem;color:#333;}
+.servicio-item{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);border-left:4px solid #2e8b57}
+.servicio-item h3{margin-bottom:1rem}
+.proceso{background:#f5f5f5;padding:3rem 0;margin-top:2rem}
+.step{background:#fff;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+.cta-button, .cta-phone {
+    display:inline-block;
+    background:#fff;
+    color:#000000;
+    padding:1rem 1.8rem;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+    margin-top:1rem
+}
+@media (max-width:768px){.servicios-incluidos{grid-template-columns:1fr}}
+
+/* Service pages share the same understated, local-first visual language. */
+.hero-servicio {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 88% 42%, rgba(118, 185, 71, .18), transparent 22rem),
+        linear-gradient(115deg, #104633, var(--verde-principal));
+    color: #fffefa;
+    padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+    text-align: left;
+}
+
+.hero-servicio::after {
+    position: absolute;
+    top: -13rem;
+    right: -7rem;
+    width: 31rem;
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 254, 250, .15);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 2.5rem rgba(255, 254, 250, .035),
+        0 0 0 5rem rgba(255, 254, 250, .025);
+    content: "";
+    pointer-events: none;
+}
+
+.hero-servicio .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+}
+
+.hero-servicio h1 {
+    max-width: 18ch;
+    margin-bottom: 1.1rem;
+    color: #fffefa;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.04;
+}
+
+.hero-servicio p {
+    max-width: 52ch;
+    margin: 0;
+    color: rgba(255, 254, 250, .9);
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.hero-servicio .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 1.2rem;
+}
+
+.hero-servicio .cta-phone,
+.hero-servicio .cta-button,
+.cta-seccion .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin: .75rem 0 0;
+    padding: .8rem 1rem;
+    border: 1px solid #fffefa;
+    border-radius: 5px;
+    background: #fffefa;
+    color: var(--verde-principal);
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    transition: transform .18s ease, background-color .18s ease;
+}
+
+.hero-servicio .cta-button.secondary {
+    margin-left: 0;
+    background: transparent;
+    color: #fffefa;
+}
+
+.hero-servicio .cta-button:hover,
+.hero-servicio .cta-phone:hover,
+.cta-seccion .cta-button:hover {
+    color: var(--verde-principal);
+    background: #e8f1df;
+    transform: translateY(-2px);
+}
+
+.servicio-detalle {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: var(--surface);
+}
+
+.servicio-detalle .container,
+.proceso .container {
+    max-width: 1280px;
+}
+
+.servicio-detalle .section-title,
+.servicio-detalle .section-subtitle {
+    text-align: left;
+}
+
+.servicio-detalle .section-title {
+    margin-bottom: .8rem;
+}
+
+.servicio-detalle .section-subtitle {
+    max-width: 70ch;
+    margin: 0 0 2rem;
+    color: var(--muted);
+}
+
+.servicios-incluidos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+
+.servicio-item {
+    padding: clamp(1.3rem, 2vw, 1.7rem);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--verde-secundario);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 8px 24px rgba(24, 51, 42, .045);
+}
+
+.servicio-item h3 {
+    margin-bottom: .9rem;
+    font-family: var(--font-body);
+    font-size: 1.08rem;
+    font-weight: 750;
+    letter-spacing: -.02em;
+}
+
+.servicio-item ul {
+    padding-left: 1.1rem;
+    color: var(--muted);
+}
+
+.servicio-item li {
+    padding: .22rem 0;
+    line-height: 1.6;
+}
+
+.servicio-item li::marker {
+    color: var(--verde-secundario);
+}
+
+.proceso {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: var(--paper);
+}
+
+.proceso .container h2 {
+    margin-bottom: 1.6rem;
+    text-align: left;
+}
+
+.proceso-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.step {
+    min-height: 190px;
+    padding: 1.35rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(24, 51, 42, .04);
+}
+
+.step-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1rem;
+    border-radius: 50%;
+    background: #e7eee4;
+    color: var(--verde-principal);
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.step h3 {
+    margin-bottom: .45rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: -.02em;
+}
+
+.step p {
+    font-size: .92rem;
+}
+
+.cta-seccion {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: #104633;
+    color: #fffefa;
+    text-align: left;
+}
+
+.cta-seccion h2 {
+    max-width: 20ch;
+    margin-bottom: .8rem;
+    color: #fffefa;
+}
+
+.cta-seccion p {
+    max-width: 62ch;
+    color: rgba(255, 254, 250, .9);
+}
+
+.cta-seccion .cta-button {
+    border-color: #fffefa;
+    background: #fffefa;
+    color: #104633;
+}
+
+@media (max-width: 760px) {
+    .servicios-incluidos,
+    .proceso-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-servicio .container > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-servicio .cta-phone,
+    .hero-servicio .cta-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .proceso-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .hero-servicio::after {
+        top: -9rem;
+        right: -17rem;
+    }
+
+    .proceso-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .step {
+        min-height: 0;
+    }
+}

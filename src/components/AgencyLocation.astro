@@ -1,0 +1,64 @@
+---
+interface Props {
+  lang?: 'es' | 'ca';
+  basePath?: string;
+}
+
+const { lang = 'es', basePath = '' } = Astro.props;
+const isSpanish = lang === 'es';
+
+const content = isSpanish ? {
+  heading: 'Nuestra <span class="highlight">agencia en Badalona</span>',
+  mapAlt: 'Mapa de ubicación de Fernet Limpiezas en Avenida Alfonso XIII, Badalona',
+  companyName: 'Fernet Limpiezas',
+  addressLabel: '📍 Dirección:',
+  addressValue: 'Avenida Alfonso XIII nº 107-109 , Badalona, Barcelona, Cataluña, España, 08912',
+  telLabel: '📞 Tel:',
+  mailLabel: '✉️ Mail:',
+  hoursLabel: '🕒 Horarios:',
+  hoursValue: 'Oficina: Lunes a viernes: De 09:00-14:00 / 16:30-18:30',
+  hoursNote: '*Consulta horario de verano'
+} : {
+  heading: 'La nostra <span class="highlight">agència a Badalona</span>',
+  mapAlt: 'Mapa d\'ubicació de Fernet Neteges a Avinguda Alfons XIII, Badalona',
+  companyName: 'Fernet Neteges',
+  addressLabel: '📍 Adreça:',
+  addressValue: 'Avinguda Alfons XIII núm. 107-109 , Badalona, Barcelona, Catalunya, Espanya, 08912',
+  telLabel: '📞 Tel:',
+  mailLabel: '✉️ Mail:',
+  hoursLabel: '🕒 Horaris:',
+  hoursValue: 'Oficina: Dilluns a divendres: De 09:00-14:00 / 16:30-18:30',
+  hoursNote: '*Consulta horari d\'estiu'
+};
+---
+
+<section class="agencia-badalona">
+  <h2 set:html={content.heading}></h2>
+  <div class="agencia-content">
+    <div class="agencia-mapa">
+      <a href="https://maps.app.goo.gl/m9k7YVjbUtUDmmW27" target="_blank" rel="noopener noreferrer">
+        <img loading="lazy" src={`${basePath}/img/map.png`} alt={content.mapAlt} class="mapa-imagen">
+      </a>
+    </div>
+    <div class="agencia-info">
+      <h3>{content.companyName}</h3>
+      <div class="info-item">
+        <strong>{content.addressLabel}</strong>
+        <p>{content.addressValue}</p>
+      </div>
+      <div class="info-item">
+        <strong>{content.telLabel}</strong>
+        <p><a href="tel:+34931050338">931 050 338</a></p>
+      </div>
+      <div class="info-item">
+        <strong>{content.mailLabel}</strong>
+        <a href="mailto:info@limpiezasfernet.com?subject=ConsultaWeb">info@limpiezasfernet.com </a>
+      </div>
+      <div class="info-item">
+        <strong>{content.hoursLabel}</strong>
+        <p>{content.hoursValue}</p>
+        <p class="horario-nota">{content.hoursNote}</p>
+      </div>
+    </div>
+  </div>
+</section>

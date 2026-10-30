@@ -1,0 +1,210 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Consejos y Guías de Limpieza Profesional en Badalona | Fernet";
+const description = "Guías prácticas sobre limpieza de oficinas, comunidades, comercios, barcos y obra nueva en Badalona. Soluciones reales para mantener tus espacios impecables.";
+const keywords = "blog limpieza Badalona, consejos limpieza profesional, limpieza barcos Badalona, limpieza yates puerto Badalona, limpieza pisos Gorg Badalona, técnicas limpieza, guías limpieza";
+const canonical = "https://www.limpiezasfernet.com/blog-limpiezas-badalona/";
+const esLink = "https://www.limpiezasfernet.com/blog-limpiezas-badalona/";
+const caLink = "https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de Limpieza Profesional Badalona",
+    "description": "Guías directas y soluciones de limpieza para viviendas, comunidades de vecinos y negocios en Badalona.",
+    "url": "https://www.limpiezasfernet.com/blog-limpiezas-badalona/",
+    "publisher": {
+      "@type": "LocalBusiness",
+      "name": "Fernet Limpiezas",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida Alfonso XIII nº 107-109",
+        "addressLocality": "Badalona",
+        "postalCode": "08912",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 931 050 338",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday"
+          ],
+          "opens": "09:00",
+          "closes": "14:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday"
+          ],
+          "opens": "16:30",
+          "closes": "18:30"
+        }
+      ]
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="index.html"
+  extraCss={["blog.css"]}
+>
+<section class="hero blog-index-hero">
+            <div class="container blog-index-layout">
+                <div class="blog-index-copy">
+                    <h1>Blog de Limpieza Profesional en Badalona</h1>
+                    <p class="hero-subtitle">Guías prácticas y consejos técnicos para mantener impecables tu hogar, comunidad o negocio.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">Llama al 931 050 338</a>
+                        <a href="../contacto.html" class="cta-secondary">Pide Tu Presupuesto Gratis</a>
+                    </div>
+                </div>
+                <figure class="blog-index-image">
+                    <img src="../img/portada.png" alt="Equipo de Fernet Limpiezas delante de su oficina en Badalona" width="1280" height="960">
+                    <figcaption>Consejos prácticos <strong>desde Badalona</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="blog-intro">
+            <div class="container">
+                <h2>Respuestas claras para mantener impecables tus instalaciones</h2>
+                <p>Descubre cómo eliminar el polvo fino tras una reforma, mantener limpios los escaparates de tu comercio, organizar la desinfección de tu oficina o proteger la teca de tu barco. Guías directas preparadas por nuestro equipo especializado en Badalona.</p>
+            </div>
+        </section>
+        <section class="blog-grid-section">
+            <div class="container">
+                <h2 class="section-title">Artículos Destacados</h2>
+                <div class="blog-grid">
+                    <article class="blog-card blog-card-featured">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/abrillantado-suelos-profesional-badalona.jpg" alt="Limpieza de pisos nuevos en el barrio del Gorg, Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Obra Nueva</span>
+                                <span class="blog-date">Octubre 2025</span>
+                            </div>
+                            <h3><a href="limpieza-pisos-gorg-badalona.html">Limpieza de Pisos Nuevos en Gorg, Badalona</a></h3>
+                            <p>Cómo eliminar el polvo fino de obra, quitar la lechada de azulejos y dejar tu piso recién entregado listo para entrar a vivir sin esfuerzo.</p>
+                            <a href="limpieza-pisos-gorg-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-oficinas-empresas-badalona.jpg" alt="Limpieza profesional de oficinas en Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Oficinas</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-oficinas-empresas-badalona.html">Limpieza de Oficinas: Claves para un Espacio Productivo</a></h3>
+                            <p>Protocolos de limpieza para puestos de trabajo, pantallas, aseos y zonas comunes. Mantén un entorno de trabajo saludable y profesional.</p>
+                            <a href="limpieza-oficinas-empresas-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-comunidades-vecinos-badalona.jpg" alt="Mantenimiento de comunidades de vecinos en Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Comunidades</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-comunidades-vecinos-badalona.html">Guía Completa de Limpieza para Comunidades de Vecinos</a></h3>
+                            <p>Planificación de mantenimiento para escaleras, portales, ascensores y garajes. Evita el deterioro del edificio y mejora la convivencia.</p>
+                            <a href="limpieza-comunidades-vecinos-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-barcos-yates-puerto-badalona.jpg" alt="Limpieza de barcos y yates en el puerto de Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Náutica</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-barcos-yates-badalona.html">Limpieza Profesional de Barcos y Yates en Badalona</a></h3>
+                            <p>Protección contra el salitre en fibra de vidrio, teca e interiores náuticos en el Puerto de Badalona. Preserva el valor de tu embarcación.</p>
+                            <a href="limpieza-barcos-yates-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-final-obra-badalona.jpg" alt="Limpieza de final de obra en Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Reformas y Hogar</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-final-obra-badalona.html">Guía Profesional para la Limpieza de Final de Obra</a></h3>
+                            <p>Técnicas y productos específicos para retirar restos de pintura, yeso, siliconas y polvo acumulado tras una reforma.</p>
+                            <a href="limpieza-final-obra-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-general-badalona.jpg" alt="Técnicas de limpieza profunda en Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Técnicas</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-profunda-badalona.html">Limpieza a Fondo: Guía de una Limpieza Intensiva</a></h3>
+                            <p>Cuándo es indispensable una limpieza intensiva y cómo desinfectar cocinas, baños, persianas y rincones que el mantenimiento diario no alcanza.</p>
+                            <a href="limpieza-profunda-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../img/limpieza-comercios-tiendas-badalona.jpg" alt="Limpieza de comercios en Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Comercios</span>
+                                <span class="blog-date">Enero 2025</span>
+                            </div>
+                            <h3><a href="limpieza-comercios-badalona.html">Limpieza de Comercios: Atrae Clientes con una Imagen Impecable</a></h3>
+                            <p>Escaparates cristalinos, probadores higienizados y suelos brillantes. Transmite máxima confianza desde el primer vistazo a tu tienda.</p>
+                            <a href="limpieza-comercios-badalona.html" class="blog-read-more">Leer artículo completo →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="blog-cta">
+            <div class="container">
+                <h2>¿Necesitas un Servicio de Limpieza Profesional en Badalona?</h2>
+                <p>Te enviamos una propuesta personalizada y ajustada a las necesidades de tu espacio en menos de 24 horas, sin ningún compromiso.</p>
+                <div class="cta-container">
+                    <a href="tel:+34931050338" class="cta-phone">Llama Ahora: 931 050 338</a>
+                    <a href="../contacto.html" class="cta-secondary">Solicitar Presupuesto Gratis</a>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

@@ -1,0 +1,187 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Contacto | Limpieza en Badalona | Fernet Limpiezas";
+const description = "Contacta con Fernet Limpiezas en Badalona para comentar el servicio que necesitas. Llámanos o explica tu consulta en el formulario.";
+const keywords = "contacto limpieza badalona, presupuesto limpieza badalona, teléfono empresa limpieza, email limpieza badalona, fernet limpiezas contacto";
+const canonical = "https://www.limpiezasfernet.com/contacto.html";
+const esLink = "https://www.limpiezasfernet.com/contacto.html";
+const caLink = "https://www.limpiezasfernet.com/ca/contacte.html";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fernet Limpiezas",
+    "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+    "@id": "https://www.limpiezasfernet.com",
+    "url": "https://www.limpiezasfernet.com",
+    "telephone": "+34931050338",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "16:30",
+        "closes": "18:30"
+      }
+    ],
+    "email": "info@limpiezasfernet.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Alfonso XIII nº 107-109",
+      "addressLocality": "Badalona",
+      "postalCode": "08912",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.446988",
+      "longitude": "2.245032"
+    },
+    "description": "Formulario de contacto y datos de Fernet Limpiezas en Badalona. Pide tu presupuesto de limpieza para comunidades, oficinas o empresas.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de limpieza profesional",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de Comunidades de Vecinos"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de Oficinas y Empresas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de Comercios y Tiendas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de Final de Obra"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de Cristales"
+          }
+        }
+      ]
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=""
+  currentPage="contacto.html"
+  extraCss={["contacto.css"]}
+>
+<section class="hero">
+            <div class="container">
+                <h1>Hablemos de tus necesidades de limpieza en Badalona</h1>
+                <p>Recibe una propuesta clara, transparente y a la medida de tu espacio en menos de 24 horas.</p>
+            </div>
+        </section>
+        <section class="contacto-section">
+            <div class="container">
+                <div class="contacto-content">
+                    <div class="contacto-info">
+                        <h2>Información de contacto</h2>
+                        <p><strong>Dirección:</strong> Avenida Alfonso XIII nº 107-109, Badalona</p>
+                        <p><strong>Teléfono:</strong> <a href="tel:+34931050338">931 050 338</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@limpiezasfernet.com">info@limpiezasfernet.com</a></p>
+                        <p><strong>Horario:</strong> Lunes a viernes de 09:00 a 14:00 y de 16:30 a 18:30</p>
+                        <h3>Nuestros servicios principales</h3>
+                        <ul>
+                            <li>✓ Limpieza de Comunidades</li>
+                            <li>✓ Limpieza de Oficinas y Empresas</li>
+                            <li>✓ Limpieza de Comercios</li>
+                            <li>✓ Limpieza Final de Obra</li>
+                            <li>✓ Limpieza de Parkings y Garajes</li>
+                            <li>✓ Limpieza de Cristales</li>
+                        </ul>
+                    </div>
+                    <form class="contacto-form" action="https://formspree.io/f/info@limpiezasfernet.com" method="POST">
+                        <h3>Solicitar presupuesto sin compromiso</h3>
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Tipo de Servicio</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Elige...</option>
+                                <option value="comunidades">Comunidades de Vecinos</option>
+                                <option value="oficinas">Oficinas y Empresas</option>
+                                <option value="comercios">Comercios</option>
+                                <option value="final-obra">Limpieza Final de Obra</option>
+                                <option value="parkings">Parkings y Garajes</option>
+                                <option value="cristales">Limpieza de Cristales</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group--message">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas y te contactaremos..."></textarea>
+                        </div>
+                        <div class="honeypot">
+                            <input type="text" name="extra_info" tabindex="-1" value="">
+                            <span id="decoy">3</span>
+                        </div>
+                        <div class="form-group form-group--captcha">
+                            <label for="captcha">Captcha: ¿Cuánto es 8 + 2? *</label>
+                            <input type="text" id="captcha" name="captcha" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Solicitar propuesta gratuita</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

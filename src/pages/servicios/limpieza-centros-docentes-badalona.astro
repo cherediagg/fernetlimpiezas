@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Colegios y academias en Badalona | Fernet Limpiezas";
+const description = "Servicio de limpieza y desinfección para colegios, guarderías y academias en Badalona. Creamos entornos educativos seguros y saludables. ¡Pide presupuesto!";
+const keywords = "limpieza colegios Badalona, limpieza academias Badalona, limpieza centros docentes Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza de Centros Docentes en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza de Centros Docentes en Badalona | Colegios y Academias",
+      "description": "Servicio de limpieza y desinfección para colegios, guarderías y academias en Badalona. Creamos entornos educativos seguros y saludables. ¡Pide presupuesto!",
+      "serviceType": "Limpieza de Centros Docentes",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-academias.png"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-centros-docentes-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza de centros docentes en Badalona</h1>
+        <p>Entornos educativos seguros y saludables para el aprendizaje</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza de centros docentes en Badalona</h2>
+        <p class="section-subtitle">Limpieza y desinfección de colegios, guarderías y academias en Badalona. Protocolos específicos para centros educativos.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏫 Aulas y salones</h3>
+<ul>
+<li>Desinfección periódica de mesas y superficies</li>
+<li>Aspirado y fregado de suelos</li>
+<li>Limpieza de pizarras y material didáctico</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧪 Laboratorios y talleres</h3>
+<ul>
+<li>Limpieza con protocolos especializados</li>
+<li>Eliminación segura de residuos no peligrosos</li>
+<li>Control de ventilación y filtros donde proceda</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🚻 Baños y vestuarios</h3>
+<ul>
+<li>Desinfección diaria y control de suministros</li>
+<li>Inspecciones de higiene regulares</li>
+<li>Tratamientos específicos para olores</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro Proceso de Trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y Evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y Presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

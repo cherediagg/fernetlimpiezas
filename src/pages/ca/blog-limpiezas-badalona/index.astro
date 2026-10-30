@@ -1,0 +1,210 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Consells i Guies de Neteja Professional a Badalona | Fernet";
+const description = "Guies pràctiques sobre neteja d'oficines, comunitats, comerços, vaixells i obra nova a Badalona. Solucions reals per mantenir els teus espais impecables.";
+const keywords = "blog neteja Badalona, consells neteja professional, neteja vaixells Badalona, neteja iots port Badalona, neteja pisos Gorg Badalona, tècniques neteja, guies neteja";
+const canonical = "https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/";
+const esLink = "https://www.limpiezasfernet.com/blog-limpiezas-badalona/";
+const caLink = "https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de Neteja Professional Badalona",
+    "description": "Guies directes i solucions de neteja per a habitatges, comunitats de veïns i negocis a Badalona.",
+    "url": "https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/",
+    "publisher": {
+      "@type": "LocalBusiness",
+      "name": "Fernet Neteges",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+        "addressLocality": "Badalona",
+        "postalCode": "08912",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 931 050 338",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday"
+          ],
+          "opens": "09:00",
+          "closes": "14:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday"
+          ],
+          "opens": "16:30",
+          "closes": "18:30"
+        }
+      ]
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="index.html"
+  extraCss={["../../blog-limpiezas-badalona/blog.css"]}
+>
+<section class="hero blog-index-hero">
+            <div class="container blog-index-layout">
+                <div class="blog-index-copy">
+                    <h1>Blog de Neteja Professional a Badalona</h1>
+                    <p class="hero-subtitle">Guies pràctiques i consells tècnics per mantenir impecables la teva llar, comunitat o negoci.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">Truca al 931 050 338</a>
+                        <a href="../contacte.html" class="cta-secondary">Demanar Pressupost Gratuït</a>
+                    </div>
+                </div>
+                <figure class="blog-index-image">
+                    <img src="../../img/portada.png" alt="Equip de Fernet Neteges davant de la seva oficina a Badalona" width="1280" height="960">
+                    <figcaption>Consells pràctics <strong>des de Badalona</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="blog-intro">
+            <div class="container">
+                <h2>Respostes clares per mantenir impecables les teves instal·lacions</h2>
+                <p>Descobreix com eliminar la pols fina després d'una reforma, mantenir nets els aparadors del teu comerç, organitzar la desinfecció de la teva oficina o protegir la teca del teu vaixell. Guies directes preparades pel nostre equip especialitzat a Badalona.</p>
+            </div>
+        </section>
+        <section class="blog-grid-section">
+            <div class="container">
+                <h2 class="section-title">Articles Destacats</h2>
+                <div class="blog-grid">
+                    <article class="blog-card blog-card-featured">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/abrillantado-suelos-profesional-badalona.jpg" alt="Neteja de pisos nous al barri del Gorg, Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Obra Nova</span>
+                                <span class="blog-date">Octubre 2025</span>
+                            </div>
+                            <h3><a href="neteja-pisos-gorg-badalona.html">Neteja de Pisos Nous a Gorg, Badalona</a></h3>
+                            <p>Com eliminar la pols fina d'obra, treure la beurada de rajoles i deixar el teu pis recent lliurat a punt per entrar-hi a viure sense esforç.</p>
+                            <a href="neteja-pisos-gorg-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-oficinas-empresas-badalona.jpg" alt="Neteja professional d'oficines a Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Oficines</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-oficines-empreses-badalona.html">Neteja d'Oficines: Claus per a un Espai Productiu</a></h3>
+                            <p>Protocols de neteja per a llocs de treball, pantalles, lavabos i zones comunes. Mantén un entorn laboral saludable i professional.</p>
+                            <a href="neteja-oficines-empreses-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-comunidades-vecinos-badalona.jpg" alt="Manteniment de comunitats de veïns a Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Comunitats</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-comunitats-veins-badalona.html">Guia Completa de Neteja per a Comunitats de Veïns</a></h3>
+                            <p>Planificació de manteniment per a escales, portals, ascensors i garatges. Evita el deteriorament de l'edifici i millora la convivència.</p>
+                            <a href="neteja-comunitats-veins-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-barcos-yates-puerto-badalona.jpg" alt="Neteja de vaixells i iots al port de Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Nàutica</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-vaixells-iots-badalona.html">Neteja Professional de Vaixells i Iots a Badalona</a></h3>
+                            <p>Protecció contra el salnitre en fibra de vidre, teca i interiors nàutics al Port de Badalona. Conserva el valor de la teva embarcació.</p>
+                            <a href="neteja-vaixells-iots-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-final-obra-badalona.jpg" alt="Neteja de final d'obra a Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Reformes i Llar</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-final-obra-badalona.html">Guia Professional per a la Neteja de Final d'Obra</a></h3>
+                            <p>Tècniques i productes específics per retirar restes de pintura, guix, silicones i pols acumulada després d'una reforma.</p>
+                            <a href="neteja-final-obra-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-general-badalona.jpg" alt="Tècniques de neteja profunda a Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Tècniques</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-profunda-badalona.html">Neteja a Fons: Guia d'una Neteja Intensiva</a></h3>
+                            <p>Quan és indispensable una neteja intensiva i com desinfectar cuines, banys, persianes i rincons difícils que el manteniment diari no ateny.</p>
+                            <a href="neteja-profunda-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img loading="lazy" src="../../img/limpieza-comercios-tiendas-badalona.jpg" alt="Neteja de comerços a Badalona">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Comerços</span>
+                                <span class="blog-date">Gener 2025</span>
+                            </div>
+                            <h3><a href="neteja-comercos-badalona.html">Neteja de Comerços: Atreu Clients amb una Imatge Impecable</a></h3>
+                            <p>Aparadors cristal·lins, emprovadors higienitzats i terres brillants. Transmet màxima confiança des de la primera ullada a la teva botiga.</p>
+                            <a href="neteja-comercos-badalona.html" class="blog-read-more">Llegir article complet →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="blog-cta">
+            <div class="container">
+                <h2>Necessites un Servei de Neteja Professional a Badalona?</h2>
+                <p>T'enviem una proposta personalitzada i ajustada a les necessitats del teu espai en menys de 24 hores, sense cap compromís.</p>
+                <div class="cta-container">
+                    <a href="tel:+34931050338" class="cta-phone">Truca Ara: 931 050 338</a>
+                    <a href="../contacte.html" class="cta-secondary">Sol·licitar Pressupost Gratuït</a>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

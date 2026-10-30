@@ -1,0 +1,461 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import GeoCoverage from '@components/GeoCoverage.astro';
+import AgencyLocation from '@components/AgencyLocation.astro';
+
+const title = "Empresa de limpieza en Badalona | Fernet Limpiezas";
+const description = "Limpieza de comunidades, oficinas, comercios y viviendas en Badalona. Consulta los servicios y pide un presupuesto a medida.";
+const keywords = "limpieza Badalona, servicios limpieza, limpieza comunidades, limpieza oficinas, limpieza empresas, limpieza comercios, limpieza escuelas, limpieza centros clínicos, Fernet Limpiezas";
+const canonical = "https://www.limpiezasfernet.com/";
+const esLink = "https://www.limpiezasfernet.com/";
+const caLink = "https://www.limpiezasfernet.com/ca/";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fernet Limpiezas",
+    "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+    "@id": "https://www.limpiezasfernet.com/#localbusiness",
+    "url": "https://www.limpiezasfernet.com/",
+    "telephone": "+34931050338",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "16:30",
+        "closes": "18:30"
+      }
+    ],
+    "email": "info@limpiezasfernet.com",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34931050338",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "Spanish",
+          "Catalan"
+        ]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34647825663",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "Spanish",
+          "Catalan"
+        ]
+      }
+    ],
+    "description": "Servicios de limpieza en Badalona para comunidades, empresas y particulares. Solicita una propuesta para el espacio que necesitas mantener.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Alfonso XIII nº 107-109",
+      "addressLocality": "Badalona",
+      "postalCode": "08912",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.446988,
+      "longitude": 2.245032
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      {
+        "@type": "City",
+        "name": "Santa Coloma de Gramenet"
+      },
+      {
+        "@type": "City",
+        "name": "Sant Adrià de Besòs"
+      },
+      {
+        "@type": "City",
+        "name": "Montgat"
+      },
+      {
+        "@type": "City",
+        "name": "Tiana"
+      },
+      {
+        "@type": "City",
+        "name": "Alella"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/fernetlimpiezas",
+      "https://www.instagram.com/fernetlimpiezas"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de limpieza profesional",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Comunidades",
+            "name": "Limpieza de Comunidades de Vecinos",
+            "description": "Mantenimiento integral de comunidades, incluyendo escaleras, zonas comunes y garajes.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-comunidades-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Oficinas",
+            "name": "Limpieza de Oficinas y Empresas",
+            "description": "Servicios de limpieza para un entorno de trabajo productivo y saludable.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Comercios",
+            "name": "Limpieza de Comercios y Tiendas",
+            "description": "Limpieza de locales comerciales para ofrecer la mejor imagen a tus clientes.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Centros Docentes",
+            "name": "Limpieza de Centros Docentes",
+            "description": "Higienización y desinfección de colegios, academias y centros de formación.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza Industrial",
+            "name": "Limpieza Industrial",
+            "description": "Limpieza de naves, fábricas y almacenes, cumpliendo normativas de seguridad.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Clínicas",
+            "name": "Limpieza de Centros Clínicos",
+            "description": "Protocolos de limpieza y desinfección para entornos sanitarios.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-clinicas-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Cristales",
+            "name": "Limpieza de Cristales",
+            "description": "Limpieza de cristales en altura, escaparates y ventanas.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-cristales-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Limpieza de Final de Obra",
+            "name": "Limpieza de Final de Obra",
+            "description": "Eliminación de polvo y restos para entregar espacios listos para su uso.",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Abrillantado de Suelos",
+            "name": "Abrillantado de Suelos",
+            "description": "Tratamientos para recuperar el brillo de mármol, terrazo y otros suelos.",
+            "url": "https://www.limpiezasfernet.com/servicios/abrillantado-suelos-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de altura",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-altura-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza a fondo",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-fondo-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Eliminación de grafitis",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-grafitis-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza de parkings",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Limpieza para particulares",
+            "url": "https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Restauración de suelos",
+            "url": "https://www.limpiezasfernet.com/servicios/restauracion-suelos-badalona.html"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Por qué elegir Fernet Limpiezas para servicios de limpieza en Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fernet Limpiezas ofrece servicios profesionales de limpieza local en Badalona con amplia experiencia. Garantizamos presupuestos transparentes en menos de 24 horas, personal cualificado y cobertura en todos los barrios de Badalona como Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà y Bufalà."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué servicios de limpieza profesional ofrecen en Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ofrecemos limpieza de comunidades de vecinos, oficinas, comercios, centros docentes, clínicas, naves industriales, cristales en altura, finales de obra y abrillantado de suelos de mármol y terrazo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta un servicio de limpieza en Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La limpieza de comunidades parte desde 180 €/mes, las oficinas desde 35 €/hora y la limpieza de hogar desde 30 €/hora. El precio exacto se ajusta a las necesidades específicas de tu espacio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo entregan el presupuesto de limpieza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entregamos presupuestos detallados y personalizados sin compromiso en un plazo máximo de 24 horas laborables desde tu consulta."
+        }
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=""
+  currentPage="index.html"
+  extraCss={[]}
+>
+<section id="inicio" class="hero home-hero-section">
+            <div class="home-hero container">
+                <div class="home-hero-copy">
+                    <h1>Empresa de limpieza profesional en Badalona</h1>
+                    <p class="hero-subtitle">Olvídate de las preocupaciones de mantenimiento. Mantén tu comunidad, empresa o vivienda impecable, saludable y libre de estrés con nuestro equipo local de confianza.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.55 3.6.55a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.45.55 3.58a1 1 0 0 1-.25 1.02z"/></svg>
+                            Llama gratis: 931 050 338
+                        </a>
+                        <a href="contacto.html" class="cta-secondary">Presupuesto en 24h sin compromiso <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <ul class="hero-benefits">
+                        <li>Espacios impecables y desinfectados</li>
+                        <li>Presupuesto transparente y sin compromiso</li>
+                        <li>Respuesta rápida en Badalona</li>
+                    </ul>
+                </div>
+                <figure class="home-hero-image">
+                    <img src="img/portada.png" alt="Equipo de Fernet Limpiezas delante de su oficina en Badalona" fetchpriority="high">
+                    <figcaption><span class="hero-image-dot" aria-hidden="true"></span><span>Un equipo local<br><strong>cerca de ti</strong></span></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="servicios" class="servicios">
+            <h2 class="section-title">Soluciones de limpieza profesional a tu medida en Badalona</h2>
+            <p class="section-intro">Elige la tranquilidad para tu inmueble o negocio. Mantenimiento impecable con protocolos adaptados y máxima puntualidad.</p>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                <a href="servicios/limpieza-comunidades-badalona.html" aria-label="Ver servicio de limpieza de comunidades en Badalona">
+                    <img src="img/limpieza-comunidad-vecinos.png" class="img-servicio" alt="Limpieza de comunidades en Badalona">
+                    <h3>Comunidades de vecinos</h3>
+                    <p>Tranquilidad total para tu vecindario: escaleras, portales, ascensor y garajes relucientes con supervisión constante.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="servicios/limpieza-oficinas-badalona.html" aria-label="Ver servicio de limpieza de oficinas en Badalona">
+                    <img src="img/limpieza-oficinas.jpeg" class="img-servicio" alt="limpieza de oficinas">
+                    <h3>Oficinas y empresas</h3>
+                    <p>Entornos de trabajo limpios y desinfectados que potencian el bienestar de tu equipo y la imagen corporativa.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="servicios/limpieza-comercios-badalona.html" aria-label="Ver servicio de limpieza de comercios en Badalona">
+                    <img src="img/limpieza-tiendas.png" class="img-servicio" alt="Limpieza de tiendas y comercios">
+                    <h3>Comercios y tiendas</h3>
+                    <p>Causa la mejor impresión a tus clientes con locales y escaparates impecables en los horarios que mejor te convengan.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="servicios/limpieza-centros-docentes-badalona.html" aria-label="Ver servicio de limpieza de escuelas y academias en Badalona">
+                    <img src="img/limpieza-academias.png" class="img-servicio" alt="Limpieza de academias y escuelas">
+                    <h3>Escuelas y academias</h3>
+                    <p>Higiene y desinfección garantizada en aulas y zonas comunes para proteger la salud de estudiantes y docentes.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="servicios/limpieza-industrial-badalona.html" aria-label="Ver servicio de limpieza industrial en Badalona">
+                    <img src="img/limpieza-fabricas.png" class="img-servicio" alt="Limpieza de fábricas e industrias">
+                    <h3>Fábricas e industrias</h3>
+                    <p>Limpieza técnica especializada en naves y almacenes cumpliendo con las máximas normativas de seguridad.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="servicios/limpieza-clinicas-badalona.html" aria-label="Ver servicio de limpieza de centros clínicos en Badalona">
+                    <img src="img/limpieza-clinicas.jpeg" class="img-servicio" alt="Limpieza de clinicas y centros de salud">
+                    <h3>Centros clínicos</h3>
+                    <p>Protocolos de higienización sanitaria rigurosos para espacios sanitarios, estéticos y consultas médicas.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Ver detalles del servicio <span>↗</span></span>
+                    </a>
+                </article>
+            </div>
+            <div class="otros-servicios-section">
+                <h3 class="otros-servicios-title">Otros servicios que ofrecemos en Badalona:</h3>
+                <ul class="otros-servicios-grid">
+                    <li><a href="servicios/limpieza-particulares-badalona.html"><strong>Limpieza del hogar</strong><span>Servicio doméstico</span></a></li>
+                    <li><a href="servicios/limpieza-fondo-badalona.html"><strong>Limpieza a fondo</strong><span>Limpieza intensiva</span></a></li>
+                    <li><a href="servicios/limpieza-cristales-badalona.html"><strong>Limpieza de cristales</strong><span>Ventanas y escaparates</span></a></li>
+                    <li><a href="servicios/limpieza-finales-obra-badalona.html"><strong>Limpieza de fin de obra</strong><span>Después de reformas</span></a></li>
+                    <li><a href="servicios/limpieza-parkings-badalona.html"><strong>Limpieza de garajes</strong><span>Parkings y sótanos</span></a></li>
+                    <li><a href="servicios/abrillantado-suelos-badalona.html"><strong>Abrillantado de suelos</strong><span>Abrillantado y pulido</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="nosotros" class="sobre-nosotros">
+            <div class="container">
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <h2>¿Por qué confiar en Fernet Limpiezas en Badalona?</h2>
+                        <p>Sabemos que buscas un servicio puntual, detallista y de plena confianza para despreocuparte por completo de las tareas de limpieza.</p>
+                        <h3>Atención adaptada a tu espacio</h3>
+                        <p>Diseñamos un plan de trabajo exclusivo respetando los horarios y necesidades de tu comunidad, empresa o vivienda.</p>
+                        <h3>Transparencia total y sin sorpresas</h3>
+                        <p>Propuestas detalladas sin costes ocultos ni letra pequeña, con comunicación fluida y respuesta inmediata.</p>
+                    </div>
+                    <div class="sobre-valores">
+                        <div class="valor">
+                            <h4>Plan personalizado</h4>
+                            <p>Soluciones a medida para cada inmueble</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Trato cercano</h4>
+                            <p>Atención directa y rápida ante cualquier duda</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Sin sobrecostes</h4>
+                            <p>Presupuesto transparente y detallado</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Empresa local</h4>
+                            <p>Equipo profesional con base en Badalona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <GeoCoverage lang="es" />
+        <section id="faq" class="sobre-nosotros">
+            <div class="container">
+                <h2 class="section-title">Preguntas frecuentes sobre servicios de limpieza en Badalona</h2>
+                <div class="sobre-content">
+                    <div class="sobre-text" style="width: 100%;">
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>¿Por qué elegir Fernet Limpiezas para servicios de limpieza en Badalona?</h3>
+                            <p>Fernet Limpiezas ofrece servicios profesionales de limpieza local en Badalona con amplia experiencia. Garantizamos presupuestos transparentes en menos de 24 horas, personal cualificado y cobertura en todos los barrios de Badalona como Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà y Bufalà.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>¿Qué servicios de limpieza profesional ofrecen en Badalona?</h3>
+                            <p>Ofrecemos limpieza de comunidades de vecinos, oficinas, comercios, centros docentes, clínicas, naves industriales, cristales en altura, finales de obra y abrillantado de suelos de mármol y terrazo.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>¿Cuánto cuesta un servicio de limpieza en Badalona?</h3>
+                            <p>La limpieza de comunidades parte desde 180 €/mes, las oficinas desde 35 €/hora y la limpieza de hogar desde 30 €/hora. El precio exacto se ajusta a las necesidades específicas de tu espacio.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>¿En cuánto tiempo entregan el presupuesto de limpieza?</h3>
+                            <p>Entregamos presupuestos detallados y personalizados sin compromiso en un plazo máximo de 24 horas laborables desde tu consulta.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <AgencyLocation lang="es" basePath="" />
+</BaseLayout>

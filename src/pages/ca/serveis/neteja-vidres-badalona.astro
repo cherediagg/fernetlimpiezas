@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja de vidres a Badalona | Fernet Neteges";
+const description = "Servei de neteja de vidres a Badalona per a finestres, aparadors i tancaments. Utilitzem perxa per a treballs en altura. Demana pressupost!";
+const keywords = "neteja vidres Badalona, neteja aparadors Badalona, neteja finestres Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-cristales-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja de Vidres a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja de Vidres a Badalona | Finestres, Aparadors i Altures",
+      "description": "Servei de neteja de vidres a Badalona per a finestres, aparadors i tancaments. Utilitzem perxa per a treballs en altura. Demana pressupost!",
+      "serviceType": "Neteja de Vidres",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-cristales-escaparates-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-vidres-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja de vidres a Badalona</h1>
+        <p>Vidres sense marques, interiors i exteriors en tot tipus d'altures</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Neteja de vidres a Badalona</h2>
+        <p class="section-subtitle">Neteja professional de vidres a Badalona: finestres, aparadors i envidraments en altura. Tècniques manuals i amb perxa segons el cas.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🪟 Finestres i Balcons</h3>
+<ul>
+<li>Rentat i assecat sense marques</li>
+<li>Tractaments antitaques per a una major durada</li>
+<li>Neteja de perfils i marcs</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🪟 Aparadors i grans vidres</h3>
+<ul>
+<li>Tècniques específiques per a grans superfícies</li>
+<li>Neteja nocturna per no interrompre el negoci</li>
+<li>Control de reflexos i presentació comercial</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧗‍♂️ Vidres en altura</h3>
+<ul>
+<li>Perxes telescòpiques i plataformes elevadores</li>
+<li>Seguretat certificada per a treballs en altura</li>
+<li>Plans de manteniment i freqüència recomanada</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>El Nostre Procés de Treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i Avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i Pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>L'equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Sol·licita la teva proposta personalitzada sense compromís en menys de 24 hores.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

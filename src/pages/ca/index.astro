@@ -1,0 +1,463 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import GeoCoverage from '@components/GeoCoverage.astro';
+import AgencyLocation from '@components/AgencyLocation.astro';
+
+const title = "Empresa de neteja a Badalona | Fernet Neteges";
+const description = "Neteja de comunitats, oficines, comerços i habitatges a Badalona. Consulta els serveis i demana un pressupost a mida.";
+const keywords = "neteja Badalona, serveis neteja, neteja comunitats, neteja oficines, neteja empreses, neteja comerços, neteja escoles, neteja centres clínics, Fernet Neteges";
+const canonical = "https://www.limpiezasfernet.com/ca/";
+const esLink = "https://www.limpiezasfernet.com/";
+const caLink = "https://www.limpiezasfernet.com/ca/";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fernet Neteges",
+    "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+    "@id": "https://www.limpiezasfernet.com/#localbusiness",
+    "url": "https://www.limpiezasfernet.com/ca/",
+    "telephone": "+34931050338",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "16:30",
+        "closes": "18:30"
+      }
+    ],
+    "email": "info@limpiezasfernet.com",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34931050338",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "Spanish",
+          "Catalan"
+        ]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34647825663",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "Spanish",
+          "Catalan"
+        ]
+      }
+    ],
+    "description": "Empresa de neteja professional a Badalona amb serveis per a comunitats, oficines, comerços, clíniques, escoles i indústries.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+      "addressLocality": "Badalona",
+      "postalCode": "08912",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.446988,
+      "longitude": 2.245032
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      {
+        "@type": "City",
+        "name": "Santa Coloma de Gramenet"
+      },
+      {
+        "@type": "City",
+        "name": "Sant Adrià de Besòs"
+      },
+      {
+        "@type": "City",
+        "name": "Montgat"
+      },
+      {
+        "@type": "City",
+        "name": "Tiana"
+      },
+      {
+        "@type": "City",
+        "name": "Alella"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/fernetlimpiezas",
+      "https://www.instagram.com/fernetlimpiezas"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serveis de neteja professional",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Comunitats de Veïns",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja d'Oficines i Empreses",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-oficines-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Comerços i Botigues",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-comercos-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Centres Docents",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja Industrial",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-industrial-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Centres Clínics",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-cliniques-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Vidres",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Final d'Obra",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-finals-obra-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Abrillantat de Terres",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja d'altura",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja a fons",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-fons-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Eliminació de grafitis",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-grafitis-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de pàrquings",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja per a particulars",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Restauració de terres",
+            "url": "https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Per què triar Fernet Neteges per a serveis de neteja a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fernet Neteges ofereix serveis professionals de neteja local a Badalona amb àmplia experiència. Garantim pressupostos transparents en menys de 24 hores, personal qualificat i cobertura a tots els barris de Badalona com Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà i Bufalà."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quins serveis de neteja professional ofereixen a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oferim neteja de comunitats de veïns, oficines, comerços, centres docents, clíniques, naus industrials, vidres en altura, finals d'obra i abrillantat de terres de marbre i terràs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quant costa un servei de neteja a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La neteja de comunitats comença des de 180 €/mes, les oficines des de 35 €/hora i la neteja de la llar des de 30 €/hora. El preu exacte s'ajusta a les necessitats específiques del teu espai."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "En quant de temps lliuren el pressupost de neteja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lliurem pressupostos detallats i personalitzats sense compromís en un termini màxim de 24 hores laborables des de la teva consulta."
+        }
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="index.html"
+  extraCss={[]}
+>
+<section id="inicio" class="hero home-hero-section">
+            <div class="home-hero container">
+                <div class="home-hero-copy">
+                    <h1>Empresa de neteja professional a Badalona</h1>
+                    <p class="hero-subtitle">Oblida't de les preocupacions de manteniment. Mantingues la teva comunitat, empresa o habitatge impecable, saludable i lliure d'estrès amb el nostre equip local de confiança.</p>
+                    <div class="cta-container">
+                        <a href="tel:+34931050338" class="cta-phone">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.55 3.6.55a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.45.55 3.58a1 1 0 0 1-.25 1.02z"/></svg>
+                            Truca gratis: 931 050 338
+                        </a>
+                        <a href="pressupost.html" class="cta-secondary">Pressupost en 24h sense compromís <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <ul class="hero-benefits">
+                        <li>Espais impecables i desinfectats</li>
+                        <li>Pressupost transparent i sense compromís</li>
+                        <li>Resposta ràpida a Badalona</li>
+                    </ul>
+                </div>
+                <figure class="home-hero-image">
+                    <img src="../img/portada.png" alt="Equip de Fernet Neteges davant de la seva oficina a Badalona" fetchpriority="high">
+                    <figcaption><span class="hero-image-dot" aria-hidden="true"></span><span>Un equip local<br><strong>a prop teu</strong></span></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="serveis" class="servicios">
+            <h2 class="section-title">Solucions de neteja professional a la teva mida a Badalona</h2>
+            <p class="section-intro">Tria la tranquil·litat per al teu immoble o negoci. Manteniment impecable amb protocols adaptats i màxima puntualitat.</p>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                <a href="serveis/neteja-comunitats-badalona.html" aria-label="Veure el servei de neteja de comunitats a Badalona">
+                    <img src="../img/limpieza-comunidad-vecinos.png" class="img-servicio" alt="Neteja de comunitats de veïns a Badalona">
+                    <h3>Comunitats de veïns</h3>
+                    <p>Tranquil·litat total per al teu veïnat: escales, portals, ascensor i garatges impecables amb supervisió constant.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="serveis/neteja-oficines-badalona.html" aria-label="Veure el servei de neteja d'oficines a Badalona">
+                    <img src="../img/limpieza-oficinas.jpeg" class="img-servicio" alt="Neteja d'oficines a Badalona">
+                    <h3>Oficines i empreses</h3>
+                    <p>Entorns de treball nets i desinfectats que potencien el benestar del teu equip i la imatge corporativa.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="serveis/neteja-comercos-badalona.html" aria-label="Veure el servei de neteja de comerços a Badalona">
+                    <img src="../img/limpieza-tiendas.png" class="img-servicio" alt="Neteja de comerços i botigues">
+                    <h3>Comerços i botigues</h3>
+                    <p>Causa la millor impressió als teus clients amb locals i aparadors impecables en els horaris que més et convinguin.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="serveis/neteja-centres-docents-badalona.html" aria-label="Veure el servei de neteja d'escoles i acadèmies a Badalona">
+                    <img src="../img/limpieza-academias.png" class="img-servicio" alt="Neteja d'escoles i acadèmies">
+                    <h3>Escoles i acadèmies</h3>
+                    <p>Higiene i desinfecció garantida en aules i zones comunes per protegir la salut d'estudiants i docents.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="serveis/neteja-industrial-badalona.html" aria-label="Veure el servei de neteja industrial a Badalona">
+                    <img src="../img/limpieza-fabricas.png" class="img-servicio" alt="Neteja de fàbriques i espais industrials">
+                    <h3>Fàbriques i indústries</h3>
+                    <p>Neteja tècnica especialitzada en naus i magatzems complint amb les màximes normatives de seguretat.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                </a>
+                </article>
+                <article class="servicio-card">
+                    <a href="serveis/neteja-cliniques-badalona.html" aria-label="Veure el servei de neteja de centres clínics a Badalona">
+                    <img src="../img/limpieza-clinicas.jpeg" class="img-servicio" alt="Neteja de centres clínics">
+                    <h3>Centres clínics</h3>
+                    <p>Protocols d'higienització sanitària rigorosos per a espais sanitaris, estètics i consultes mèdiques.</p>
+                    <span class="servicio-card-action" aria-hidden="true">Veure detalls del servei <span>↗</span></span>
+                    </a>
+                </article>
+            </div>
+            <div class="otros-servicios-section">
+                <h3 class="otros-servicios-title">Altres serveis que oferim a Badalona:</h3>
+                <ul class="otros-servicios-grid">
+                    <li><a href="serveis/neteja-particulars-badalona.html"><strong>Neteja de la llar</strong><span>Servei domèstic</span></a></li>
+                    <li><a href="serveis/neteja-fons-badalona.html"><strong>Neteja a fons</strong><span>Neteja intensiva</span></a></li>
+                    <li><a href="serveis/neteja-vidres-badalona.html"><strong>Neteja de vidres</strong><span>Finestres i aparadors</span></a></li>
+                    <li><a href="serveis/neteja-finals-obra-badalona.html"><strong>Neteja de final d'obra</strong><span>Després de reformes</span></a></li>
+                    <li><a href="serveis/neteja-parkings-badalona.html"><strong>Neteja de garatges</strong><span>Pàrquings i soterranis</span></a></li>
+                    <li><a href="serveis/abrillantat-terres-badalona.html"><strong>Abrillantat de terres</strong><span>Abrillantat i polit</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="nosaltres" class="sobre-nosotros">
+            <div class="container">
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <h2>Per què confiar en Fernet Neteges a Badalona?</h2>
+                        <p>Sabem que busques un servei puntual, detallista i de plena confiança per despreocupar-te per complet de les tasques de neteja.</p>
+                        <h3>Atenció adaptada al teu espai</h3>
+                        <p>Dissenyem un pla de treball exclusiu respectant els horaris i necessitats de la teva comunitat, empresa o habitatge.</p>
+                        <h3>Transparència total i sense sorpreses</h3>
+                        <p>Propostes detallades sense costos ocults ni lletra petita, amb comunicació fluïda i resposta immediata.</p>
+                    </div>
+                    <div class="sobre-valores">
+                        <div class="valor">
+                            <h4>Pla personalitzat</h4>
+                            <p>Solucions a mida per a cada immoble</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Tracte proper</h4>
+                            <p>Atenció directa i ràpida davant qualsevol dubte</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Sense sobrecostos</h4>
+                            <p>Pressupost transparent i detallat</p>
+                        </div>
+                        <div class="valor">
+                            <h4>Empresa local</h4>
+                            <p>Equip professional amb base a Badalona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <GeoCoverage lang="ca" />
+        <section id="faq" class="sobre-nosotros">
+            <div class="container">
+                <h2 class="section-title">Preguntes freqüents sobre serveis de neteja a Badalona</h2>
+                <div class="sobre-content">
+                    <div class="sobre-text" style="width: 100%;">
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>Per què triar Fernet Neteges per a serveis de neteja a Badalona?</h3>
+                            <p>Fernet Neteges ofereix serveis professionals de neteja local a Badalona amb àmplia experiència. Garantim pressupostos transparents en menys de 24 hores, personal qualificat i cobertura a tots els barris de Badalona com Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà i Bufalà.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>Quins serveis de neteja professional ofereixen a Badalona?</h3>
+                            <p>Oferim neteja de comunitats de veïns, oficines, comerços, centres docents, clíniques, naus industrials, vidres en altura, finals d'obra i abrillantat de terres de marbre i terràs.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>Quant costa un servei de neteja a Badalona?</h3>
+                            <p>La neteja de comunitats comença des de 180 €/mes, les oficines des de 35 €/hora i la neteja de la llar des de 30 €/hora. El preu exacte s'ajusta a les necessitats específiques del teu espai.</p>
+                        </article>
+                        <article class="faq-item" style="margin-bottom: 1.5rem;">
+                            <h3>En quant de temps lliuren el pressupost de neteja?</h3>
+                            <p>Lliurem pressupostos detallats i personalitzats sense compromís en un termini màxim de 24 hores laborables des de la teva consulta.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <AgencyLocation lang="ca" basePath=".." />
+        <section class="galeria-section" id="galeria">
+            <h2 class="section-title">Alguns dels treballs realitzats a Badalona</h2>
+            <p class="section-intro">
+                Descobreix alguns dels nostres projectes de neteja professional. Cada treball reflecteix el nostre compromís amb l'excel·lència. Fes clic a qualsevol imatge per veure-la en detall.
+            </p>
+            <div class="galeria-grid">
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-comunidades-vecinos-badalona.jpg" alt="Neteja de comunitats de veïns a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-oficinas-empresas-badalona.jpg" alt="Neteja d'oficines i empreses a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-barcos-yates-puerto-badalona.jpg" alt="Neteja de vaixells i iots al port de Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-final-obra-badalona.jpg" alt="Neteja de final d'obra a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-cristales-escaparates-badalona.jpg" alt="Neteja de vidres i aparadors a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/abrillantado-suelos-profesional-badalona.jpg" alt="Abrillantat de terres professional a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-industrial-naves-badalona.jpg" alt="Neteja industrial de naus a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-comercios-tiendas-badalona.jpg" alt="Neteja de comerços i botigues a Badalona"></div>
+                <div class="galeria-imagen"><img loading="lazy" src="../img/limpieza-general-badalona.jpg" alt="Servei de neteja general a Badalona"></div>
+            </div>
+            <div class="galeria-cta">
+                <a href="contacte.html" class="btn-galeria-completa">Sol·licita informació</a>
+            </div>
+        </section>
+</BaseLayout>

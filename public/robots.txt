@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.limpiezasfernet.com/sitemap.xml
+Sitemap: https://www.limpiezasfernet.com/ca/sitemap.xml

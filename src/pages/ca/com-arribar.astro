@@ -1,0 +1,75 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Com Arribar a Fernet Neteges a Badalona";
+const description = "Troba la millor ruta per arribar a les nostres oficines a Badalona. Proporcionem indicacions detallades i opcions de transport públic.";
+const keywords = "com arribar a fernet neteges, adreça fernet neteges, mapa fernet neteges, transport públic badalona, arribar a avinguda alfons xiii badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/com-arribar.html";
+const esLink = "https://www.limpiezasfernet.com/como-llegar.html";
+const caLink = "https://www.limpiezasfernet.com/ca/com-arribar.html";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Com Arribar a Fernet Neteges",
+    "description": "Instruccions detallades per arribar a les oficines de Fernet Neteges a Badalona, incloent-hi un mapa interactiu i opcions de transport públic.",
+    "url": "https://www.limpiezasfernet.com/ca/com-arribar.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Com Arribar"
+        }
+      ]
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="com-arribar.html"
+  extraCss={["../contacto.css"]}
+>
+<section class="hero">
+            <div class="container">
+                <h1>Com Arribar a les Nostres Oficines a Badalona</h1>
+                <p>T'esperem a l'Avinguda Alfons XIII, 107-109. Aquí t'indiquem com trobar-nos.</p>
+            </div>
+        </section>
+        <section class="como-llegar-section">
+            <div class="container">
+                <h2>La Nostra Ubicació</h2>
+                <p><strong>Adreça:</strong> Avinguda Alfons XIII núm. 107-109, 08912 Badalona, Barcelona</p>
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.92799063288587!2d2.2344941250902495!3d41.442522940363624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb688d13e77b%3A0x969d0e6a0c484cf0!2sFernet%20Limpiezas!5e0!3m2!1sen!2ses!4v1759411275703!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa de ubicación de Fernet Limpiezas" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="transporte-info">
+                    <h3>Transport Públic Proper</h3>
+                    <ul>
+                        <li><strong><i class="fas fa-bus"></i> Autobús:</strong> Les línies d'autobús B3, B25 i M28 tenen parades a pocs minuts de la nostra oficina.</li>
+                        <li><strong><i class="fas fa-subway"></i> Metro:</strong> L'estació de metro més propera és <strong>L2 - Sant Roc</strong>, que es troba a uns 10-15 minuts a peu.</li>
+                        <li><strong><i class="fas fa-train"></i> Tren:</strong> L'estació de Rodalies <strong>Sant Adrià de Besòs (R1)</strong> està a aproximadament 20 minuts caminant.</li>
+                    </ul>
+                    <h3>Indicacions per Arribar en Cotxe</h3>
+                    <p>Si vens en cotxe, pots accedir fàcilment des de l'autopista C-31 (sortida Badalona Sud). Hi ha aparcament disponible als carrers propers, tot i que pot ser limitat en hores punta.</p>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

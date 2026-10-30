@@ -1,0 +1,241 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Tarifes de Neteja a Badalona | Fernet Neteges";
+const description = "Tarifes orientatives de neteja a Badalona per a comunitats, oficines i habitatges. Consulta les condicions i demana una proposta.";
+const keywords = "tarifes neteja badalona, preus neteja, neteja barata badalona, fernet neteges tarifes";
+const canonical = "https://www.limpiezasfernet.com/ca/tarifes.html";
+const esLink = "https://www.limpiezasfernet.com/tarifas.html";
+const caLink = "https://www.limpiezasfernet.com/ca/tarifes.html";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fernet Neteges",
+    "@id": "https://www.limpiezasfernet.com/#localbusiness",
+    "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+    "url": "https://www.limpiezasfernet.com/ca/tarifes.html",
+    "telephone": "+34931050338",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "16:30",
+        "closes": "18:30"
+      }
+    ],
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+      "addressLocality": "Badalona",
+      "postalCode": "08912",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "description": "Tarifes orientatives de neteja a Badalona per a comunitats, oficines i habitatges. Consulta les condicions i demana una proposta.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Neteja de Comunitats",
+          "description": "Servei de neteja i manteniment per a comunitats de veïns a Badalona, incloent escales, portals i zones comunes."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "180",
+          "priceCurrency": "EUR",
+          "unitText": "mes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Neteja d'Oficines",
+          "description": "Servei de neteja professional per a oficines i empreses a Badalona, per hores."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "35",
+          "priceCurrency": "EUR",
+          "unitText": "hora"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Neteja de la Llar",
+          "description": "Servei de neteja domèstica per hores per a particulars a Badalona."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "30",
+          "priceCurrency": "EUR",
+          "unitText": "hora"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quines són les tarifes de neteja de comunitats a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La neteja de comunitats de veïns a Badalona té una tarifa de referència des de 180 € al mes, que abasta escales, portal, ascensor, vidres i zones comunes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quin és el preu per hora de neteja d'oficines a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La neteja professional d'oficines i empreses a Badalona s'ofereix des de 35 € l'hora, incloent despatxos, papereres, lavabos i zones de descans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quant costa l'abrillantat de terres per metre quadrat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El tractament d'abrillantat i cristal·litzat de terres de marbre i terràs comença des de 5,50 € per metre quadrat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hi ha compromís de permanència en les tarifes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, Fernet Neteges ofereix contractes flexibles i pressupostos transparents sense clàusules de permanència obligatòria."
+        }
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="tarifes.html"
+  extraCss={["../tarifas.css"]}
+>
+<section class="tarifas-section">
+        <div class="tarifas-heading">
+            <h1 class="section-title">Tarifes de neteja a Badalona</h1>
+            <p class="tarifas-intro">Preus transparents i sense permanència. Consulta les nostres tarifes de referència i sol·licita una proposta a la teva mida en menys de 24 hores.</p>
+        </div>
+        <div class="tarifas-grid">
+
+            <article class="tarifa-card">
+                <h2>Neteja de comunitats</h2>
+                <p class="precio" aria-label="Des de 180 euros al mes">
+                    <span class="precio-prefijo">des de</span><strong>180€</strong><span class="precio-unidad">/mes*</span>
+                </p>
+                <ul>
+                    <li>Neteja d'escala</li>
+                    <li>Manteniment de portal</li>
+                    <li>Neteja de vidres</li>
+                </ul>
+                <a href="contacte.html" class="cta-button">Sol·licitar pressupost</a>
+            </article>
+
+            <article class="tarifa-card">
+                <h2>Neteja d'oficines</h2>
+                <p class="precio" aria-label="Des de 35 euros per hora">
+                    <span class="precio-prefijo">des de</span><strong>35€</strong><span class="precio-unidad">/hora*</span>
+                </p>
+                <ul>
+                    <li>Neteja de despatxos</li>
+                    <li>Buidatge de papereres</li>
+                    <li>Zones comunes</li>
+                </ul>
+                <a href="contacte.html" class="cta-button">Sol·licitar pressupost</a>
+            </article>
+
+            <article class="tarifa-card">
+                <h2>Neteja de la llar</h2>
+                <p class="precio" aria-label="Des de 30 euros per hora">
+                    <span class="precio-prefijo">des de</span><strong>30€</strong><span class="precio-unidad">/hora*</span>
+                </p>
+                <ul>
+                    <li>Neteja general</li>
+                    <li>Servei per hores</li>
+                    <li>Planxa i bugada (opcional)</li>
+                </ul>
+                <a href="contacte.html" class="cta-button">Sol·licitar pressupost</a>
+            </article>
+
+            <article class="tarifa-card destacado">
+                <p class="tarifa-etiqueta">Preu per superfície</p>
+                <h2>Abrillantat i cristal·litzat de terres</h2>
+                <p class="precio" aria-label="Des de 5 euros i 50 cèntims per metre quadrat">
+                    <span class="precio-prefijo">des de</span><strong>5,5€</strong><span class="precio-unidad">/m²*</span>
+                </p>
+                <ul>
+                    <li>Abrillantat professional</li>
+                    <li>Cristal·litzat de superfícies</li>
+                    <li>Ideal per a comunitats i oficines</li>
+                </ul>
+                <a href="contacte.html" class="cta-button cta-destacado">Sol·licitar pressupost</a>
+            </article>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>* Tarifes de referència transparents.</strong> L'import exacte s'adapta a la superfície, freqüència i necessitats específiques del teu espai.</p>
+            <p>Demana la teva valoració personalitzada sense cap tipus de compromís.</p>
+            <p><a href="preus.md">Consulta les tarifes en text pla (Markdown)</a> | <a href="../pricing.md">Machine-readable Pricing</a></p>
+        </div>
+
+        <div class="tarifas-faq" style="max-width: 900px; margin: 3rem auto 0; text-align: left; padding: 2rem; background: var(--surface); border-radius: 8px;">
+            <h2>Preguntes freqüents sobre tarifes a Badalona</h2>
+            <article style="margin-bottom: 1.2rem;">
+                <h3>Quines són les tarifes de neteja de comunitats a Badalona?</h3>
+                <p>La neteja de comunitats de veïns a Badalona té una tarifa de referència des de 180 € al mes, que abasta escales, portal, ascensor, vidres i zones comunes.</p>
+            </article>
+            <article style="margin-bottom: 1.2rem;">
+                <h3>Quin és el preu per hora de neteja d'oficines a Badalona?</h3>
+                <p>La neteja professional d'oficines i empreses a Badalona s'ofereix des de 35 € l'hora, incloent despatxos, papereres, lavabos i zones de descans.</p>
+            </article>
+            <article style="margin-bottom: 1.2rem;">
+                <h3>Quant costa l'abrillantat de terres per metre quadrat?</h3>
+                <p>El tractament d'abrillantat i cristal·litzat de terres de marbre i terràs comença des de 5,50 € per metre quadrat.</p>
+            </article>
+            <article style="margin-bottom: 1.2rem;">
+                <h3>Hi ha compromís de permanència en les tarifes?</h3>
+                <p>No, Fernet Neteges ofereix contractes flexibles i pressupostos transparents sense clàusules de permanència obligatòria.</p>
+            </article>
+        </div>
+    </section>
+</BaseLayout>

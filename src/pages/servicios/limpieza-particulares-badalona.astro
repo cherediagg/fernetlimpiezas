@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza para particulares en Badalona | Fernet Limpiezas";
+const description = "Limpieza doméstica por horas en viviendas de Badalona. Consulta las opciones de frecuencia y solicita una propuesta para tu hogar.";
+const keywords = "limpieza particulares Badalona, limpieza casas Badalona, limpieza hogar Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza para Particulares en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza para Particulares en Badalona | Hogar y Vivienda",
+      "description": "Servicio de limpieza para particulares en Badalona. Ofrecemos limpieza doméstica por horas, semanal o quincenal para pisos y casas. ¡Pide presupuesto!",
+      "serviceType": "Limpieza para Particulares",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-general-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-particulares-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza para particulares en Badalona</h1>
+        <p>Servicios de limpieza doméstica a medida para tu hogar</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza para particulares en Badalona</h2>
+        <p class="section-subtitle">Servicios de limpieza para particulares en Badalona: limpiezas periódicas, limpiezas a fondo y servicios puntuales para viviendas y chalets.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏠 Limpieza doméstica</h3>
+<ul>
+<li>Limpieza semanal, quincenal o mensual según necesidad</li>
+<li>Cambio de ropa de cama y cuidado de zonas íntimas</li>
+<li>Control de productos y suministro si se solicita</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧽 Limpiezas puntuales</h3>
+<ul>
+<li>Limpieza profunda antes de una mudanza o evento</li>
+<li>Limpieza tras obras menores</li>
+<li>Servicios de planchado y organización</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🔒 Confianza y seguridad</h3>
+<ul>
+<li>Personal verificado y con formación</li>
+<li>Seguros y cobertura de responsabilidad civil</li>
+<li>Flexibilidad horaria y servicio personalizado</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro proceso de trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

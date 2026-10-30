@@ -1,0 +1,161 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza de parkings en Badalona | Fernet Limpiezas";
+const description = "Servicio de limpieza de parkings y garajes en Badalona. Realizamos barrido y fregado mecánico para eliminar polvo y manchas de aceite. ¡Pide presupuesto!";
+const keywords = "limpieza parkings Badalona, limpieza garajes Badalona, limpieza parkings empresa Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza de Parkings en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza de Parkings en Badalona | Garajes y Aparcamientos",
+      "description": "Servicio de limpieza de parkings y garajes en Badalona. Realizamos barrido y fregado mecánico para eliminar polvo y manchas de aceite. ¡Pide presupuesto!",
+      "serviceType": "Limpieza de Parkings",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      }
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-parkings-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza de parkings en Badalona</h1>
+        <p>Eliminación de manchas de aceite, polvo y suciedad acumulada</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza de parkings en Badalona</h2>
+        <p class="section-subtitle">Servicios profesionales de limpieza de parkings y garajes en Badalona: barrido mecánico, fregado con detergentes especializados y desinfección.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🧹 Barrido mecánico</h3>
+<ul>
+<li>Retirada de polvo y residuos con barredoras</li>
+<li>Limpieza de accesos y rampas</li>
+<li>Tratamiento de polvo fino y arenas</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧽 Fregado y eliminación de manchas</h3>
+<ul>
+<li>Fregado industrial y eliminación de manchas de aceite</li>
+<li>Aplicación de desengrasantes concentrados</li>
+<li>Uso de máquinas rotativas para suelos</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🛡️ Señalización y seguridad</h3>
+<ul>
+<li>Limpieza de señalización horizontal y bandas antideslizantes</li>
+<li>Revisión básica de sistemas de desagüe</li>
+<li>Coordinación con administración de parking</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro proceso de trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

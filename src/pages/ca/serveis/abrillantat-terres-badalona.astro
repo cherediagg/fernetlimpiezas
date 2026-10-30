@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Abrillantat de terres a Badalona | Fernet Neteges";
+const description = "Servei d'abrillantat i cristal·litzat de terres a Badalona. Retornem la brillantor a terres de marbre, terratzo i hidràulics. Demana pressupost!";
+const keywords = "abrillantat terres Badalona, cristal·litzat terres Badalona, poliment terres Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/abrillantado-suelos-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Abrillantat i Cristal·litzat de Terres a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Abrillantat i Cristal·litzat de Terres a Badalona | Marbre i Terratzo",
+      "description": "Servei d'abrillantat i cristal·litzat de terres a Badalona. Retornem la brillantor a terres de marbre, terratzo i hidràulics. Demana pressupost!",
+      "serviceType": "Abrillantat i Cristal·litzat de Terres",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/abrillantado-suelos-profesional-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="abrillantat-terres-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Abrillantat de terres a Badalona</h1>
+        <p>Recuperem la brillantor de terres de marbre, terratzo i hidràulics</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Abrillantat i cristal·litzat de terres a Badalona</h2>
+        <p class="section-subtitle">Abrillantat i cristal·litzat de terres a Badalona per a marbre, terratzo i terres industrials. Màquines professionals i segelladors d'alta durabilitat.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>✨ Tractament de marbre</h3>
+<ul>
+<li>Polit i eliminació de ratllades</li>
+<li>Aplicació de producte cristal·litzant per a una brillantor duradora</li>
+<li>Segellat protector contra taques</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🛠️ Terratzo i rajoles</h3>
+<ul>
+<li>Raspat i recuperació de la brillantor</li>
+<li>Reparació de juntes i tractament de porus</li>
+<li>Manteniment periòdic per preservar l'acabat</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🏭 Terres industrials</h3>
+<ul>
+<li>Aplicació de resines i tractaments antilliscants</li>
+<li>Protecció contra químics i abrasió</li>
+<li>Pla de manteniment industrial</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2 class="section-title">El nostre procés de treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>L'equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Sol·licita la teva proposta personalitzada sense compromís en menys de 24 hores.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>
