@@ -1,0 +1,98 @@
+/* Sección Tarifas */
+.tarifas-section {
+  padding: 4rem 1rem;
+  background: var(--gris-claro);
+}
+
+.tarifas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarifa-card {
+  background: var(--blanco);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarifa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tarifa-card h3 {
+  color: var(--azul-principal);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.tarifa-card .precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--verde-principal);
+  margin-bottom: 1rem;
+}
+
+.tarifa-card .precio span {
+  font-size: 1rem;
+  color: var(--gris-texto);
+}
+
+.tarifa-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--azul-principal);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:visited {
+    color: white;
+}
+
+.cta-button:hover {
+  background: var(--verde-principal);
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Destacar servicio especial */
+.tarifa-card.destacado {
+  border: 2px solid var(--verde-secundario);
+  transform: scale(1.02);
+}
+
+.cta-destacado {
+  background: var(--verde-secundario);
+}
+
+.cta-destacado:hover {
+  background: var(--azul-principal);
+}
+
+.tarifa-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+    margin-top: 3rem;
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}

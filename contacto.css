@@ -1,0 +1,87 @@
+.contacto-section {
+    padding: 5rem 0;
+}
+.contacto-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.contacto-info h2 {
+    color: var(--azul-principal);
+    margin-bottom: 2rem;
+}
+.contacto-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.contacto-info h3 {
+    color: var(--azul-principal);
+    margin: 2rem 0 1rem;
+}
+.contacto-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+.contacto-info li {
+    padding: 0.3rem 0;
+}
+.contacto-form {
+    background: var(--gris-claro);
+    padding: 2rem;
+    border-radius: 15px;
+}
+.contacto-form h3 {
+    margin-bottom: 1.5rem;
+    color: var(--azul-principal);
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--gris-texto);
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+.submit-btn {
+    background: var(--azul-principal);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .contacto-content {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+.honeypot {
+    position: absolute;
+    left: -5000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
