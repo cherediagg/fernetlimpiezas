@@ -32,6 +32,12 @@
       "skillPath": "skills/marketing-psychology/SKILL.md",
       "computedHash": "d057044710ce7b7f9b90b84b3ab64e9359aaf47982b922ec10daca3822185ede"
     },
+    "programmatic-seo": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/programmatic-seo/SKILL.md",
+      "computedHash": "2e8deb5f75edc80b0f114363f01c00e94333b4260f8adf660fb8f7698992dd99"
+    },
     "seo-audit": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
