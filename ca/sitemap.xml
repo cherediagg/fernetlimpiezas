@@ -180,4 +180,7 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/tarifes.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/tarifas.html" />
   </url>
+  <url>
+    <loc>https://www.limpiezasfernet.com/ca/preus.md</loc>
+  </url>
 </urlset>

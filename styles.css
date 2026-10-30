@@ -977,20 +977,6 @@ nav .language-switcher a {
   min-width: 0;
 }
 
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: .65rem;
-  margin-bottom: 1.2rem;
-  color: var(--verde-principal);
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
-.eyebrow-dot,
 .hero-image-dot {
   width: 9px;
   height: 9px;
@@ -1233,24 +1219,14 @@ nav .language-switcher a {
   transform: scale(1.025);
 }
 
-.servicio-card-category {
-  margin: 1.15rem 1.3rem .4rem;
-  color: var(--verde-principal);
-  font-size: .7rem;
-  font-weight: 800;
-  letter-spacing: .11em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
 .servicio-card h3 {
-  margin: 0 1.3rem .55rem;
+  margin: 1.25rem 1.3rem .65rem;
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 1.2vw, 1.18rem);
-  font-weight: 750;
-  letter-spacing: -.02em;
-  line-height: 1.35;
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.2;
 }
 
 .servicio-card-action {
@@ -1365,12 +1341,13 @@ nav .language-switcher a {
 }
 
 .sobre-nosotros {
-  background: var(--paper);
+  border-top: 1px solid var(--line);
+  background: var(--surface);
 }
 
 .sobre-content {
   max-width: 1280px;
-  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+  padding-inline: 0;
   gap: clamp(2.5rem, 7vw, 7rem);
 }
 
@@ -1463,6 +1440,7 @@ nav .language-switcher a {
 
 .zona-cobertura {
   padding-inline: 0;
+  border-top: 1px solid var(--line);
   background: var(--paper);
   text-align: left;
 }
@@ -1472,15 +1450,6 @@ nav .language-switcher a {
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
   align-items: center;
   gap: clamp(2rem, 6vw, 5rem);
-}
-
-.zona-kicker {
-  margin-bottom: .85rem;
-  color: var(--verde-principal);
-  font-size: .76rem;
-  font-weight: 800;
-  letter-spacing: .14em;
-  text-transform: uppercase;
 }
 
 .zona-intro > p:last-child {

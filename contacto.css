@@ -1,116 +1,29 @@
 .contacto-section {
-    padding: 5rem 0;
-}
-.contacto-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-}
-.contacto-info h2 {
-    color: var(--azul-principal);
-    margin-bottom: 2rem;
-}
-.contacto-info p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-.contacto-info h3 {
-    color: var(--azul-principal);
-    margin: 2rem 0 1rem;
-}
-.contacto-info ul {
-    list-style: none;
-    padding-left: 0;
-}
-.contacto-info li {
-    padding: 0.3rem 0;
-}
-.contacto-form {
-    background: var(--gris-claro);
-    padding: 2rem;
-    border-radius: 15px;
-}
-.contacto-form h3 {
-    margin-bottom: 1.5rem;
-    color: var(--azul-principal);
-}
-.form-group {
-    margin-bottom: 1.5rem;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: var(--gris-texto);
-}
-.form-group input,
-.form-group textarea,
-.form-group select {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-.form-group textarea {
-    height: 120px;
-    resize: vertical;
-}
-.submit-btn {
-    background: var(--azul-principal);
-    color: var(--blanco);
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-.submit-btn:hover {
-    transform: translateY(-2px);
-}
-@media (max-width: 768px) {
-    .contacto-content {
-        grid-template-columns: 1fr;
-    }
-    .hero h1 {
-        font-size: 2rem;
-    }
-}
-.honeypot {
-    position: absolute;
-    left: -5000px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.contacto-section {
-    padding: clamp(3rem, 6vw, 5.5rem) 0;
+    padding: clamp(2.5rem, 5vw, 4rem) 0;
     background: var(--surface);
 }
 
 .contacto-content {
-    grid-template-columns: .9fr 1.1fr;
-    gap: clamp(2rem, 5vw, 5rem);
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
     align-items: start;
 }
 
 .contacto-info h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     color: var(--ink);
 }
 
 .contacto-info p {
-    margin-bottom: .85rem;
+    margin-bottom: .65rem;
     color: var(--muted);
-    font-size: 1rem;
+    font-size: .95rem;
 }
 
 .contacto-info p strong {
     color: var(--ink);
-    font-size: .82rem;
+    font-size: .8rem;
     letter-spacing: .04em;
     text-transform: uppercase;
 }
@@ -122,87 +35,181 @@
 }
 
 .contacto-info h3 {
-    margin: 2rem 0 .8rem;
+    margin: 1.5rem 0 .6rem;
     color: var(--ink);
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: .98rem;
     font-weight: 750;
     letter-spacing: -.01em;
 }
 
+.contacto-info ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .15rem 1rem;
+    padding: 0;
+    list-style: none;
+}
+
 .contacto-info li {
-    padding: .3rem 0;
+    padding: .2rem 0;
     color: var(--muted);
+    font-size: .9rem;
 }
 
 .contacto-form {
-    padding: clamp(1.3rem, 3vw, 2.2rem);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem 1rem;
+    padding: clamp(1.2rem, 2.5vw, 1.75rem);
     border: 1px solid var(--line);
     border-radius: 8px;
     background: var(--paper);
 }
 
 .contacto-form h3 {
-    margin-bottom: 1.2rem;
+    grid-column: 1 / -1;
+    margin: 0 0 .1rem;
     color: var(--ink);
     font-family: var(--font-body);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 750;
     letter-spacing: -.02em;
 }
 
 .form-group {
-    margin-bottom: 1.1rem;
+    display: grid;
+    align-content: start;
+    gap: .35rem;
+    min-width: 0;
+    margin: 0;
+}
+
+.form-group--message {
+    grid-column: 1 / -1;
+}
+
+.form-group--captcha {
+    grid-column: 1;
 }
 
 .form-group label {
     color: var(--ink);
-    font-size: .88rem;
+    font-size: .82rem;
     font-weight: 650;
+    line-height: 1.3;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select {
-    min-height: 48px;
-    padding: .75rem .85rem;
+    width: 100%;
+    min-height: 44px;
+    padding: .6rem .75rem;
     border: 1px solid #bdc9bf;
     border-radius: 4px;
     background: var(--surface);
     color: var(--ink);
     font: inherit;
+    font-size: .92rem;
     transition: border-color .16s ease, box-shadow .16s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+.form-group select:focus-visible {
     border-color: var(--verde-principal);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(24, 91, 69, .12);
+    box-shadow: 0 0 0 3px rgba(24, 91, 69, .14);
 }
 
 .form-group textarea {
-    min-height: 130px;
+    min-height: 76px;
+    resize: vertical;
+}
+
+.honeypot {
+    position: absolute;
+    left: -5000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .submit-btn {
-    min-height: 48px;
-    padding: .8rem 1.3rem;
+    grid-column: 2;
+    align-self: end;
+    min-height: 44px;
+    padding: .65rem 1rem;
+    border: 0;
     border-radius: 4px;
     background: var(--verde-principal);
     color: #fffefa;
     font: inherit;
-    font-size: .95rem;
+    font-size: .92rem;
     font-weight: 750;
+    cursor: pointer;
+    transition: background-color .16s ease, transform .16s ease;
 }
 
 .submit-btn:hover {
+    transform: translateY(-1px);
     background: #104633;
+}
+
+.submit-btn:focus-visible {
+    outline: 3px solid rgba(24, 91, 69, .3);
+    outline-offset: 3px;
 }
 
 @media (max-width: 760px) {
     .contacto-content {
         grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .contacto-info ul {
+        max-width: 34rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .contacto-form {
+        gap: .7rem;
+        padding: 1rem;
+    }
+
+    .contacto-form h3 {
+        font-size: 1.1rem;
+    }
+
+    .form-group label {
+        font-size: .78rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding-inline: .55rem;
+        font-size: .86rem;
+    }
+
+    .submit-btn {
+        padding-inline: .25rem;
+        font-size: .78rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 280px) {
+    .contacto-form {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .form-group--message,
+    .form-group--captcha,
+    .submit-btn {
+        grid-column: 1;
     }
 }

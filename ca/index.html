@@ -23,13 +23,14 @@
     <link rel="canonical" href="https://www.limpiezasfernet.com/ca/">
     <link rel="alternate" hreflang="es" href="https://www.limpiezasfernet.com/">
     <link rel="alternate" hreflang="ca" href="https://www.limpiezasfernet.com/ca/">
+    <link rel="alternate" type="text/markdown" href="https://www.limpiezasfernet.com/llms.txt">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Fernet Neteges",
     "image": "https://www.limpiezasfernet.com/img/logo.jpg",
-    "@id": "https://www.limpiezasfernet.com/ca/",
+    "@id": "https://www.limpiezasfernet.com/#localbusiness",
     "url": "https://www.limpiezasfernet.com/ca/",
     "telephone": "+34931050338",
     "openingHoursSpecification": [
@@ -86,14 +87,17 @@
     },
     "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "41.446988",
-        "longitude": "2.245032"
+        "latitude": 41.446988,
+        "longitude": 2.245032
     },
-    "areaServed": {
-        "@type": "Place",
-        "name": "Badalona"
-    },
-    "priceRange": "$$",
+    "areaServed": [
+        { "@type": "City", "name": "Badalona" },
+        { "@type": "City", "name": "Santa Coloma de Gramenet" },
+        { "@type": "City", "name": "Sant Adrià de Besòs" },
+        { "@type": "City", "name": "Montgat" },
+        { "@type": "City", "name": "Tiana" },
+        { "@type": "City", "name": "Alella" }
+    ],
     "sameAs": [
         "https://www.facebook.com/fernetlimpiezas",
         "https://www.instagram.com/fernetlimpiezas"
@@ -106,63 +110,120 @@
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Comunitats de Veïns"
+                    "name": "Neteja de Comunitats de Veïns",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja d'Oficines i Empreses"
+                    "name": "Neteja d'Oficines i Empreses",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-oficines-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Comerços i Botigues"
+                    "name": "Neteja de Comerços i Botigues",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-comercos-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Centres Docents"
+                    "name": "Neteja de Centres Docents",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja Industrial"
+                    "name": "Neteja Industrial",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-industrial-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Centres Clínics"
+                    "name": "Neteja de Centres Clínics",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-cliniques-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Vidres"
+                    "name": "Neteja de Vidres",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Neteja de Final d'Obra"
+                    "name": "Neteja de Final d'Obra",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-finals-obra-badalona.html"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Abrillantat de Terres"
+                    "name": "Abrillantat de Terres",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neteja d'altura",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neteja a fons",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-fons-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Eliminació de grafitis",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-grafitis-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neteja de pàrquings",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Neteja per a particulars",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Restauració de terres",
+                    "url": "https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html"
                 }
             }
         ]
@@ -184,7 +245,6 @@
         <section id="inicio" class="hero home-hero-section">
             <div class="home-hero container">
                 <div class="home-hero-copy">
-                    <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Neteja de proximitat · Badalona</p>
                     <h1>Empresa de neteja a Badalona</h1>
                     <p class="hero-subtitle">Neteja professional de comunitats, empreses i habitatges a Badalona. Explica'ns què necessites i demana una proposta a mida.</p>
                     <div class="cta-container">
@@ -213,7 +273,6 @@
                 <article class="servicio-card">
                 <a href="serveis/neteja-comunitats-badalona.html" aria-label="Veure el servei de neteja de comunitats a Badalona">
                     <img src="../img/limpieza-comunidad-vecinos.png" class="img-servicio" alt="Neteja de comunitats de veïns a Badalona">
-                    <span class="servicio-card-category">Zones comunes</span>
                     <h3>Comunitats de veïns</h3>
                     <p>Neteja integral d'escales, portals, garatges i zones comunes. Manteniment regular adaptat a les necessitats de cada comunitat a Badalona.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -222,7 +281,6 @@
                 <article class="servicio-card">
                     <a href="serveis/neteja-oficines-badalona.html" aria-label="Veure el servei de neteja d'oficines a Badalona">
                     <img src="../img/limpieza-oficinas.jpeg" class="img-servicio" alt="Neteja d'oficines a Badalona">
-                    <span class="servicio-card-category">Espais de treball</span>
                     <h3>Oficines i empreses</h3>
                     <p>Neteja de despatxos, zones comunes i espais de treball, amb tasques adaptades a l'ús de cada oficina.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -231,7 +289,6 @@
                 <article class="servicio-card">
                     <a href="serveis/neteja-comercos-badalona.html" aria-label="Veure el servei de neteja de comerços a Badalona">
                     <img src="../img/limpieza-tiendas.png" class="img-servicio" alt="Neteja de comerços i botigues">
-                    <span class="servicio-card-category">Atenció al públic</span>
                     <h3>Comerços i botigues</h3>
                     <p>Neteja especialitzada per a comerços, botigues i locals comercials. Mantenim el teu negoci impecable per oferir la millor imatge als teus clients.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -240,7 +297,6 @@
                 <article class="servicio-card">
                     <a href="serveis/neteja-centres-docents-badalona.html" aria-label="Veure el servei de neteja d'escoles i acadèmies a Badalona">
                     <img src="../img/limpieza-academias.png" class="img-servicio" alt="Neteja d'escoles i acadèmies">
-                    <span class="servicio-card-category">Centres educatius</span>
                     <h3>Escoles i acadèmies</h3>
                     <p>Neteja d'aules, zones comunes i superfícies d'ús freqüent en escoles i acadèmies.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -249,7 +305,6 @@
                 <article class="servicio-card">
                     <a href="serveis/neteja-industrial-badalona.html" aria-label="Veure el servei de neteja industrial a Badalona">
                     <img src="../img/limpieza-fabricas.png" class="img-servicio" alt="Neteja de fàbriques i espais industrials">
-                    <span class="servicio-card-category">Espais productius</span>
                     <h3>Fàbriques i indústries</h3>
                     <p>Neteja de naus, magatzems i espais de producció, segons les característiques de cada instal·lació.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -258,7 +313,6 @@
                 <article class="servicio-card">
                     <a href="serveis/neteja-cliniques-badalona.html" aria-label="Veure el servei de neteja de centres clínics a Badalona">
                     <img src="../img/limpieza-clinicas.jpeg" class="img-servicio" alt="Neteja de centres clínics">
-                    <span class="servicio-card-category">Atenció sanitària</span>
                     <h3>Centres clínics</h3>
                     <p>Neteja de clíniques, consultes de podologia i òptiques. Explica'ns quins espais i horaris necessites cobrir.</p>
                     <span class="servicio-card-action" aria-hidden="true">Veure servei <span>↗</span></span>
@@ -312,7 +366,6 @@
         <section class="zona-cobertura">
             <div class="container zona-layout">
                 <div class="zona-intro">
-                    <p class="zona-kicker">Atenció local</p>
                     <h2>Badalona i municipis propers</h2>
                     <p>Un equip d'aquí, per tenir cura dels espais de la ciutat i el seu entorn.</p>
                 </div>

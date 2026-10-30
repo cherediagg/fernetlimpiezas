@@ -10,15 +10,6 @@
   text-align: left;
 }
 
-.tarifas-kicker {
-  margin-bottom: .85rem;
-  color: var(--verde-principal);
-  font-size: .75rem;
-  font-weight: 800;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
 .tarifas-heading .section-title {
   max-width: 24ch;
   margin-bottom: .75rem;

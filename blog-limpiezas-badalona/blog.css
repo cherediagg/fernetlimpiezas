@@ -603,32 +603,6 @@ header {
     max-width: 640px;
 }
 
-.blog-kicker {
-    display: flex;
-    align-items: center;
-    gap: .65rem;
-    margin-bottom: 1.2rem;
-    color: var(--verde-principal);
-    font-size: .75rem;
-    font-weight: 800;
-    letter-spacing: .12em;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-
-.blog-index .hero.blog-index-hero .blog-index-copy .blog-kicker {
-    color: var(--verde-principal);
-}
-
-.blog-kicker::before {
-    width: 9px;
-    height: 9px;
-    flex: 0 0 auto;
-    border-radius: 50%;
-    background: var(--verde-secundario);
-    content: "";
-}
-
 .blog-index .blog-index-copy h1 {
     max-width: 14ch;
     margin-bottom: 1rem;
