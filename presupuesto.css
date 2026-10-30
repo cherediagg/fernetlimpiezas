@@ -1,111 +1,5 @@
 /* Estilos para la página de presupuesto */
 .presupuesto-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.presupuesto-section .container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.presupuesto-section h1 {
-    font-size: 2.5rem;
-    color: #0056b3;
-    margin-bottom: 20px;
-}
-
-.presupuesto-section > p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-.opciones-presupuesto {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.opcion {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 30px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.opcion h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 10px;
-}
-
-.opcion p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
-.contacto-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contacto-links li {
-    margin-bottom: 10px;
-}
-
-.cta-button-secondary {
-    display: block;
-    width: 100%;
-    background-color: #6c757d;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button-secondary:hover {
-    background-color: #5a6268;
-}
-
-@media (max-width: 768px) {
-    .opciones-presupuesto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .opcion {
-        max-width: 100%;
-    }
-}
-
-.presupuesto-section {
     min-height: 68vh;
     padding: clamp(3rem, 7vw, 6rem) 1.25rem;
     background: var(--paper);
@@ -114,43 +8,76 @@
 
 .presupuesto-section .container {
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 .presupuesto-section h1 {
-    max-width: 18ch;
+    max-width: 20ch;
+    margin-bottom: 1rem;
     color: var(--ink);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    line-height: 1.05;
 }
 
 .presupuesto-section > p {
-    max-width: 68ch;
+    max-width: 65ch;
+    margin-bottom: 2.5rem;
     color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.7;
 }
 
 .opciones-presupuesto {
+    display: flex;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .opcion {
-    width: calc(50% - .5rem);
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 0.75rem);
     max-width: none;
-    padding: clamp(1.4rem, 3vw, 2.2rem);
+    padding: clamp(1.5rem, 3vw, 2.5rem);
     border: 1px solid var(--line);
-    border-radius: 7px;
+    border-radius: 8px;
     background: var(--surface);
-    box-shadow: none;
+    box-shadow: 0 4px 18px rgba(24, 51, 42, .04);
+    text-align: left;
+    transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+
+.opcion:hover {
+    border-color: rgba(24, 91, 69, .4);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(24, 51, 42, .08);
 }
 
 .opcion h2 {
-    border: 0;
-    padding: 0;
+    margin-bottom: .8rem;
     color: var(--ink);
-    font-size: 1.5rem;
+    font-family: var(--font-body);
+    font-size: 1.45rem;
+    font-weight: 750;
+    letter-spacing: -.02em;
 }
 
 .opcion p {
+    margin-bottom: 1.8rem;
     color: var(--muted);
+    font-size: .98rem;
+    line-height: 1.65;
+}
+
+.contacto-links {
+    display: grid;
+    gap: .75rem;
+    width: 100%;
+    margin: auto 0 0;
+    padding: 0;
+    list-style: none;
 }
 
 .presupuesto-section .cta-button,
@@ -159,25 +86,31 @@
     align-items: center;
     justify-content: center;
     min-height: 48px;
-    padding: .75rem 1rem;
+    width: 100%;
+    margin-top: auto;
+    padding: .8rem 1.2rem;
     border: 1px solid var(--verde-principal);
-    border-radius: 5px;
+    border-radius: 6px;
     background: var(--verde-principal);
     color: #fffefa;
-    font-weight: 700;
+    font-size: .95rem;
+    font-weight: 750;
+    text-decoration: none;
+    transition: background-color .18s ease, color .18s ease, transform .18s ease;
 }
 
 .presupuesto-section .cta-button-secondary {
-    display: block;
-    width: 100%;
     background: transparent;
     color: var(--verde-principal);
 }
 
 .presupuesto-section .cta-button:hover,
-.presupuesto-section .cta-button-secondary:hover {
+.presupuesto-section .cta-button:focus-visible,
+.presupuesto-section .cta-button-secondary:hover,
+.presupuesto-section .cta-button-secondary:focus-visible {
     background: #104633;
     color: #fffefa;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 760px) {

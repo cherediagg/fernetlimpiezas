@@ -1,30 +1,12 @@
-
-.section-subtitle{max-width:800px;margin:0 auto 3rem;color:#333;}
-.servicio-item{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);border-left:4px solid #2e8b57}
-.servicio-item h3{margin-bottom:1rem}
-.proceso{background:#f5f5f5;padding:3rem 0;margin-top:2rem}
-.step{background:#fff;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
-.cta-button, .cta-phone {
-    display:inline-block;
-    background:#fff;
-    color:#000000;
-    padding:1rem 1.8rem;
-    border-radius:50px;
-    font-weight:700;
-    text-decoration:none;
-    margin-top:1rem
-}
-@media (max-width:768px){.servicios-incluidos{grid-template-columns:1fr}}
-
 /* Service pages share the same understated, local-first visual language. */
 .hero-servicio {
     position: relative;
     overflow: hidden;
+    padding: clamp(3.5rem, 7vw, 5.5rem) 0;
     background:
         radial-gradient(circle at 88% 42%, rgba(118, 185, 71, .18), transparent 22rem),
         linear-gradient(115deg, #104633, var(--verde-principal));
     color: #fffefa;
-    padding: clamp(3.5rem, 7vw, 5.5rem) 0;
     text-align: left;
 }
 
@@ -53,6 +35,7 @@
     max-width: 18ch;
     margin-bottom: 1.1rem;
     color: #fffefa;
+    font-family: var(--font-display);
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.04;
 }
@@ -60,7 +43,7 @@
 .hero-servicio p {
     max-width: 52ch;
     margin: 0;
-    color: rgba(255, 254, 250, .9);
+    color: rgba(255, 254, 250, .92);
     font-size: 1.08rem;
     line-height: 1.7;
 }
@@ -69,7 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: .75rem;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 }
 
 .hero-servicio .cta-phone,
@@ -79,15 +62,16 @@
     align-items: center;
     justify-content: center;
     min-height: 48px;
-    margin: .75rem 0 0;
-    padding: .8rem 1rem;
+    margin: 0;
+    padding: .8rem 1.25rem;
     border: 1px solid #fffefa;
-    border-radius: 5px;
+    border-radius: 6px;
     background: #fffefa;
     color: var(--verde-principal);
     font-size: .95rem;
-    font-weight: 700;
+    font-weight: 750;
     line-height: 1.35;
+    text-decoration: none;
     transition: transform .18s ease, background-color .18s ease;
 }
 
@@ -100,13 +84,13 @@
 .hero-servicio .cta-button:hover,
 .hero-servicio .cta-phone:hover,
 .cta-seccion .cta-button:hover {
-    color: var(--verde-principal);
     background: #e8f1df;
+    color: var(--verde-principal);
     transform: translateY(-2px);
 }
 
 .servicio-detalle {
-    padding: clamp(3rem, 6vw, 5rem) 0;
+    padding: clamp(3rem, 6vw, 5.5rem) 0;
     background: var(--surface);
 }
 
@@ -122,33 +106,39 @@
 
 .servicio-detalle .section-title {
     margin-bottom: .8rem;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
 }
 
 .servicio-detalle .section-subtitle {
     max-width: 70ch;
-    margin: 0 0 2rem;
+    margin: 0 0 2.2rem;
     color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.65;
 }
 
 .servicios-incluidos {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.1rem;
+    gap: 1.25rem;
 }
 
 .servicio-item {
-    padding: clamp(1.3rem, 2vw, 1.7rem);
+    padding: clamp(1.4rem, 2.2vw, 1.8rem);
     border: 1px solid var(--line);
-    border-top: 3px solid var(--verde-secundario);
-    border-radius: 10px;
+    border-top: 4px solid var(--verde-secundario);
+    border-radius: 8px;
     background: var(--surface);
-    box-shadow: 0 8px 24px rgba(24, 51, 42, .045);
+    box-shadow: 0 4px 18px rgba(24, 51, 42, .04);
 }
 
 .servicio-item h3 {
     margin-bottom: .9rem;
+    color: var(--ink);
     font-family: var(--font-body);
-    font-size: 1.08rem;
+    font-size: 1.15rem;
     font-weight: 750;
     letter-spacing: -.02em;
 }
@@ -159,7 +149,8 @@
 }
 
 .servicio-item li {
-    padding: .22rem 0;
+    padding: .25rem 0;
+    font-size: .95rem;
     line-height: 1.6;
 }
 
@@ -168,12 +159,15 @@
 }
 
 .proceso {
-    padding: clamp(3rem, 6vw, 5rem) 0;
+    padding: clamp(3rem, 6vw, 5.5rem) 0;
     background: var(--paper);
 }
 
 .proceso .container h2 {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.8rem;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
     text-align: left;
 }
 
@@ -184,44 +178,47 @@
 }
 
 .step {
-    min-height: 190px;
-    padding: 1.35rem 1.2rem;
+    min-height: 195px;
+    padding: 1.4rem 1.25rem;
     border: 1px solid var(--line);
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--surface);
     text-align: left;
-    box-shadow: 0 8px 24px rgba(24, 51, 42, .04);
+    box-shadow: 0 4px 18px rgba(24, 51, 42, .04);
 }
 
 .step-icon {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     align-items: center;
     justify-content: center;
     margin: 0 0 1rem;
     border-radius: 50%;
     background: #e7eee4;
     color: var(--verde-principal);
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
 .step h3 {
     margin-bottom: .45rem;
+    color: var(--ink);
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 750;
     letter-spacing: -.02em;
 }
 
 .step p {
+    color: var(--muted);
     font-size: .92rem;
+    line-height: 1.6;
 }
 
 .cta-seccion {
-    padding: clamp(3rem, 6vw, 5rem) 0;
+    padding: clamp(3rem, 6vw, 5.5rem) 0;
     background: #104633;
     color: #fffefa;
     text-align: left;
@@ -231,11 +228,15 @@
     max-width: 20ch;
     margin-bottom: .8rem;
     color: #fffefa;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
 }
 
 .cta-seccion p {
     max-width: 62ch;
-    color: rgba(255, 254, 250, .9);
+    color: rgba(255, 254, 250, .92);
+    font-size: 1.05rem;
+    line-height: 1.65;
 }
 
 .cta-seccion .cta-button {
@@ -244,9 +245,14 @@
     color: #104633;
 }
 
-@media (max-width: 760px) {
-    .servicios-incluidos,
+@media (max-width: 960px) {
     .proceso-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .servicios-incluidos {
         grid-template-columns: 1fr;
     }
 
@@ -258,12 +264,6 @@
     .hero-servicio .cta-phone,
     .hero-servicio .cta-button {
         width: 100%;
-    }
-}
-
-@media (max-width: 960px) {
-    .proceso-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 

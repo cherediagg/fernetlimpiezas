@@ -14,62 +14,140 @@
     <link rel="stylesheet" href="../styles.css">
     <style>
         .empleo-section {
-            padding: 2rem 1rem;
-            max-width: 800px;
+            padding: clamp(3rem, 6vw, 5.5rem) 1.25rem;
+            background: var(--paper);
+        }
+        .empleo-container {
+            max-width: 960px;
             margin: 0 auto;
         }
-        .empleo-section h1 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #0056b3;
+        .empleo-header {
+            margin-bottom: 2.8rem;
+            text-align: left;
+        }
+        .empleo-header h1 {
+            margin-bottom: .8rem;
+            color: var(--ink);
+            font-family: var(--font-display);
+            font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+            line-height: 1.05;
+        }
+        .empleo-header p {
+            max-width: 65ch;
+            color: var(--muted);
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+        .ofertas-grid {
+            display: grid;
+            gap: 1.5rem;
         }
         .oferta {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            padding: clamp(1.5rem, 3vw, 2.2rem);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--verde-principal);
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            background: var(--surface);
+            box-shadow: 0 4px 18px rgba(24, 51, 42, .04);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .oferta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(24, 51, 42, .08);
         }
         .oferta h2 {
-            color: #333;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: .6rem;
+            color: var(--ink);
+            font-family: var(--font-body);
+            font-size: 1.35rem;
+            font-weight: 750;
+            letter-spacing: -.02em;
         }
         .oferta p {
-            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            color: var(--muted);
+            font-size: .98rem;
+            line-height: 1.65;
+        }
+        .oferta h3 {
+            margin-bottom: .6rem;
+            color: var(--verde-principal);
+            font-family: var(--font-body);
+            font-size: .92rem;
+            font-weight: 750;
+            letter-spacing: .04em;
+            text-transform: uppercase;
         }
         .oferta ul {
-            list-style-type: '✓';
-            padding-left: 1.5rem;
-            margin-top: 1rem;
+            display: grid;
+            gap: .45rem;
+            padding: 0;
+            list-style: none;
         }
         .oferta li {
-            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.4rem;
+            color: var(--ink);
+            font-size: .94rem;
+            line-height: 1.55;
+        }
+        .oferta li::before {
+            position: absolute;
+            left: 0;
+            top: .05em;
+            color: var(--verde-secundario);
+            content: "✓";
+            font-weight: 800;
         }
         .cta-empleo {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 2rem;
-            background-color: #e7f1ff;
+            margin-top: 3rem;
+            padding: clamp(2rem, 4vw, 3rem);
+            border: 1px solid var(--line);
             border-radius: 8px;
+            background: var(--surface);
+            box-shadow: var(--shadow-soft);
+            text-align: left;
         }
         .cta-empleo h3 {
-            margin-bottom: 1rem;
+            margin-bottom: .6rem;
+            color: var(--ink);
+            font-family: var(--font-display);
+            font-size: 1.8rem;
         }
         .cta-empleo p {
-            font-size: 1.1rem;
+            max-width: 60ch;
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.65;
         }
-        .cta-empleo a {
-            font-weight: bold;
-            color: #0056b3;
+        .cta-empleo-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            margin-top: 1.2rem;
+            padding: .8rem 1.4rem;
+            border: 1px solid var(--verde-principal);
+            border-radius: 6px;
+            background: var(--verde-principal);
+            color: #fffefa;
+            font-size: .95rem;
+            font-weight: 750;
+            text-decoration: none;
+            transition: background-color .18s ease, transform .18s ease;
+        }
+        .cta-empleo-action:hover,
+        .cta-empleo-action:focus-visible {
+            background: #104633;
+            color: #fffefa;
+            transform: translateY(-2px);
         }
     </style>
-            <script src="../js/main.js" defer></script>
-<link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/empleo.html">
-<meta property="og:url" content="https://www.limpiezasfernet.com/ca/feina.html">
-<meta property="og:title" content="Feina en neteja a Badalona | Fernet Neteges">
-<meta property="og:description" content="Busques feina al sector de la neteja a Badalona? Fernet Neteges busca personal qualificat. Consulta les nostres ofertes i uneix-te al nostre equip!">
+    <script src="../js/main.js" defer></script>
+    <link rel="alternate" hreflang="x-default" href="https://www.limpiezasfernet.com/empleo.html">
+    <meta property="og:url" content="https://www.limpiezasfernet.com/ca/feina.html">
+    <meta property="og:title" content="Feina en neteja a Badalona | Fernet Neteges">
+    <meta property="og:description" content="Busques feina al sector de la neteja a Badalona? Fernet Neteges busca personal qualificat. Consulta les nostres ofertes i uneix-te al nostre equip!">
 </head>
 <body>
     <header-component
@@ -80,50 +158,57 @@
     </header-component>
     <main id="main-content">
         <section class="empleo-section">
-            <h1>Uneix-te al Nostre Equip</h1>
-            <p style="text-align: center; margin-bottom: 2rem;">Tens experiència en neteja i t'interessa treballar a Badalona? Consulta les ofertes disponibles i revisa el perfil sol·licitat per a cada lloc de feina.</p>
+            <div class="empleo-container">
+                <header class="empleo-header">
+                    <h1>Uneix-te al Nostre Equip</h1>
+                    <p>Tens experiència en neteja i t'interessa treballar a Badalona? Consulta les ofertes disponibles i revisa el perfil sol·licitat per a cada lloc de feina.</p>
+                </header>
 
-            <div class="oferta">
-                <h2>Personal de Neteja</h2>
-                <p>Busquem personal per a realitzar tasques de neteja en comunitats de veïns, oficines, locals comercials i finals d'obra.</p>
-                <h3>Requisits:</h3>
-                <ul>
-                    <li>Experiència demostrable en el sector de la neteja.</li>
-                    <li>Persona responsable, puntual i organitzada.</li>
-                    <li>Capacitat per a treballar en equip.</li>
-                    <li>Residència a Badalona o rodalies.</li>
-                </ul>
-            </div>
+                <div class="ofertas-grid">
+                    <article class="oferta">
+                        <h2>Personal de Neteja</h2>
+                        <p>Busquem personal per a realitzar tasques de neteja en comunitats de veïns, oficines, locals comercials i finals d'obra.</p>
+                        <h3>Requisits:</h3>
+                        <ul>
+                            <li>Experiència demostrable en el sector de la neteja.</li>
+                            <li>Persona responsable, puntual i organitzada.</li>
+                            <li>Capacitat per a treballar en equip.</li>
+                            <li>Residència a Badalona o rodalies.</li>
+                        </ul>
+                    </article>
 
-            <div class="oferta">
-                <h2>Personal de Neteja de Vidres</h2>
-                <p>Seleccionem netejavidres professionals per a serveis a empreses i particulars. Es valorarà experiència en treballs en alçada.</p>
-                <h3>Requisits:</h3>
-                <ul>
-                    <li>Experiència mínima de 2 anys en neteja de vidres.</li>
-                    <li>Coneixement de diferents tècniques i eines (perxa, rasclet, etc.).</li>
-                    <li>Atenció al detall i acabats d'alta qualitat.</li>
-                    <li>Carnet de conduir i vehicle propi (valorable).</li>
-                </ul>
-            </div>
+                    <article class="oferta">
+                        <h2>Personal de Neteja de Vidres</h2>
+                        <p>Seleccionem netejavidres professionals per a serveis a empreses i particulars. Es valorarà experiència en treballs en alçada.</p>
+                        <h3>Requisits:</h3>
+                        <ul>
+                            <li>Experiència mínima de 2 anys en neteja de vidres.</li>
+                            <li>Coneixement de diferents tècniques i eines (perxa, rasclet, etc.).</li>
+                            <li>Atenció al detall i acabats d'alta qualitat.</li>
+                            <li>Carnet de conduir i vehicle propi (valorable).</li>
+                        </ul>
+                    </article>
 
-            <div class="oferta">
-                <h2>Especialista en Abrillantat de Terres</h2>
-                <p>Busquem un professional amb experiència en el tractament i abrillantat de tota mena de terres (marbre, terratzo, etc.).</p>
-                <h3>Requisits:</h3>
-                <ul>
-                    <li>Experiència demostrable en l'ús de maquinària rotativa.</li>
-                    <li>Coneixement de productes químics per al tractament de terres.</li>
-                    <li>Capacitat per a treballar de forma autònoma.</li>
-                    <li>Resultats impecables i atenció al detall.</li>
-                </ul>
-            </div>
+                    <article class="oferta">
+                        <h2>Especialista en Abrillantat de Terres</h2>
+                        <p>Busquem un professional amb experiència en el tractament i abrillantat de tota mena de terres (marbre, terratzo, etc.).</p>
+                        <h3>Requisits:</h3>
+                        <ul>
+                            <li>Experiència demostrable en l'ús de maquinària rotativa.</li>
+                            <li>Coneixement de productes químics per al tractament de terres.</li>
+                            <li>Capacitat per a treballar de forma autònoma.</li>
+                            <li>Resultats impecables i atenció al detall.</li>
+                        </ul>
+                    </article>
+                </div>
 
-            <div class="cta-empleo">
-                <h3>Interessat/da?</h3>
-                <p>Si compleixes els requisits i vols unir-te al nostre equip, envia'ns el teu currículum a:</p>
-                <p><a href="mailto:info@limpiezasfernet.com?subject=Candidatura%20de%20Feina">info@limpiezasfernet.com</a></p>
-                <p>Esperem conèixer-te aviat!</p>
+                <div class="cta-empleo">
+                    <h3>Interessat/da a treballar amb nosaltres?</h3>
+                    <p>Si compleixes els requisits i vols unir-te al nostre equip a Badalona, envia'ns el teu currículum per correu electrònic:</p>
+                    <a href="mailto:info@limpiezasfernet.com?subject=Candidatura%20de%20Feina" class="cta-empleo-action">
+                        Enviar Currículum (info@limpiezasfernet.com) ↗
+                    </a>
+                </div>
             </div>
         </section>
     </main>

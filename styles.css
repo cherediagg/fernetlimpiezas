@@ -830,8 +830,8 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid #26789c;
-  outline-offset: 4px;
+  outline: 3px solid var(--verde-principal);
+  outline-offset: 3px;
 }
 
 img {

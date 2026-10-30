@@ -91,9 +91,9 @@ class HeaderComponent extends HTMLElement {
                         <li><a href="${links.rates}" ${currentPage.includes('tarifas') || currentPage.includes('tarifes') ? 'aria-current="page"' : ''}>${t.rates}</a></li>
                         <li><a href="${links.contact}" ${currentPage.includes('contacto') || currentPage.includes('contacte') ? 'aria-current="page"' : ''}>${t.contact}</a></li>
                         <li class="language-switcher">
-                            <a href="${esLink}" hreflang="es" lang="es">ES</a>
+                            <a href="${esLink}" hreflang="es" lang="es" ${isSpanish ? 'aria-current="true"' : ''}>ES</a>
                             <span>|</span>
-                            <a href="${caLink}" hreflang="ca" lang="ca">CA</a>
+                            <a href="${caLink}" hreflang="ca" lang="ca" ${!isSpanish ? 'aria-current="true"' : ''}>CA</a>
                         </li>
                     </ul>
                 </nav>
@@ -160,7 +160,7 @@ class FooterComponent extends HTMLElement {
                 companyDescription: 'Empresa de limpieza en Badalona. Servicios para comunidades, negocios y viviendas.',
                 contactTitle: 'Contacto',
                 address: 'Avenida Alfonso XIII nº 107-109, Badalona, Barcelona',
-                linksTitle: 'Enlaces de interes',
+                linksTitle: 'Enlaces de interés',
                 rates: 'Tarifas',
                 budget: 'Presupuesto',
                 howToArrive: 'Cómo llegar',
@@ -257,9 +257,7 @@ class FooterComponent extends HTMLElement {
                     <div class="footer-contact">
                         <h4>${t.companyName}</h4>
                         <p>${t.companyDescription}</p>
-                        <br>
-                        <br>
-                        <h4>${t.contactTitle}</h4>
+                        <h4 style="margin-top: 1.5rem;">${t.contactTitle}</h4>
                         <p>${t.address}</p>
                         <p><a href="tel:+34931050338">931 050 338</a></p>
                         <p><a href="mailto:info@limpiezasfernet.com">info@limpiezasfernet.com</a></p>
