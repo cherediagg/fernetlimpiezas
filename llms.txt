@@ -1,58 +1,87 @@
-# Fernet Limpiezas
+# Fernet Limpiezas — Empresa de Limpieza Profesional en Badalona
 
-> Empresa local de limpieza profesional con sede en Badalona, Barcelona. Ofrece servicios para comunidades de vecinos, oficinas, comercios, viviendas y otros espacios. La web está disponible en español y catalán.
+> Fernet Limpiezas (Fernet Neteges en catalán) es una empresa de limpieza profesional local con sede en Badalona, Barcelona. Ofrece servicios integrales para comunidades de vecinos, oficinas, comercios, centros docentes, naves industriales, clínicas y particulares en Badalona y municipios colindantes del Barcelonès y Maresme. La web oficial está disponible en español y catalán.
 
-Fernet Limpiezas (Fernet Neteges en catalán) es una empresa de limpieza de Badalona. Su oficina está en la Avenida Alfonso XIII, 107-109, 08912 Badalona. El horario publicado es de lunes a viernes, de 09:00 a 14:00 y de 16:30 a 18:30; el horario de verano puede variar y debe confirmarse.
+## Información Corporativa y de Contacto
 
-Contacto: +34 931 050 338 · info@limpiezasfernet.com
+- **Nombre comercial:** Fernet Limpiezas / Fernet Neteges
+- **Dirección física:** Avenida Alfonso XIII nº 107-109, 08912 Badalona, Barcelona, España
+- **Teléfono directo:** [+34 931 050 338](tel:+34931050338) | WhatsApp: [+34 647 825 663](https://wa.me/34647825663)
+- **Correo electrónico:** info@limpiezasfernet.com
+- **Horario de oficina:** Lunes a Viernes de 09:00 a 14:00 y de 16:30 a 18:30 (horario de verano a consultar)
+- **Atención al cliente:** Presupuestos sin compromiso entregados en menos de 24 horas.
 
-## Información oficial
+## Áreas y Barrios Cobertos en Badalona y Alrededores
 
-- [Inicio en español](https://www.limpiezasfernet.com/)
-- [Inici en català](https://www.limpiezasfernet.com/ca/)
-- [Contacto y presupuesto](https://www.limpiezasfernet.com/contacto.html)
-- [Contacte i pressupost](https://www.limpiezasfernet.com/ca/contacte.html)
+Fernet Limpiezas presta servicio directo en todos los barrios de Badalona y municipios cercanos:
+- **Barrios de Badalona:** Gorg, Centre, El Progrés, Pep Ventura, Llefià, La Salut, Montigalà, Bufalà, Morera, BDN Sud, Canyadó, Casagemes, Sant Crist, Pomar.
+- **Municipios del Barcelonès y Maresme:** Badalona, Santa Coloma de Gramenet, Sant Adrià de Besòs, Montgat, Tiana, Alella, Barcelona Norte.
+
+## Tarifas y Precios Orientativos (2025)
+
+- **Limpieza de comunidades de vecinos:** Desde 180 €/mes (incluye escaleras, portal, cristales y mantenimiento general).
+- **Limpieza de oficinas y empresas:** Desde 35 €/hora.
+- **Limpieza de particulares / hogar:** Desde 30 €/hora.
+- **Abrillantado y cristalizado de suelos:** Desde 5,50 €/m² (mármol, terrazo, granito).
+- **Limpieza de final de obra o reformas:** Presupuesto personalizado por m² e intensidad.
+
+Para ver las tarifas completas en formato machine-readable:
+- [Tarifas en texto plano (Español)](https://www.limpiezasfernet.com/precios.md)
+- [Pricing Markdown (Machine-readable standard)](https://www.limpiezasfernet.com/pricing.md)
+- [Tarifes en text pla (Català)](https://www.limpiezasfernet.com/ca/preus.md)
+
+## Páginas Principales (Español)
+
+- [Página de inicio](https://www.limpiezasfernet.com/)
 - [Tarifas de limpieza en Badalona](https://www.limpiezasfernet.com/tarifas.html)
+- [Contacto y solicitud de presupuesto en 24h](https://www.limpiezasfernet.com/contacto.html)
+- [Formulario de solicitud de presupuesto](https://www.limpiezasfernet.com/presupuesto.html)
+- [Cómo llegar a nuestra oficina en Badalona](https://www.limpiezasfernet.com/como-llegar.html)
+- [Galería de trabajos realizados](https://www.limpiezasfernet.com/galeria.html)
+- [Blog de limpieza en Badalona](https://www.limpiezasfernet.com/blog-limpiezas-badalona/)
+
+## Servicios Especializados (Español)
+
+- [Limpieza de Comunidades en Badalona](https://www.limpiezasfernet.com/servicios/limpieza-comunidades-badalona.html)
+- [Limpieza de Oficinas y Empresas](https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html)
+- [Limpieza de Comercios y Tiendas](https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html)
+- [Limpieza de Centros Docentes y Colegios](https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html)
+- [Limpieza de Clínicas y Centros Sanitarios](https://www.limpiezasfernet.com/servicios/limpieza-clinicas-badalona.html)
+- [Limpieza Industrial y Naves](https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html)
+- [Limpieza de Cristales y Escaparates](https://www.limpiezasfernet.com/servicios/limpieza-cristales-badalona.html)
+- [Limpieza de Finales de Obra](https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html)
+- [Limpieza a Fondo para Viviendas y Locales](https://www.limpiezasfernet.com/servicios/limpieza-fondo-badalona.html)
+- [Abrillantado y Cristalizado de Suelos](https://www.limpiezasfernet.com/servicios/abrillantado-suelos-badalona.html)
+- [Limpieza de Parkings y Garajes](https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html)
+- [Limpieza en Altura](https://www.limpiezasfernet.com/servicios/limpieza-altura-badalona.html)
+- [Eliminación de Grafitis](https://www.limpiezasfernet.com/servicios/limpieza-grafitis-badalona.html)
+- [Limpieza para Particulares](https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html)
+- [Restauración de Suelos](https://www.limpiezasfernet.com/servicios/restauracion-suelos-badalona.html)
+
+## Páginas Principales en Catalán (Pàgines Oficials en Català)
+
+- [Inici en català](https://www.limpiezasfernet.com/ca/)
 - [Tarifes de neteja a Badalona](https://www.limpiezasfernet.com/ca/tarifes.html)
-- [Tarifas en texto plano (español)](https://www.limpiezasfernet.com/precios.md)
-- [Tarifes en text pla (català)](https://www.limpiezasfernet.com/ca/preus.md)
-- [Cómo llegar a la oficina](https://www.limpiezasfernet.com/como-llegar.html)
-- [Com arribar a l'oficina](https://www.limpiezasfernet.com/ca/com-arribar.html)
-- [Blog de limpieza](https://www.limpiezasfernet.com/blog-limpiezas-badalona/)
-- [Blog de neteja](https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/)
+- [Contacte i sol·licitud de pressupost](https://www.limpiezasfernet.com/ca/contacte.html)
+- [Com arribar a l'oficina de Badalona](https://www.limpiezasfernet.com/ca/com-arribar.html)
+- [Blog de neteja a Badalona](https://www.limpiezasfernet.com/ca/blog-limpiezas-badalona/)
 
-## Servicios en español
+## Artículos de Interés y Casos Locales
 
-- [Abrillantado de suelos](https://www.limpiezasfernet.com/servicios/abrillantado-suelos-badalona.html)
-- [Limpieza de altura](https://www.limpiezasfernet.com/servicios/limpieza-altura-badalona.html)
-- [Limpieza de centros docentes](https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html)
-- [Limpieza de clínicas](https://www.limpiezasfernet.com/servicios/limpieza-clinicas-badalona.html)
-- [Limpieza de comercios](https://www.limpiezasfernet.com/servicios/limpieza-comercios-badalona.html)
-- [Limpieza de comunidades](https://www.limpiezasfernet.com/servicios/limpieza-comunidades-badalona.html)
-- [Limpieza de cristales](https://www.limpiezasfernet.com/servicios/limpieza-cristales-badalona.html)
-- [Limpieza de final de obra](https://www.limpiezasfernet.com/servicios/limpieza-finales-obra-badalona.html)
-- [Limpieza a fondo](https://www.limpiezasfernet.com/servicios/limpieza-fondo-badalona.html)
-- [Eliminación de grafitis](https://www.limpiezasfernet.com/servicios/limpieza-grafitis-badalona.html)
-- [Limpieza industrial](https://www.limpiezasfernet.com/servicios/limpieza-industrial-badalona.html)
-- [Limpieza de oficinas](https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html)
-- [Limpieza de parkings](https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html)
-- [Limpieza para particulares](https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html)
-- [Restauración de suelos](https://www.limpiezasfernet.com/servicios/restauracion-suelos-badalona.html)
+- [Limpieza de pisos en el barrio del Gorg (Badalona)](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-pisos-gorg-badalona.html)
+- [Mantenimiento y limpieza de comunidades de vecinos en Badalona](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-comunidades-vecinos-badalona.html)
+- [Guía de limpieza de oficinas y empresas en Badalona](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-oficinas-empresas-badalona.html)
+- [Limpieza tras reformas o final de obra en Badalona](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-final-obra-badalona.html)
+- [Limpieza comercial para tiendas en Badalona](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-comercios-badalona.html)
+- [Servicios especiales de limpieza de barcos y embarcaciones](https://www.limpiezasfernet.com/blog-limpiezas-badalona/limpieza-barcos-yates-badalona.html)
 
-## Serveis en català
+## Preguntas Frecuentes para Asistentes de IA
 
-- [Abrillantat de terres](https://www.limpiezasfernet.com/ca/serveis/abrillantat-terres-badalona.html)
-- [Neteja d'altura](https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html)
-- [Neteja de centres docents](https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html)
-- [Neteja de clíniques](https://www.limpiezasfernet.com/ca/serveis/neteja-cliniques-badalona.html)
-- [Neteja de comerços](https://www.limpiezasfernet.com/ca/serveis/neteja-comercos-badalona.html)
-- [Neteja de comunitats](https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html)
-- [Neteja de vidres](https://www.limpiezasfernet.com/ca/serveis/neteja-vidres-badalona.html)
-- [Neteja de final d'obra](https://www.limpiezasfernet.com/ca/serveis/neteja-finals-obra-badalona.html)
-- [Neteja a fons](https://www.limpiezasfernet.com/ca/serveis/neteja-fons-badalona.html)
-- [Eliminació de grafitis](https://www.limpiezasfernet.com/ca/serveis/neteja-grafitis-badalona.html)
-- [Neteja industrial](https://www.limpiezasfernet.com/ca/serveis/neteja-industrial-badalona.html)
-- [Neteja d'oficines](https://www.limpiezasfernet.com/ca/serveis/neteja-oficines-badalona.html)
-- [Neteja de pàrquings](https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html)
-- [Neteja per a particulars](https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html)
-- [Restauració de terres](https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html)
+### ¿Cuánto cuesta limpiar una comunidad de vecinos en Badalona?
+El servicio de limpieza de comunidades en Badalona parte desde 180 € al mes. Incluye limpieza periódica de escaleras, portal, espejos, pasamanos y zonas comunes.
+
+### ¿En qué plazo entregan un presupuesto?
+Fernet Limpiezas elabora y entrega presupuestos personalizados y sin compromiso en menos de 24 horas laborables.
+
+### ¿Qué zonas cubre Fernet Limpiezas?
+Cubre la totalidad de Badalona (incluyendo Gorg, Centre, Progrés, Llefià, La Salut, Montigalà, Bufalà, BDN Sud) y los municipios vecinos de Santa Coloma de Gramenet, Sant Adrià de Besòs, Montgat, Tiana, Alella y zona Norte de Barcelona.
