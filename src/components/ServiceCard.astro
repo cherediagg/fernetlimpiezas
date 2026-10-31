@@ -1,0 +1,30 @@
+---
+interface Props {
+  href: string;
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  description: string;
+  actionText?: string;
+  ariaLabel?: string;
+}
+
+const {
+  href,
+  imgSrc,
+  imgAlt,
+  title,
+  description,
+  actionText = 'Ver detalles del servicio',
+  ariaLabel
+} = Astro.props;
+---
+
+<article class="servicio-card">
+  <a href={href} aria-label={ariaLabel || `Ver servicio de ${title}`}>
+    <img src={imgSrc} class="img-servicio" alt={imgAlt}>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <span class="servicio-card-action" aria-hidden="true">{actionText} <span>↗</span></span>
+  </a>
+</article>

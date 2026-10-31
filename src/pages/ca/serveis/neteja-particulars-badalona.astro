@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja per a particulars a Badalona | Fernet Neteges";
+const description = "Servei de neteja per a particulars a Badalona. Oferim neteja domèstica per hores, setmanal o quinzenal per a pisos i cases. Demana pressupost!";
+const keywords = "neteja particulars Badalona, neteja cases Badalona, neteja llar Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-particulares-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja per a Particulars a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-particulars-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja per a Particulars a Badalona | Llar i Habitatge",
+      "description": "Servei de neteja per a particulars a Badalona. Oferim neteja domèstica per hores, setmanal o quinzenal per a pisos i cases. Demana pressupost!",
+      "serviceType": "Neteja per a Particulars",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-general-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-particulars-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja per a particulars a Badalona</h1>
+        <p>Serveis de neteja domèstica a mida per a la teva llar</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Neteja per a particulars a Badalona</h2>
+        <p class="section-subtitle">Serveis de neteja per a particulars a Badalona: neteges periòdiques, neteges a fons i serveis puntuals per a habitatges i xalets.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏠 Neteja Domèstica</h3>
+<ul>
+<li>Neteja setmanal, quinzenal o mensual segons necessitat</li>
+<li>Canvi de roba de llit i cura de zones íntimes</li>
+<li>Control de productes i subministrament si se sol·licita</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧽 Neteges puntuals</h3>
+<ul>
+<li>Neteja profunda abans d'una mudança o esdeveniment</li>
+<li>Neteja després d'obres menors</li>
+<li>Serveis de planxat i organització</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🔒 Confiança i seguretat</h3>
+<ul>
+<li>Personal verificat i amb formació</li>
+<li>Assegurances i cobertura de responsabilitat civil</li>
+<li>Flexibilitat horària i servei personalitzat</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>El Nostre Procés de Treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i Avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i Pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>L'equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Contacta amb nosaltres i rep una proposta adaptada a la teva llar a Badalona.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

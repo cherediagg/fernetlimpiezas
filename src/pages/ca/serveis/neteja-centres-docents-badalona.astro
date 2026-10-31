@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja de Col·legis i Acadèmies a Badalona | Fernet Neteges";
+const description = "Servei de neteja i desinfecció per a col·legis, llars d'infants i acadèmies a Badalona. Creem entorns educatius segurs i saludables. Demana pressupost!";
+const keywords = "neteja col·legis Badalona, neteja acadèmies Badalona, neteja centres docents Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-centros-docentes-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja de Centres Docents a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-centres-docents-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja de Centres Docents a Badalona | Col·legis i Acadèmies",
+      "description": "Servei de neteja i desinfecció per a col·legis, llars d'infants i acadèmies a Badalona. Creem entorns educatius segurs i saludables. Demana pressupost!",
+      "serviceType": "Neteja de Centres Docents",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-academias.png"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-centres-docents-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja de centres docents a Badalona</h1>
+        <p>Entorns educatius segurs i saludables per a l'aprenentatge</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Neteja de centres docents a Badalona</h2>
+        <p class="section-subtitle">Neteja i desinfecció de col·legis, llars d'infants i acadèmies a Badalona. Protocols específics per a centres educatius.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏫 Aules i sales</h3>
+<ul>
+<li>Desinfecció periòdica de taules i superfícies</li>
+<li>Aspirat i fregat de terres</li>
+<li>Neteja de pissarres i material didàctic</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧪 Laboratoris i tallers</h3>
+<ul>
+<li>Neteja amb protocols especialitzats</li>
+<li>Eliminació segura de residus no perillosos</li>
+<li>Control de ventilació i filtres on escaigui</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🚻 Banys i vestidors</h3>
+<ul>
+<li>Desinfecció diària i control de subministraments</li>
+<li>Inspeccions d'higiene regulars</li>
+<li>Tractaments específics per a olors</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2 class="section-title">El nostre procés de treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>L'equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Contacta amb nosaltres i rep una proposta adaptada al teu centre educatiu a Badalona.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja en altura a Badalona | Fernet Neteges";
+const description = "Servei de neteja d'altura a Badalona. Realitzem treballs verticals per netejar vidres i façanes amb total seguretat. Demana pressupost!";
+const keywords = "neteja d'altura Badalona, treballs verticals Badalona, neteja de façanes Badalona, neteja de vidres en altura";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-altura-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja d'Altura a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-altura-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja d'Altura a Badalona | Treballs Verticals",
+      "description": "Servei de neteja d'altura a Badalona. Realitzem treballs verticals per netejar vidres i façanes amb total seguretat. Demana pressupost!",
+      "serviceType": "Neteja d'Altura",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-ventalanes.png"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-altura-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja d'Altura a Badalona</h1>
+        <p>Solucions segures i eficaces per a la neteja de façanes, vidres i estructures elevades.</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Experts en Treballs Verticals</h2>
+        <p class="section-subtitle">Neteja en altura de façanes i vidres a Badalona. Consulta l'accés a l'edifici i les característiques de la feina.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏢 Neteja de Façanes</h3>
+              <ul>
+                  <li>Neteja de façanes de vidre, mur cortina i altres materials.</li>
+                  <li>Eliminació de brutícia, contaminació i taques.</li>
+                  <li>Tractaments de protecció per a una major durabilitat.</li>
+              </ul>
+          </div>
+          <div class="servicio-item"><h3>💧 Neteja de Vidres en Altura</h3>
+              <ul>
+                  <li>Neteja de finestrals i vidrieres en edificis d'oficines i residencials.</li>
+                  <li>Ús de plataformes elevadores i tècniques de despenjament.</li>
+                  <li>Resultats sense marques per a una transparència total.</li>
+              </ul>
+          </div>
+          <div class="servicio-item"><h3>🏗️ Estructures i Rètols</h3>
+              <ul>
+                  <li>Neteja de rètols comercials, bigues i altres estructures.</li>
+                  <li>Personal qualificat i amb formació específica en seguretat.</li>
+                  <li>Adaptabilitat a qualsevol tipus d'edifici o estructura.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2 class="section-title">El Nostre Procés de Treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Anàlisi i Planificació</h3><p>Avaluem l'estructura i dissenyem un pla de treball segur i eficient.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Pressupost Detallat</h3><p>T'oferim una proposta clara, sense costos ocults i adaptada a les teves necessitats.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució Segura</h3><p>El nostre equip qualificat realitza la feina amb les màximes mesures de seguretat.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Supervisió i Qualitat</h3><p>Revisem les tasques incloses i fem seguiment del servei acordat.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Necessites un servei de neteja d'altura?</h2>
+        <p>Contacta amb nosaltres i rep un pressupost per a la neteja de la teva façana o vidres a Badalona.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

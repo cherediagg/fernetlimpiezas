@@ -1,0 +1,291 @@
+/* Estilos para la página de la galería */
+.gallery-page {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Estilo de las miniaturas */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+.thumbnail .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.thumbnail:hover .caption {
+    transform: translateY(0);
+}
+
+
+/* Estilo del Lightbox con CSS puro (:target) */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Cuando el lightbox es el target, se muestra */
+.lightbox:target {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+/* Botón para cerrar el lightbox */
+.close-lightbox {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.close-lightbox:visited {
+    color: #fff;
+}
+
+.close-lightbox:hover {
+    transform: scale(1.1);
+    color: #ddd;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 5rem 1rem;
+    margin-top: 4rem;
+    background: linear-gradient(135deg, var(--azul-principal), var(--verde-principal));
+    color: var(--blanco);
+    border-radius: 15px;
+}
+
+.cta-section h2 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.cta-button {
+    background: var(--blanco);
+    color: var(--azul-principal);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background-color: #f5f5f5;
+    color: var(--azul-principal); /* Evita que cambie el color del texto */
+}
+
+.gallery-page {
+    max-width: 1280px;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.gallery-page > .section-title {
+    margin-bottom: .8rem;
+    text-align: left;
+}
+
+.gallery-page > .section-intro {
+    max-width: 70ch;
+    margin: 0 0 2.2rem;
+    text-align: left;
+}
+
+.gallery-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.thumbnail {
+    min-width: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    background: var(--paper);
+}
+
+.thumbnail img {
+    height: auto;
+    aspect-ratio: 1.25;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 12px 30px rgba(24, 51, 42, .16);
+    transform: translateY(-3px);
+}
+
+.thumbnail:hover img,
+.thumbnail:focus-visible img {
+    transform: scale(1.035);
+}
+
+.thumbnail .caption {
+    transform: none;
+    background: linear-gradient(transparent, rgba(14, 42, 33, .78));
+    padding: 1.8rem 1rem .85rem;
+    font-size: .9rem;
+    font-weight: 650;
+    text-align: left;
+}
+
+.thumbnail:focus-visible .caption {
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+.cta-section {
+    margin: 0;
+    padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 4vw, 3.5rem);
+    border-radius: 0;
+    background: var(--verde-principal);
+    text-align: left;
+}
+
+.cta-section h2 {
+    max-width: 20ch;
+    color: #fffefa;
+}
+
+.cta-section p {
+    max-width: 64ch;
+    color: rgba(255, 254, 250, .84);
+}
+
+.cta-section .cta-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: .8rem 1.2rem;
+    border-radius: 5px;
+    background: #fffefa;
+    color: var(--verde-principal);
+    font-size: .95rem;
+}
+
+.lightbox {
+    padding: 1rem;
+    background: rgba(14, 36, 29, .94);
+}
+
+.lightbox-content img {
+    border-radius: 4px;
+}
+
+.close-lightbox {
+    top: .5rem;
+    right: 1.2rem;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@media (max-width: 800px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbnail img {
+        aspect-ratio: 1.45;
+    }
+}

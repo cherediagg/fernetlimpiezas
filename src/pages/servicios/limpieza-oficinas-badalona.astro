@@ -1,0 +1,267 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Limpieza de oficinas en Badalona | Fernet Limpiezas";
+const description = "Limpieza de despachos, aseos y zonas comunes en oficinas de Badalona. Cuéntanos la frecuencia y las tareas que necesitas.";
+const keywords = "limpieza oficinas Badalona, limpieza despachos Badalona, servicios limpieza empresas Badalona";
+const canonical = "https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-oficines-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.limpiezasfernet.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://www.limpiezasfernet.com/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Limpieza de Oficinas en Badalona",
+          "item": "https://www.limpiezasfernet.com/servicios/limpieza-oficinas-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Limpieza de Oficinas en Badalona",
+      "description": "Servicio profesional de limpieza para oficinas, despachos y empresas en Badalona. Mantenimiento diario, desinfección y limpieza de áreas comunes para un entorno laboral productivo y saludable.",
+      "serviceType": "Limpieza de oficinas",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Limpiezas",
+        "url": "https://www.limpiezasfernet.com/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Alfonso XIII nº 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-oficinas-empresas-badalona.jpg"
+    }
+  ],
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué abarca la limpieza de oficinas en Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Incluye limpieza diaria o periódica de puestos de trabajo, vaciado de papeleras, desinfección de aseos y office, mantenimiento de suelos y mopedo de superficies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se puede adaptar la limpieza fuera del horario laboral?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, nos adaptamos a los horarios de tu empresa en Badalona (primeras horas de la mañana, tardes o fines de semana) para no interrumpir la actividad productiva."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dan servicio de limpieza de oficinas en polígonos e industrias de Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, atendemos oficinas en zonas comerciales y polígonos industriales como Les Guixeres, Can Ribó, Granland y Pep Ventura."
+        }
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=".."
+  currentPage="limpieza-oficinas-badalona.html"
+  extraCss={["servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Limpieza de oficinas en Badalona</h1>
+        <p>Servicios profesionales para un entorno de trabajo impecable</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Llámanos gratis: 931 050 338</a>
+          <a href="../contacto.html" class="cta-button secondary">Presupuesto sin compromiso en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Limpieza de oficinas en Badalona</h2>
+        <p class="section-subtitle">Servicio profesional de limpieza de oficinas en Badalona: limpieza diaria, desinfección de áreas comunes, salas de reuniones y tratamiento de suelos.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🧹 Limpieza diaria</h3>
+<ul>
+<li>Aspirado y fregado de suelos</li>
+<li>Vaciado y reciclaje de papeleras</li>
+<li>Limpieza y desinfección de baños y cocinas</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧴 Desinfección y salud</h3>
+<ul>
+<li>Limpieza y desinfección de puntos de alto contacto (pomos, teclados, interruptores)</li>
+<li>Protocolos especiales para entornos sensibles</li>
+<li>Uso de productos certificados y, si se requiere, ecológicos</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🪑 Mantenimiento del mobiliario</h3>
+<ul>
+<li>Limpieza de mesas y superficies</li>
+<li>Tratamiento de tapicerías y sillas</li>
+<li>Limpieza de cristales interiores</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="cobertura-oficinas" style="padding: 3rem 0; background-color: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">Cobertura de limpieza de oficinas por zonas empresariales en Badalona</h2>
+        <p style="margin-bottom: 1.5rem; text-align: center;">Mantenimiento y desinfección para oficinas y despachos profesionales en las principales zonas de negocio:</p>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <thead>
+              <tr style="background: var(--verde-principal); color: #fff; text-align: left;">
+                <th style="padding: 12px 16px;">Zona empresarial / Polígono</th>
+                <th style="padding: 12px 16px;">Horarios adaptados</th>
+                <th style="padding: 12px 16px;">Planes de limpieza</th>
+                <th style="padding: 12px 16px;">Respuesta rápida</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Polígono Les Guixeres</strong></td>
+                <td style="padding: 12px 16px;">Mañanas / Tardes / Noches</td>
+                <td style="padding: 12px 16px;">Oficinas técnicas, sedes corporativas, salas de reunión</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Badalona Centre / Pep Ventura</strong></td>
+                <td style="padding: 12px 16px;">Flexibilidad horaria total</td>
+                <td style="padding: 12px 16px;">Despachos profesionales, gestorías, clínicas y servicios</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Zona Marina / Gorg (BDN Media)</strong></td>
+                <td style="padding: 12px 16px;">Diario o días alternos</td>
+                <td style="padding: 12px 16px;">Espacios coworking, estudios, empresas tecnológicas</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 16px;"><strong>Polígonos Can Ribó / Granland / Sud</strong></td>
+                <td style="padding: 12px 16px;">Turnos a medida</td>
+                <td style="padding: 12px 16px;">Oficinas adosadas a naves e instalaciones industriales</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hub-spoke-links" style="margin-top: 2rem; padding: 1.5rem; background: #fff; border-radius: 8px;">
+          <h3>Servicios y guías de interés para empresas:</h3>
+          <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <li><a href="../blog-limpiezas-badalona/limpieza-oficinas-empresas-badalona.html" style="color: var(--verde-principal); font-weight: 600;">📖 Guía de limpieza y desinfección de oficinas en Badalona</a></li>
+            <li><a href="limpieza-comercios-badalona.html" style="color: var(--verde-principal); font-weight: 600;">🏪 Limpieza de comercios y locales comerciales</a></li>
+            <li><a href="limpieza-cristales-badalona.html" style="color: var(--verde-principal); font-weight: 600;">🪟 Limpieza de cristales y escaparates</a></li>
+            <li><a href="limpieza-industrial-badalona.html" style="color: var(--verde-principal); font-weight: 600;">🏭 Limpieza industrial y naves corporativas</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-servicio" style="padding: 3rem 0;">
+      <div class="container">
+        <h2>Preguntas frecuentes sobre limpieza de oficinas</h2>
+        <div style="max-width: 800px; margin: 1.5rem auto 0;">
+          <article style="margin-bottom: 1.5rem;">
+            <h3>¿Qué abarca la limpieza de oficinas en Badalona?</h3>
+            <p>Incluye limpieza diaria o periódica de puestos de trabajo, vaciado de papeleras, desinfección de aseos y office, mantenimiento de suelos y mopedo de superficies.</p>
+          </article>
+          <article style="margin-bottom: 1.5rem;">
+            <h3>¿Se puede adaptar la limpieza fuera del horario laboral?</h3>
+            <p>Sí, nos adaptamos a los horarios de tu empresa en Badalona (primeras horas de la mañana, tardes o fines de semana) para no interrumpir la actividad productiva.</p>
+          </article>
+          <article style="margin-bottom: 1.5rem;">
+            <h3>¿Dan servicio de limpieza de oficinas en polígonos e industrias de Badalona?</h3>
+            <p>Sí, atendemos oficinas en zonas comerciales y polígonos industriales como Les Guixeres, Can Ribó, Granland y Pep Ventura.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proceso">
+      <div class="container">
+        <h2>Nuestro Proceso de Trabajo</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacto y Evaluación</h3><p>Estudiamos tus necesidades y visitamos el espacio para preparar un plan a medida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Propuesta y Presupuesto</h3><p>Enviamos un presupuesto detallado con frecuencias y materiales a utilizar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Ejecución</h3><p>Equipo cualificado ejecuta el servicio con maquinaria y productos profesionales.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Calidad</h3><p>Revisión final de las tareas incluidas en el servicio.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>¿Quieres un espacio impecable sin preocupaciones?</h2>
+        <p>Solicita tu propuesta personalizada sin compromiso en menos de 24 horas.</p>
+        <a href="../contacto.html" class="cta-button">Solicitar propuesta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

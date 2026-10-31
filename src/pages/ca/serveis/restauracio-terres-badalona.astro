@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Restauració de terres a Badalona | Fernet Neteges";
+const description = "Servei de restauració de terres a Badalona. Experts en polit i tractament de terres de terracota, marbre i hidràulics. Demana pressupost!";
+const keywords = "restauració de terres Badalona, tractament de terres, polit de terres, terres de terracota, terres de marbre";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/restauracion-suelos-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Restauració de Terres a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/restauracio-terres-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Restauració de Terres a Badalona | Terracota, Marbre i més",
+      "description": "Servei de restauració de terres a Badalona. Experts en polit i tractament de terres de terracota, marbre i hidràulics. Demana pressupost!",
+      "serviceType": "Restauració de Terres",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/abrillantado-suelos-profesional-badalona.jpg"
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="restauracio-terres-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Restauració de Terres a Badalona</h1>
+        <p>Retornem la bellesa original als teus terres amb tractaments especialitzats.</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Tractaments per a Cada Tipus de Terra</h2>
+        <p class="section-subtitle">Ens especialitzem en la restauració de terres nobles, eliminant taques, desgast i retornant la seva esplendor original amb tècniques i productes específics.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏺 Terres de Terracota i Tova Cuita</h3>
+              <ul>
+                  <li>Neteja profunda per eliminar taques d'humitat i salnitre.</li>
+                  <li>Tractaments de segellat amb efecte mat, setinat o brillant.</li>
+                  <li>Protecció hidròfuga i oleòfuga per evitar futures taques.</li>
+              </ul>
+          </div>
+          <div class="servicio-item"><h3>💎 Marbre i Terratzo</h3>
+              <ul>
+                  <li>Polit i rebaixat per eliminar rascades i desgast.</li>
+                  <li>Cristal·litzat per a una brillantor de mirall duradora.</li>
+                  <li>Recuperació de juntes i reparació de petites imperfeccions.</li>
+              </ul>
+          </div>
+          <div class="servicio-item"><h3>💠 Terres Hidràulics</h3>
+              <ul>
+                  <li>Neteja acurada per no danyar els pigments originals.</li>
+                  <li>Aplicació de ceres naturals i segelladors específics.</li>
+                  <li>Recuperació del color i protecció del mosaic.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>El Nostre Procés de Restauració</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Diagnòstic del Terra</h3><p>Analitzem l'estat del terra i el tipus de material per definir el tractament adequat.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Prova i Pressupost</h3><p>Realitzem una petita prova si és necessari i et lliurem un pressupost tancat.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució del Tractament</h3><p>El nostre equip aplica el tractament amb maquinària i productes d'alta gamma.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Acabat i Manteniment</h3><p>Et lliurem el terra restaurat i t'assessorem sobre el seu manteniment.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols recuperar els teus terres?</h2>
+        <p>Contacta amb nosaltres per a un diagnòstic i pressupost sense compromís a Badalona.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

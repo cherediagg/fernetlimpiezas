@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Feina en neteja a Badalona | Fernet Neteges";
+const description = "Busques feina al sector de la neteja a Badalona? Fernet Neteges busca personal qualificat. Consulta les nostres ofertes i uneix-te al nostre equip!";
+const keywords = "feina neteja badalona, treball neteja badalona, ofertes de feina neteja, personal de neteja, netejavidres, abrillantador de terres";
+const canonical = "https://www.limpiezasfernet.com/ca/feina.html";
+const esLink = "https://www.limpiezasfernet.com/empleo.html";
+const caLink = "https://www.limpiezasfernet.com/ca/feina.html";
+const jsonLd = null;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="feina.html"
+  extraCss={[]}
+>
+<section class="empleo-section">
+            <h1>Forma Part del Nostre Equip Professional</h1>
+            <p style="text-align: center; margin-bottom: 2rem;">Busquem professionals compromesos i detallistes. Oferim estabilitat laboral, excel·lent ambient de treball i oportunitats a Badalona.</p>
+
+            <div class="oferta">
+                <h2>Personal de Neteja</h2>
+                <p>Busquem personal per a realitzar tasques de neteja en comunitats de veïns, oficines, locals comercials i finals d'obra.</p>
+                <h3>Requisits:</h3>
+                <ul>
+                    <li>Experiència demostrable en el sector de la neteja.</li>
+                    <li>Persona responsable, puntual i organitzada.</li>
+                    <li>Capacitat per a treballar en equip.</li>
+                    <li>Residència a Badalona o rodalies.</li>
+                </ul>
+            </div>
+
+            <div class="oferta">
+                <h2>Personal de Neteja de Vidres</h2>
+                <p>Seleccionem netejavidres professionals per a serveis a empreses i particulars. Es valorarà experiència en treballs en alçada.</p>
+                <h3>Requisits:</h3>
+                <ul>
+                    <li>Experiència mínima de 2 anys en neteja de vidres.</li>
+                    <li>Coneixement de diferents tècniques i eines (perxa, rasclet, etc.).</li>
+                    <li>Atenció al detall i acabats d'alta qualitat.</li>
+                    <li>Carnet de conduir i vehicle propi (valorable).</li>
+                </ul>
+            </div>
+
+            <div class="oferta">
+                <h2>Especialista en Abrillantat de Terres</h2>
+                <p>Busquem un professional amb experiència en el tractament i abrillantat de tota mena de terres (marbre, terratzo, etc.).</p>
+                <h3>Requisits:</h3>
+                <ul>
+                    <li>Experiència demostrable en l'ús de maquinària rotativa.</li>
+                    <li>Coneixement de productes químics per al tractament de terres.</li>
+                    <li>Capacitat per a treballar de forma autònoma.</li>
+                    <li>Resultats impecables i atenció al detall.</li>
+                </ul>
+            </div>
+
+            <div class="cta-empleo">
+                <h3>Interessat/da?</h3>
+                <p>Si compleixes els requisits i vols unir-te al nostre equip, envia'ns el teu currículum a:</p>
+                <p><a href="mailto:info@limpiezasfernet.com?subject=Candidatura%20de%20Feina">info@limpiezasfernet.com</a></p>
+                <p>Esperem conèixer-te aviat!</p>
+            </div>
+        </section>
+</BaseLayout>

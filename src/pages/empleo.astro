@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Empleo en limpieza en Badalona | Fernet Limpiezas";
+const description = "¿Buscas empleo en el sector de la limpieza en Badalona? Fernet Limpiezas busca personal cualificado. ¡Consulta nuestras ofertas y únete a nuestro equipo!";
+const keywords = "empleo limpieza badalona, trabajo limpieza badalona, ofertas de trabajo limpieza, personal de limpieza, limpiacristales, abrillantador de suelos";
+const canonical = "https://www.limpiezasfernet.com/empleo.html";
+const esLink = "https://www.limpiezasfernet.com/empleo.html";
+const caLink = "https://www.limpiezasfernet.com/ca/feina.html";
+const jsonLd = null;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="es"
+  basePath=""
+  currentPage="empleo.html"
+  extraCss={[]}
+>
+<section class="empleo-section">
+            <h1>Forma Parte de Nuestro Equipo Profesional</h1>
+            <p style="text-align: center; margin-bottom: 2rem;">Buscamos profesionales comprometidos y detallistas. Ofrecemos estabilidad laboral, excelente ambiente de trabajo y oportunidades en Badalona.</p>
+
+            <div class="oferta">
+                <h2>Personal de Limpieza</h2>
+                <p>Buscamos personal para realizar tareas de limpieza en comunidades de vecinos, oficinas, locales comerciales y finales de obra.</p>
+                <h3>Requisitos:</h3>
+                <ul>
+                    <li>Experiencia demostrable en el sector de la limpieza.</li>
+                    <li>Persona responsable, puntual y organizada.</li>
+                    <li>Capacidad para trabajar en equipo.</li>
+                    <li>Residencia en Badalona o alrededores.</li>
+                </ul>
+            </div>
+
+            <div class="oferta">
+                <h2>Personal de Limpieza de Cristales</h2>
+                <p>Seleccionamos limpiacristales profesionales para servicios a empresas y particulares. Se valorará experiencia en trabajos en altura.</p>
+                <h3>Requisitos:</h3>
+                <ul>
+                    <li>Experiencia mínima de 2 años en limpieza de cristales.</li>
+                    <li>Conocimiento de diferentes técnicas y herramientas (pértiga, rasqueta, etc.).</li>
+                    <li>Atención al detalle y acabados de alta calidad.</li>
+                    <li>Carnet de conducir y vehículo propio (valorable).</li>
+                </ul>
+            </div>
+
+            <div class="oferta">
+                <h2>Especialista en Abrillantado de Suelos</h2>
+                <p>Buscamos un profesional con experiencia en el tratamiento y abrillantado de todo tipo de suelos (mármol, terrazo, etc.).</p>
+                <h3>Requisitos:</h3>
+                <ul>
+                    <li>Experiencia demostrable en el uso de maquinaria rotativa.</li>
+                    <li>Conocimiento de productos químicos para el tratamiento de suelos.</li>
+                    <li>Capacidad para trabajar de forma autónoma.</li>
+                    <li>Resultados impecables y atención al detalle.</li>
+                </ul>
+            </div>
+
+            <div class="cta-empleo">
+                <h3>¿Interesado/a?</h3>
+                <p>Si cumples con los requisitos y quieres unirte a nuestro equipo, envíanos tu currículum a:</p>
+                <p><a href="mailto:info@limpiezasfernet.com?subject=Candidatura%20de%20Empleo">info@limpiezasfernet.com</a></p>
+                <p>¡Esperamos conocerte pronto!</p>
+            </div>
+        </section>
+</BaseLayout>

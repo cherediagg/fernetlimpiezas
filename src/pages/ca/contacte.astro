@@ -1,0 +1,186 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Contacte i Pressupost de Neteja a Badalona | Fernet Neteges";
+const description = "Contacta amb Fernet Neteges a Badalona per explicar-nos quin servei necessites. Truca'ns o escriu-nos a través del formulari.";
+const keywords = "contacte neteja badalona, pressupost neteja badalona, telèfon empresa neteja, email neteja badalona, fernet neteges contacte";
+const canonical = "https://www.limpiezasfernet.com/ca/contacte.html";
+const esLink = "https://www.limpiezasfernet.com/contacto.html";
+const caLink = "https://www.limpiezasfernet.com/ca/contacte.html";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fernet Neteges",
+    "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+    "@id": "https://www.limpiezasfernet.com/ca/",
+    "url": "https://www.limpiezasfernet.com/ca/contacte.html",
+    "telephone": "+34931050338",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday"
+        ],
+        "opens": "16:30",
+        "closes": "18:30"
+      }
+    ],
+    "email": "info@limpiezasfernet.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+      "addressLocality": "Badalona",
+      "postalCode": "08912",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.446988",
+      "longitude": "2.245032"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serveis de neteja professional",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Comunitats de Veïns"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja d'Oficines i Empreses"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Comerços i Botigues"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Final d'Obra"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Neteja de Vidres"
+          }
+        }
+      ]
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="contacte.html"
+  extraCss={["../contacto.css"]}
+>
+<section class="hero">
+            <div class="container">
+                <h1>Parlem de les teves necessitats de neteja a Badalona</h1>
+                <p>Rep una proposta clara, transparent i a la mida del teu espai en menys de 24 hores.</p>
+            </div>
+        </section>
+        <section class="contacto-section">
+            <div class="container">
+                <div class="contacto-content">
+                    <div class="contacto-info">
+            <h2>Informació de contacte</h2>
+                        <p><strong>📍 Adreça:</strong> Avinguda Alfons XIII núm. 107-109, Badalona</p>
+                        <p><strong>📞 Telèfon:</strong> <a href="tel:+34931050338">931 050 338</a></p>
+                        <p><strong>✉️ Email:</strong> <a href="mailto:info@limpiezasfernet.com">info@limpiezasfernet.com</a></p>
+                        <p><strong>Horari:</strong> De dilluns a divendres de 09:00 a 14:00 i de 16:30 a 18:30</p>
+            <h3>Els nostres serveis principals</h3>
+                        <ul>
+                            <li>✓ Neteja de Comunitats</li>
+                            <li>✓ Neteja d'Oficines i Empreses</li>
+                            <li>✓ Neteja de Comerços</li>
+                            <li>✓ Neteja Final d'Obra</li>
+                            <li>✓ Neteja de Pàrquings i Garatges</li>
+                            <li>✓ Neteja de Vidres</li>
+                        </ul>
+                    </div>
+                    <form class="contacto-form" action="https://formspree.io/f/info@limpiezasfernet.com" method="POST">
+                        <h3>Sol·licitar pressupost sense compromís</h3>
+                        <div class="form-group">
+                            <label for="nombre">Nom *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Telèfon *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Tipus de Servei</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Tria...</option>
+                                <option value="comunitats">Comunitats de Veïns</option>
+                                <option value="oficines">Oficines i Empreses</option>
+                                <option value="comerços">Comerços</option>
+                                <option value="final-obra">Neteja Final d'Obra</option>
+                                <option value="parkings">Pàrquings i Garatges</option>
+                                <option value="vidres">Neteja de Vidres</option>
+                                <option value="altres">Altres</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group--message">
+                            <label for="mensaje">Missatge</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Explica'ns què necessites i et contactarem..."></textarea>
+                        </div>
+                        <div class="honeypot">
+                            <input type="text" name="extra_info" tabindex="-1" value="">
+                            <span id="decoy">3</span>
+                        </div>
+                        <div class="form-group form-group--captcha">
+                            <label for="captcha">Captcha: Quant és 8 + 2? *</label>
+                            <input type="text" id="captcha" name="captcha" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Sol·licitar proposta gratuïta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

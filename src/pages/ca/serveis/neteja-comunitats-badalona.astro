@@ -1,0 +1,276 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja de Comunitats a Badalona | Fernet Neteges";
+const description = "Servei de neteja de comunitats a Badalona. Manteniment d'escales, portals i zones comunes. Demana el teu pressupost sense compromís.";
+const keywords = "neteja comunitats Badalona, neteja escales, neteja portals, neteja garatges, comunitats veïns Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-comunidades-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja de Comunitats de Veïns a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-comunitats-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja de Comunitats de Veïns a Badalona",
+      "description": "Servei professional i complet per al manteniment de comunitats de veïns a Badalona. Inclou neteja d'escales, portals, garatges i zones comunes.",
+      "serviceType": "Neteja de comunitats",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      },
+      "image": "https://www.limpiezasfernet.com/img/limpieza-comunidades-vecinos-badalona.jpg"
+    }
+  ],
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Què inclou el servei de neteja de comunitats a Badalona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Inclou l'escombrat i fregat d'escales i replans, desinfecció de passamans, tancaments i cabina d'ascensor, neteja del portal i vidres d'entrada, i manteniment periòdic de garatge o trasters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Amb quina freqüència es neteja una comunitat de veïns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Adaptem la freqüència a les necessitats de l'edifici: des d'1 a 5 dies a la setmana, amb revisions mensuals de qualitat i serveis complementaris com l'abrillantat de terres de marbre o terràs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A quins barris de Badalona ofereixen neteja de comunitats?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oferim servei a tots els barris de Badalona, incloent Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà, Bufalà, Morera i BDN Sud."
+        }
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-comunitats-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja de comunitats a Badalona</h1>
+        <p>Manteniment d'escales, portals, i zones comunes</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Neteja de comunitats de veïns a Badalona</h2>
+        <p class="section-subtitle">Neteja d'escales, portals, garatges i zones comunes en comunitats de Badalona. Explica'ns què necessita el teu edifici.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🏢 Escales i replans</h3>
+<ul>
+<li>Escombrat i fregat professional amb màquines d'alta eficiència</li>
+<li>Neteja i desinfecció de baranes i passamans</li>
+<li>Aspirat i tractament de moquetes i catifes</li>
+<li>Polit i restauració de terres de marbre i terratzo</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🚪 Portals i entrades</h3>
+<ul>
+<li>Fregat i desinfecció de terres del portal</li>
+<li>Neteja de vidrieres, miralls i elements decoratius</li>
+<li>Manteniment de bústies i portes d'accés</li>
+<li>Control periòdic i servei sota demanda</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🚗 Garatges i soterranis</h3>
+<ul>
+<li>Escombrat mecànic i fregat amb aigua a pressió quan escau</li>
+<li>Eliminació de taques d'oli i restes de pneumàtics</li>
+<li>Neteja de rampes, places i passadissos d'accés</li>
+<li>Gestió de residus i buidatge de papereres</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="cobertura-barrios" style="padding: 3rem 0; background-color: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">Cobertura de neteja de comunitats per barris a Badalona</h2>
+        <p style="margin-bottom: 1.5rem; text-align: center;">Oferim servei directe de manteniment i neteja de comunitats amb equips locals assignats per zones:</p>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <thead>
+              <tr style="background: var(--verde-principal); color: #fff; text-align: left;">
+                <th style="padding: 12px 16px;">Barri / Zona</th>
+                <th style="padding: 12px 16px;">Freqüències disponibles</th>
+                <th style="padding: 12px 16px;">Serveis integrats</th>
+                <th style="padding: 12px 16px;">Temps de resposta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Gorg / Port</strong></td>
+                <td style="padding: 12px 16px;">1 a 5 dies/setmana</td>
+                <td style="padding: 12px 16px;">Escales, ascensor, garatges, vidres</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Centre / Dalt la Vila</strong></td>
+                <td style="padding: 12px 16px;">1 a 5 dies/setmana</td>
+                <td style="padding: 12px 16px;">Portals històrics, marbre, escales</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>El Progrés / Pep Ventura</strong></td>
+                <td style="padding: 12px 16px;">1 a 5 dies/setmana</td>
+                <td style="padding: 12px 16px;">Escales, patis, garatges subterranis</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 12px 16px;"><strong>Llefià / La Salut</strong></td>
+                <td style="padding: 12px 16px;">1 a 3 dies/setmana</td>
+                <td style="padding: 12px 16px;">Escales comunitàries, portals</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 16px;"><strong>Montigalà / Bufalà / Morera</strong></td>
+                <td style="padding: 12px 16px;">1 a 5 dies/setmana</td>
+                <td style="padding: 12px 16px;">Grans complexos, zones comunitàries, pàrquings</td>
+                <td style="padding: 12px 16px;">&lt; 24h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="hub-spoke-links" style="margin-top: 2rem; padding: 1.5rem; background: #fff; border-radius: 8px;">
+          <h3>Serveis relacionats i guia local:</h3>
+          <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <li><a href="../blog-limpiezas-badalona/neteja-comunitats-veins-badalona.html" style="color: var(--verde-principal); font-weight: 600;">📖 Guia de manteniment de comunitats a Badalona</a></li>
+            <li><a href="../blog-limpiezas-badalona/neteja-pisos-gorg-badalona.html" style="color: var(--verde-principal); font-weight: 600;">📍 Cas pràctic: Neteja al barri del Gorg</a></li>
+            <li><a href="abrillantat-terres-badalona.html" style="color: var(--verde-principal); font-weight: 600;">✨ Abrillantat de terres de marbre i terràs</a></li>
+            <li><a href="neteja-parkings-badalona.html" style="color: var(--verde-principal); font-weight: 600;">🚗 Neteja de garatges i pàrquings comunitaris</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-servicio" style="padding: 3rem 0;">
+      <div class="container">
+        <h2>Preguntes freqüents sobre neteja de comunitats</h2>
+        <div style="max-width: 800px; margin: 1.5rem auto 0;">
+          <article style="margin-bottom: 1.5rem;">
+            <h3>Què inclou el servei de neteja de comunitats a Badalona?</h3>
+            <p>Inclou l'escombrat i fregat d'escales i replans, desinfecció de passamans, tancaments i cabina d'ascensor, neteja del portal i vidres d'entrada, i manteniment periòdic de garatge o trasters.</p>
+          </article>
+          <article style="margin-bottom: 1.5rem;">
+            <h3>Amb quina freqüència es neteja una comunitat de veïns?</h3>
+            <p>Adaptem la freqüència a les necessitats de l'edifici: des d'1 a 5 dies a la setmana, amb revisions mensuals de qualitat i serveis complementaris com l'abrillantat de terres de marbre o terràs.</p>
+          </article>
+          <article style="margin-bottom: 1.5rem;">
+            <h3>A quins barris de Badalona ofereixen neteja de comunitats?</h3>
+            <p>Oferim servei a tots els barris de Badalona, incloent Gorg, Centre, Progrés, Pep Ventura, Llefià, La Salut, Montigalà, Bufalà, Morera i BDN Sud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proceso">
+      <div class="container">
+        <h2 class="section-title">El nostre procés de treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>Equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Sol·licita la teva proposta personalitzada sense compromís en menys de 24 hores.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

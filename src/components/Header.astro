@@ -1,0 +1,106 @@
+---
+interface Props {
+  lang?: 'es' | 'ca';
+  basePath?: string;
+  esLink?: string;
+  caLink?: string;
+  currentPage?: string;
+}
+
+const {
+  lang = 'es',
+  basePath = '',
+  esLink = '/',
+  caLink = '/ca/',
+  currentPage = ''
+} = Astro.props;
+
+const isSpanish = lang === 'es';
+
+const i18n = {
+  es: {
+    home: 'Inicio',
+    services: 'Servicios',
+    about: 'Nosotros',
+    blog: 'Blog',
+    rates: 'Tarifas',
+    contact: 'Contacto',
+    openMenu: 'Abrir menú de navegación',
+    closeMenu: 'Cerrar menú de navegación',
+    navLabel: 'Navegación principal',
+    logoAlt: 'Fernet Limpiezas - Servicios de Limpieza Profesional en Badalona'
+  },
+  ca: {
+    home: 'Inici',
+    services: 'Serveis',
+    about: 'Nosaltres',
+    blog: 'Blog',
+    rates: 'Tarifes',
+    contact: 'Contacte',
+    openMenu: 'Obrir menú de navegació',
+    closeMenu: 'Tancar menú de navegació',
+    navLabel: 'Navegació principal',
+    logoAlt: 'Fernet Neteges - Serveis de Neteja Professional a Badalona'
+  }
+};
+
+const t = i18n[lang];
+
+const links = {
+  home: isSpanish ? `${basePath}/` : `${basePath}/ca/`,
+  services: isSpanish ? `${basePath}/#servicios` : `${basePath}/ca/#serveis`,
+  about: isSpanish ? `${basePath}/#nosotros` : `${basePath}/ca/#nosaltres`,
+  blog: isSpanish ? `${basePath}/blog-limpiezas-badalona/` : `${basePath}/ca/blog-limpiezas-badalona/`,
+  rates: isSpanish ? `${basePath}/tarifas.html` : `${basePath}/ca/tarifes.html`,
+  contact: isSpanish ? `${basePath}/contacto.html` : `${basePath}/ca/contacte.html`,
+};
+---
+
+<header>
+  <a href={links.home} class="logo-link" aria-label={t.home}>
+    <img src={`${basePath}/img/logo.jpg`} alt={t.logoAlt} class="logo">
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label={t.openMenu}>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+  <nav id="main-nav" aria-label={t.navLabel}>
+    <ul>
+      <li><a href={links.home} aria-current={currentPage === 'index.html' ? 'page' : undefined}>{t.home}</a></li>
+      <li><a href={links.services}>{t.services}</a></li>
+      <li><a href={links.about}>{t.about}</a></li>
+      <li><a href={links.blog} aria-current={currentPage.includes('blog') ? 'page' : undefined}>{t.blog}</a></li>
+      <li><a href={links.rates} aria-current={currentPage.includes('tarifas') || currentPage.includes('tarifes') ? 'page' : undefined}>{t.rates}</a></li>
+      <li><a href={links.contact} aria-current={currentPage.includes('contacto') || currentPage.includes('contacte') ? 'page' : undefined}>{t.contact}</a></li>
+      <li class="language-switcher">
+        <a href={esLink} hreflang="es" lang="es">ES</a>
+        <span>|</span>
+        <a href={caLink} hreflang="ca" lang="ca">CA</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('#main-nav');
+    if (menuToggle && navigation) {
+      const closeMenu = () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navigation.classList.remove('is-open');
+      };
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navigation.classList.toggle('is-open', !isExpanded);
+      });
+      navigation.addEventListener('click', (e) => {
+        if (e.target instanceof HTMLAnchorElement) {
+          closeMenu();
+        }
+      });
+    }
+  });
+</script>

@@ -1,0 +1,161 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Neteja de Pàrquings i Garatges a Badalona | Fernet Neteges";
+const description = "Servei de neteja de pàrquings i garatges a Badalona. Realitzem escombrat i fregat mecànic per eliminar pols i taques d'oli. Demana pressupost!";
+const keywords = "neteja pàrquings Badalona, neteja garatges Badalona, neteja pàrquings empresa Badalona";
+const canonical = "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html";
+const esLink = "https://www.limpiezasfernet.com/servicios/limpieza-parkings-badalona.html";
+const caLink = "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html";
+const jsonLd = [
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inici",
+          "item": "https://www.limpiezasfernet.com/ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis",
+          "item": "https://www.limpiezasfernet.com/ca/#serveis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Neteja de Pàrquings a Badalona",
+          "item": "https://www.limpiezasfernet.com/ca/serveis/neteja-parkings-badalona.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Neteja de Pàrquings a Badalona | Garatges i Aparcaments",
+      "description": "Servei de neteja de pàrquings i garatges a Badalona. Realitzem escombrat i fregat mecànic per eliminar pols i taques d'oli. Demana pressupost!",
+      "serviceType": "Neteja de Pàrquings",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fernet Neteges",
+        "url": "https://www.limpiezasfernet.com/ca/",
+        "image": "https://www.limpiezasfernet.com/img/logo.jpg",
+        "telephone": "+34931050338",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "09:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Monday",
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "16:30",
+            "closes": "18:30"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avinguda Alfons XIII núm. 107-109",
+          "addressLocality": "Badalona",
+          "postalCode": "08912",
+          "addressCountry": "ES"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Badalona"
+      }
+    }
+  ]
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath="../.."
+  currentPage="neteja-parkings-badalona.html"
+  extraCss={["../../servicios/servicios.css"]}
+>
+<section class="hero-servicio">
+      <div class="container">
+        <h1>Neteja de pàrquings a Badalona</h1>
+        <p>Eliminació de taques d'oli, pols i brutícia acumulada</p>
+        <div>
+          <a href="tel:+34931050338" class="cta-phone">📞 Truca gratis: 931 050 338</a>
+          <a href="../../ca/contacte.html" class="cta-button secondary">Pressupost sense compromís en 24h</a>
+        </div>
+      </div>
+    </section>
+    <section class="servicio-detalle">
+      <div class="container">
+        <h2 class="section-title">Neteja de pàrquings a Badalona</h2>
+        <p class="section-subtitle">Serveis professionals de neteja de pàrquings i garatges a Badalona: escombrat mecànic, fregat amb detergents especialitzats i desinfecció.</p>
+        <div class="servicios-incluidos">
+          <div class="servicio-item"><h3>🧹 Escombrat Mecànic</h3>
+<ul>
+<li>Retirada de pols i residus amb escombradores</li>
+<li>Neteja d'accessos i rampes</li>
+<li>Tractament de pols fina i sorres</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🧽 Fregat i eliminació de taques</h3>
+<ul>
+<li>Fregat industrial i eliminació de taques d'oli</li>
+<li>Aplicació de desengreixants concentrats</li>
+<li>Ús de màquines rotatives per a terres</li>
+</ul>
+</div>
+<div class="servicio-item"><h3>🛡️ Senyalització i seguretat</h3>
+<ul>
+<li>Neteja de senyalització horitzontal i bandes antilliscants</li>
+<li>Revisió bàsica de sistemes de desguàs</li>
+<li>Coordinació amb l'administració del pàrquing</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="proceso">
+      <div class="container">
+        <h2>El Nostre Procés de Treball</h2>
+        <div class="proceso-grid">
+          <div class="step"><div class="step-icon">1</div><h3>Contacte i Avaluació</h3><p>Estudiem les teves necessitats i visitem l'espai per preparar un pla a mida.</p></div>
+          <div class="step"><div class="step-icon">2</div><h3>Proposta i Pressupost</h3><p>Enviem un pressupost detallat amb freqüències i materials a utilitzar.</p></div>
+          <div class="step"><div class="step-icon">3</div><h3>Execució</h3><p>L'equip qualificat executa el servei amb maquinària i productes professionals.</p></div>
+          <div class="step"><div class="step-icon">4</div><h3>Control de Qualitat</h3><p>Revisió final de les tasques incloses en el servei.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-seccion">
+      <div class="container">
+        <h2>Vols un espai impecable sense preocupacions?</h2>
+        <p>Contacta amb nosaltres i rep una proposta adaptada al teu pàrquing o negoci a Badalona.</p>
+        <a href="../../ca/contacte.html" class="cta-button">Sol·licitar proposta en 24h</a>
+      </div>
+    </section>
+</BaseLayout>

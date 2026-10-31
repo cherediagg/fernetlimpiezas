@@ -1,0 +1,64 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+const title = "Pressupost de Neteja a Badalona | Fernet Neteges";
+const description = "Explica'ns quin espai necessites netejar i demana un pressupost de neteja a Badalona per telèfon, WhatsApp o correu electrònic.";
+const keywords = "pressupost neteja badalona, demanar pressupost neteja, preu neteja badalona, fernet neteges pressupost";
+const canonical = "https://www.limpiezasfernet.com/ca/pressupost.html";
+const esLink = "https://www.limpiezasfernet.com/presupuesto.html";
+const caLink = "https://www.limpiezasfernet.com/ca/pressupost.html";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sol·licitar Pressupost de Neteja a Badalona",
+    "url": "https://www.limpiezasfernet.com/ca/pressupost.html",
+    "description": "Pàgina per sol·licitar un pressupost de neteja o consultar tarifes. Oferim diverses vies de contacte per facilitar el procés.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fernet Neteges",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.limpiezasfernet.com/img/logo.jpg"
+      }
+    }
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonical={canonical}
+  esLink={esLink}
+  caLink={caLink}
+  jsonLd={jsonLd}
+  lang="ca"
+  basePath=".."
+  currentPage="pressupost.html"
+  extraCss={["../presupuesto.css"]}
+>
+<section class="presupuesto-section">
+            <div class="container">
+                <h1>Sol·licita el teu Pressupost a Mida en 24h</h1>
+                <p>Sense compromís, sense permanència ni costos ocults. Tria la via de contacte que et sigui més còmoda:</p>
+                <div class="opciones-presupuesto">
+                    <div class="opcion">
+                        <h2>Consultar Tarifes de Referència</h2>
+                        <p>Revisa els nostres preus orientatius per fer-te una idea clara abans de sol·licitar la teva proposta personalitzada.</p>
+                        <a href="tarifes.html" class="cta-button">Veure Tarifes Orientatives</a>
+                    </div>
+                    <div class="opcion">
+                        <h2>Atenció Immediata i Personalitzada</h2>
+                        <p>Explica'ns les característiques de la teva comunitat, empresa o habitatge i t'enviarem una proposta detallada en menys de 24 hores.</p>
+                        <ul class="contacto-links">
+                            <li><a href="tel:+34931050338" class="cta-button-secondary">Trucar Gratis al 931 050 338</a></li>
+                            <li><a href="https://wa.me/34931050338" class="cta-button-secondary" target="_blank">Contactar per WhatsApp</a></li>
+                            <li><a href="mailto:info@limpiezasfernet.com" class="cta-button-secondary">Enviar Email Directe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+</BaseLayout>

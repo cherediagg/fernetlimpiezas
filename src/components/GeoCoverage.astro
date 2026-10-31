@@ -1,0 +1,64 @@
+---
+interface Props {
+  lang?: 'es' | 'ca';
+}
+
+const { lang = 'es' } = Astro.props;
+const isSpanish = lang === 'es';
+
+const content = isSpanish ? {
+  title: 'Badalona y municipios cercanos',
+  subtitle: 'Un equipo de aquí, para cuidar espacios de la ciudad y su entorno.',
+  areasTitle: 'Áreas de cobertura',
+  cities: [
+    { name: 'Badalona', highlight: true },
+    { name: 'Santa Coloma de Gramenet', highlight: false },
+    { name: 'Sant Adrià de Besòs', highlight: false },
+    { name: 'Montgat', highlight: false },
+    { name: 'Tiana', highlight: false },
+    { name: 'Alella', highlight: false },
+    { name: 'Barcelona Norte', highlight: false },
+    { name: 'Municipios cercanos', highlight: false }
+  ],
+  question: '¿Tu zona no aparece?',
+  contactLink: 'Consúltanos',
+  endNote: '. Estudiamos cada caso.'
+} : {
+  title: 'Badalona i municipis propers',
+  subtitle: 'Un equip d\'aquí, per cuidar espais de la ciutat i el seu entorn.',
+  areasTitle: 'Àrees de cobertura',
+  cities: [
+    { name: 'Badalona', highlight: true },
+    { name: 'Santa Coloma de Gramenet', highlight: false },
+    { name: 'Sant Adrià de Besòs', highlight: false },
+    { name: 'Montgat', highlight: false },
+    { name: 'Tiana', highlight: false },
+    { name: 'Alella', highlight: false },
+    { name: 'Barcelona Nord', highlight: false },
+    { name: 'Municipis propers', highlight: false }
+  ],
+  question: 'La teva zona no hi apareix?',
+  contactLink: 'Consulta\'ns',
+  endNote: '. Estudiem cada cas.'
+};
+---
+
+<section class="zona-cobertura">
+  <div class="container zona-layout">
+    <div class="zona-intro">
+      <h2>{content.title}</h2>
+      <p>{content.subtitle}</p>
+    </div>
+    <div class="zona-content">
+      <h3>{content.areasTitle}</h3>
+      <ul class="zonas-lista">
+        {content.cities.map(city => (
+          <li>{city.highlight ? <strong>{city.name}</strong> : city.name}</li>
+        ))}
+      </ul>
+      <p class="zona-consulta">
+        {content.question} <a href="tel:+34931050338">{content.contactLink}</a>{content.endNote}
+      </p>
+    </div>
+  </div>
+</section>
