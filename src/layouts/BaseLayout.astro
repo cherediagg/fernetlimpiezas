@@ -86,9 +86,9 @@ const jsonLdArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
 
-    <link rel="stylesheet" href={`${basePath}/styles.css`}>
+    <link rel="stylesheet" href={basePath ? `${basePath}/styles.css` : "styles.css"}>
     {extraCss.map(cssPath => (
-      <link rel="stylesheet" href={`${basePath}/${cssPath}`}>
+      <link rel="stylesheet" href={basePath ? `${basePath}/${cssPath}` : cssPath}>
     ))}
 </head>
 <body>
